@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg2050" xml:lang="grc" urn="urn:cts:greekLit:tlg2050.tlg001">
   <ti:title xml:lang="lat">Vitae Sophistarum</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg2050.tlg001.1st1K-grc1" workUrn="urn:cts:greekLit:tlg2050.tlg001" xml:lang="grc">
@@ -5,4 +6,4 @@
     <ti:description xml:lang="mul">Eunapius. Libanii Opera, Volume 1.1: Orationes I-V. Foerster, Richard, editor.
       Leipzig: Teubner, 1903.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-biography</ti:genre></ti:work>

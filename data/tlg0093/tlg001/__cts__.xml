@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0093" xml:lang="grc" urn="urn:cts:greekLit:tlg0093.tlg001">
   <ti:title xml:lang="eng">Enquiry into Plants</ti:title>
     <ti:title xml:lang="lat">Historia plantarum</ti:title>
@@ -5,4 +6,4 @@
     <ti:label xml:lang="eng">Enquiry into Plants</ti:label>
     <ti:description xml:lang="eng">Theophrastus, Enquiry into Plants, Hort, Heinemann, 1916</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

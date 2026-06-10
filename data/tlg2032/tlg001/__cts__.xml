@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg2032" xml:lang="grc" urn="urn:cts:greekLit:tlg2032.tlg001">
     <ti:title xml:lang="lat">Synagoge</ti:title>
     <ti:edition urn="urn:cts:greekLit:tlg2032.tlg001.1st1K-grc1" workUrn="urn:cts:greekLit:tlg2032.tlg001" xml:lang="grc">
@@ -6,4 +7,4 @@
           Hultsch, Friedrich, editor. Leipzig: Weidmann, 1876.</ti:description>
       <!-- Incomplete. Consists right now only of book 1 of 3. -->
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

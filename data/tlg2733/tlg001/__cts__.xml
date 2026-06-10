@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg2733" xml:lang="grc" urn="urn:cts:greekLit:tlg2733.tlg001">
     <ti:title xml:lang="lat">Historia Ecclesiastica</ti:title>
     <ti:edition urn="urn:cts:greekLit:tlg2733.tlg001.1st1K-grc1" workUrn="urn:cts:greekLit:tlg2733.tlg001" xml:lang="grc">
@@ -5,4 +6,4 @@
       <ti:description xml:lang="mul">Evagrius, Scholasticus. The Ecclesiastical History of
       Evagrius with the Scholia. Bidez, Joseph; Parmentier, Leon, editors. London: Methuen, 1898.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-historiography</ti:genre></ti:work>

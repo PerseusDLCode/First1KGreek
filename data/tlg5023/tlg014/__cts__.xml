@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg5023" xml:lang="grc" urn="urn:cts:greekLit:tlg5023.tlg014">
     <ti:title xml:lang="lat">Scholia in Euripidis Hecubam (scholia vetera et scholia
         recentiora Thomae Magistri, Triclinii, Moschopuli et anonyma)</ti:title>
@@ -6,4 +7,4 @@
       <ti:description xml:lang="mul">Scholia in Euripidem. Scholia Graeca in Euripidis tragoedias, Volume 1. Dindorf, Wilhelm, editor.
           Oxford: Oxford University Press, 1863.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0233" xml:lang="grc" urn="urn:cts:greekLit:tlg0233.tlg001">
   <ti:title xml:lang="lat">Fragmentum (128)</ti:title>
   
@@ -6,4 +7,4 @@
     <ti:description xml:lang="mul">Hipponax. Corpusculum Poesis Epicae Graecae Ludibundae. Brandt, Paul, editor. Leipzig: Teubner, 1888.</ti:description>
   </ti:edition>
 
-</ti:work>
+<ti:genre confidence="medium">verse-iambic</ti:genre></ti:work>

@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1553" xml:lang="grc" urn="urn:cts:greekLit:tlg1553.tlg001">
     <ti:title xml:lang="lat">De Incredibilibus</ti:title>
     
@@ -11,4 +12,4 @@
         <ti:description xml:lang="mul">Palaiphatos. On Unbelievable Stories. Hawes, Greta, et al.,  translators. Washington, DC: Center for Hellenic Studies, 2021. (digital publication)</ti:description>
     </ti:translation>
     
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

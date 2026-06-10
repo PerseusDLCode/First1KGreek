@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0018" xml:lang="grc" urn="urn:cts:greekLit:tlg0018.tlg028">
   <ti:title xml:lang="lat">De Vita Contemplativa</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg0018.tlg028.1st1K-grc1" workUrn="urn:cts:greekLit:tlg0018.tlg028" xml:lang="grc">
@@ -10,4 +11,4 @@
 <ti:description xml:lang="eng">The works of Philo Judaeus, the contemporary of Josephus, volume 4. Yonge, C. D., translator. London: Henry G. Bohn, 1855.</ti:description>
 </ti:translation>
 
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

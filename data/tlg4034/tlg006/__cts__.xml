@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg4034" xml:lang="grc" urn="urn:cts:greekLit:tlg4034.tlg006">
   <ti:title xml:lang="lat">In Librum Quintum Ethicorum Nicomacheorum Commentarium</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg4034.tlg006.1st1K-grc1" workUrn="urn:cts:greekLit:tlg4034.tlg006" xml:lang="grc">
@@ -5,4 +6,4 @@
     <ti:description xml:lang="mul">Michael of Ephesus. In Librum Quintum Ethicorum Nicomacheorum Commentarium  
     (Commentaria in Aristotelem Graeca 22.3). Hayduck, Michael, editor. Berlin: Reimer, 1901.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

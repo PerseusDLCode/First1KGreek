@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0094" xml:lang="grc" urn="urn:cts:greekLit:tlg0094.tlg001">
   <ti:title xml:lang="lat">De Fluviis</ti:title>
   
@@ -10,4 +11,4 @@
     <ti:description xml:lang="eng">Pseudo-Plutarch. On the Naming of Rivers, Mountains, and Things Found in Them. Hawes, Greta, et al., translators. Washington, DC: Center for Hellenic Studies, 2022. (Digital publication).</ti:description>
   </ti:translation>
   
-</ti:work>
+<ti:genre confidence="high">prose-geography</ti:genre></ti:work>

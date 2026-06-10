@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg9019" xml:lang="grc" urn="urn:cts:greekLit:tlg9019.tlg001">
   <ti:title xml:lang="lat">In Aristotelis Librum De Interpretatione Commentarium</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg9019.tlg001.1st1K-grc1" workUrn="urn:cts:greekLit:tlg9019.tlg001" xml:lang="grc">
@@ -5,4 +6,4 @@
     <ti:description xml:lang="mul">Stephanus of Alexandria. In Aristotelis Librum De Interpretatione
       Commentarium (Commentaria in Aristotelem Graeca Vol 18.3). Hayduck, Michael, editor. Leipzig: Reimer, 1885.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg4086" projid="greekLit:tlg002" urn="urn:cts:greekLit:tlg4086.tlg002" xml:lang="grc">
   <ti:title xml:lang="grc">Ἀγαθοδαίμων εἰς τὸν χρησμὸν Ὀρφέως συναγωγὴ καὶ ὑπόμνημα</ti:title>
   <ti:title xml:lang="eng">Explanation and Commentary on the Oracle of Orpheus</ti:title>
@@ -9,4 +9,4 @@
       Marcellin, and Ruelle, Charles-Émile, editors. Paris: Georges Steinheil, 1888.</ti:description>
   </ti:edition>
   
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

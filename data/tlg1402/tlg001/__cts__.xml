@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1402" xml:lang="grc" urn="urn:cts:greekLit:tlg1402.tlg001">
     <ti:title xml:lang="lat">Enchridion de Metris</ti:title>
     
@@ -5,4 +6,4 @@
         <ti:label xml:lang="lat">Enchridion de Metris</ti:label>
         <ti:description xml:lang="mul">Hephaestion. Hephaestionis Enchiridion. Consbruch, Maximilian, editor. Leipzig: Teubner, 1906.</ti:description>
     </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0086" xml:lang="grc" urn="urn:cts:greekLit:tlg0086.tlg046">
   <ti:title xml:lang="lat">De ventorum situ et nominibus</ti:title>
   
@@ -6,4 +7,4 @@
     <ti:description xml:lang="mul">Aristotle. Aristotelis Opera, Volume 6. Bekker, Immanuel, editor. Oxford: Oxford University Press, 1837.</ti:description>
   </ti:edition>
   
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

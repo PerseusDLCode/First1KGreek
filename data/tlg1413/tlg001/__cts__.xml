@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1413" xml:lang="eng" urn="urn:cts:greekLit:tlg1413.tlg001">
     <ti:title xml:lang="eng">On Unbelievable Stories</ti:title>
     
@@ -6,4 +7,4 @@
         <ti:description xml:lang="mul">Heraclitus Paradoxographus. On Unbelievable Stories. Hawes, Greta, et al.,  translators.
             Washington, DC: Center for Hellenic Studies, 2021. (Digital publication).</ti:description>
     </ti:translation>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

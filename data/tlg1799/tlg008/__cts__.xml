@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1799" xml:lang="grc" urn="urn:cts:greekLit:tlg1799.tlg008">
   <ti:title xml:lang="lat">Data (demonstrationes alterae)</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg1799.tlg008.1st1K-grc1" workUrn="urn:cts:greekLit:tlg1799.tlg008" xml:lang="grc">
@@ -5,4 +6,4 @@
     <ti:description xml:lang="mul">Euclid. Euclidis Opera Omnia, Volume 6. Menge, Heinrich; Heiberg, J.L, editors.
       Leipzig: Teubner, 1896.</ti:description> 
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

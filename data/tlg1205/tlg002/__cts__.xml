@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1205" xml:lang="grc" urn="urn:cts:greekLit:tlg1205.tlg002">
   <ti:title xml:lang="lat">De Resurrectione</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg1205.tlg002.perseus-grc1" workUrn="urn:cts:greekLit:tlg1205.tlg002" xml:lang="grc">
@@ -9,4 +10,4 @@
     <ti:label xml:lang="lat">De Resurrectione Mortuorum</ti:label>
     <ti:description xml:lang="lat">Athenagoras. Athenagoras. March, Francis Andrew; Owen, William Baxter; editors. New York: Harper and Brothers, 1876.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

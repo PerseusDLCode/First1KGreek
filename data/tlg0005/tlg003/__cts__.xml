@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0005" xml:lang="grc" urn="urn:cts:greekLit:tlg0005.tlg003">
   <ti:title xml:lang="eng">Syrinx</ti:title>
   
@@ -6,4 +7,4 @@
     <ti:description xml:lang="mul">Theocritus. Bucolici Graeci. Gow, A. S. F., editor. Oxford: Clarendon Press, 1952 (printing).</ti:description>
   </ti:edition>
 
-</ti:work>
+<ti:genre confidence="high">verse-lyric-monodic</ti:genre></ti:work>

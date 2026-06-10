@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1763" projid="greekLit:tlg001" urn="urn:cts:greekLit:tlg1763.tlg001" xml:lang="grc">
     <ti:title xml:lang="lat">De tropis (olim sub auctore Gregorio Corintho)</ti:title>
     
@@ -7,4 +7,4 @@
         <ti:description xml:lang="mul">Tryphon II Grammaticus. Rhetores Graeci Vol. 3. Spengel, Leonhard von, editor. Leipzig: Teubner, 1856.</ti:description>
     </ti:edition>
 
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

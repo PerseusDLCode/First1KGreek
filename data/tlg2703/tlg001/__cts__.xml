@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg2703" xml:lang="grc" urn="urn:cts:greekLit:tlg2703.tlg001">
   <ti:title xml:lang="lat">Alexias</ti:title>
   <ti:edition urn="urn:cts:greekLit:tlg2703.tlg001.1st1K-grc1" xml:lang="grc" workUrn="urn:cts:greekLit:tlg2703.tlg001">
@@ -13,4 +14,4 @@
     <ti:label xml:lang="grc">Ἀλεξιάδα</ti:label>
     <ti:description xml:lang="mul">Anna Comnena. Annae Comnenae. Porphyrogenitae Alexias. Reifferscheid, August, editor. Leipzig: Teubner, 1884.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-historiography</ti:genre></ti:work>

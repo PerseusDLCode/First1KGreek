@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg4037" xml:lang="grc" urn="urn:cts:greekLit:tlg4037.tlg001">
     <ti:title xml:lang="lat">De Incredibilibus (excerpta Vaticana)</ti:title>
     
@@ -11,4 +12,4 @@
         <ti:description xml:lang="mul">Anonymi Paradoxographi. Rationalizing Myth in Antiquity, Hawes, Greta, author and translator. Oxford: Oxford University Press, 2014</ti:description>
     </ti:translation>
     
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

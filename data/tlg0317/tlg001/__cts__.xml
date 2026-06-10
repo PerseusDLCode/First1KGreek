@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0317" xml:lang="grc" urn="urn:cts:greekLit:tlg0317.tlg001">
   <ti:title xml:lang="lat">Acta Joannis</ti:title>
   
@@ -12,4 +13,4 @@
    </ti:translation>
   
   
-</ti:work>
+<ti:genre confidence="high">prose-biography</ti:genre></ti:work>

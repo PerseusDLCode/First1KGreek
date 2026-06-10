@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0733" xml:lang="grc" urn="urn:cts:greekLit:tlg0733.tlg001">
   <ti:title xml:lang="lat">Quaestiones medicae et problemata physica</ti:title>
   
@@ -6,4 +7,4 @@
     <ti:description xml:lang="mul">Cassius Iatrosophista. Physici et medici Graeci minores. Vol. 1. Ideler, Julius Ludwig, editor. Berlin: Reimer, 1841.</ti:description>
   </ti:edition>
 
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

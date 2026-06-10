@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0732" xml:lang="grc" urn="urn:cts:greekLit:tlg0732.tlg011">
     <ti:title xml:lang="lat">De anima libri mantissa</ti:title>
     <ti:edition urn="urn:cts:greekLit:tlg0732.tlg011.1st1K-grc1" workUrn="urn:cts:greekLit:tlg0732.tlg011" xml:lang="grc">
@@ -5,4 +6,4 @@
         <ti:description xml:lang="mul">Alexander of Aphrodisias. Alexandri Aphrodisiensis Praeter Commentaria Scripta Minora, Pars 1.
             (Supplementum Aristotelicum, Volume 2. 1). Bruns, Ivo, editor. Berlin: Reimer, 1887.</ti:description>
     </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-philosophy</ti:genre></ti:work>

@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0666" xml:lang="grc" urn="urn:cts:greekLit:tlg0666.tlg001">
     <ti:title xml:lang="lat">Declamatio</ti:title>
     
@@ -5,4 +6,4 @@
       <ti:label xml:lang="lat">Declamatio</ti:label>
       <ti:description xml:lang="mul">Adrianus. Polemonis Declamationes quae exstant duae. Hinck, Hugo, editor. Leipzig: Teubner, 1873.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-oratory</ti:genre></ti:work>

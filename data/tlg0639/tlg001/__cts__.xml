@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg0639" xml:lang="grc" urn="urn:cts:greekLit:tlg0639.tlg001">
     <ti:title xml:lang="lat">Epistula</ti:title>
     
@@ -5,4 +6,4 @@
       <ti:label xml:lang="lat">Epistula</ti:label>
       <ti:description xml:lang="mul">Menecrates Medicus Epistula. Epistolographi Graeci. Hercher, Rudolph, editor. Paris: A. F. Didot, 1873.</ti:description>
   </ti:edition>
-</ti:work>
+<ti:genre confidence="high">prose-epistolary</ti:genre></ti:work>
