@@ -90,7 +90,7 @@
          <change when="2022-08-12" who="Charlotte Houghton">initial markup of new file.</change>
       </revisionDesc>
    </teiHeader>
-   <text>
+   <text xml:lang="grc">
       <body xml:base="urn:cts:greekLit:tlg0006.tlg020.1st1K-grc1">
          <pb facs="tragicorumgraeco00naucuoft_0395" />
          <div n="1" type="fragment">

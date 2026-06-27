@@ -109,7 +109,7 @@
          <change />
       </revisionDesc>
    </teiHeader>
-   <text>
+   <text xml:lang="eng">
       <body xml:base="urn:cts:hebrewlit:heb0001.heb010.1st1K-eng1">
          <head>ISAIAH</head>
          <p>FROM HEBREW</p>

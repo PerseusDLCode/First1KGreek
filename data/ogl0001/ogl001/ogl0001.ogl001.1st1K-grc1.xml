@@ -77,7 +77,7 @@
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="fragment"
                   delim=":"
-                  match=".//div[@type='textpart'][@subtype='fragment']"
+                  match=".//div[@type='fragment']"
                   use="@n" />
             </citeStructure>
          </refsDecl>
@@ -95,7 +95,7 @@
          <change />
       </revisionDesc>
    </teiHeader>
-   <text>
+   <text xml:lang="lat">
       <body xml:base="urn:cts:greekLit:ogl0001.ogl001.1st1K-grc1">
          <pb n="184" />
          <head>FRAGMENTUM

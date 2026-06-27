@@ -99,7 +99,7 @@
          <change when="2020-06-24" who="Lisa Cerrato">initial markup of new file</change>
       </revisionDesc>
    </teiHeader>
-   <text>
+   <text xml:lang="grc">
       <body xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1">
          <l n="1" resp="ogl">
             <pb facs="bucogr_415773970_0188" />Οὐδενὸς εὐνάτειρα Μακροπτολέμοιο δὲ μάτηρ </l>
