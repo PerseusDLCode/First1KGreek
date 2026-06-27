@@ -38,8 +38,9 @@
             <authority>Harvard College Library</authority>
             <idno type="filename">ogl0001.ogl001.1st1K-grc1.xml</idno>
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
-License</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+                  Creative Commons Attribution-ShareAlike 4.0 International
+                  License</licence>
             </availability>
             <date>2018</date>
             <publisher>Harvard College Library</publisher>
@@ -64,25 +65,26 @@ License</licence>
                      </imprint>
                      <biblScope unit="volume">1</biblScope>
                   </monogr>
-                  <ref target="https://archive.org/details/reliquiaesacraes01rout/page/184/mode/2up">Internet Archive</ref>
+                  <ref target="https://archive.org/details/reliquiaesacraes01rout/page/184/mode/2up">Internet
+                     Archive</ref>
                </biblStruct>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
-         <refsDecl n="CTS">
+         <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="fragment"
-                              delim="."
-                              match=".//div[@type='textpart'][@subtype='fragment']"
-                              use="@n"/>
+                  delim=":"
+                  match=".//div[@type='textpart'][@subtype='fragment']"
+                  use="@n" />
             </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre" target="#prose-fragment"/>
+            <catRef scheme="#perseus-genre" target="#prose-fragment" />
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -90,49 +92,36 @@ License</licence>
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change/>
+         <change />
       </revisionDesc>
    </teiHeader>
    <text>
       <body xml:base="urn:cts:greekLit:ogl0001.ogl001.1st1K-grc1">
-         <pb n="184"/>
+         <pb n="184" />
          <head>FRAGMENTUM
-BEATI PINYTI,
-CNOSSI IN CRETA EPISCOPI,
-QUI EO TEMPORE QUO DIONYSIUS CORINTHIUS
-FLORUIT.</head>
-         <lb n="5"/>
+            BEATI PINYTI,
+            CNOSSI IN CRETA EPISCOPI,
+            QUI EO TEMPORE QUO DIONYSIUS CORINTHIUS
+            FLORUIT.</head>
+         <lb n="5" />
          <div n="1" type="fragment">
             <head>DE EPISTOLA PINYTI AD DIONYSIUM</head>
             <head>Hoc scribit Eusebius lib. iv. Hist. c. 23.</head>
-            <p>—πρὸς ἣν (Dionysii epistolam, de quæ supra) ὁ Πινυτὸς ἀντιγράφων,
-θαυμάζει μὲν καὶ ἀποδέχεται τὸν Διονύσιον· ἀντιπαρακαλεῖ
-δὲ a στεῤῥοτέρας ἤδη ποτὲ μεταδιδόναι τροφῆς, <lb n="10"/>
-τελειοτέροις γράμμασιν εἰσαῦθις τὸν παῤ αὐτῷ λαὸν
-ὑποθρέψαντα, ὡς μὴ διατέλους τοῖς γαλακτώδεσιν ἐνδιατρίβοντες
-λόγοις, τῇ νηπιώδει ἀγωγῇ λάθοιεν καταγηράσαντες.
-δι᾿ ἧς ἐπιστολῆς καὶ ἡ τοῦ Πινυτοῦ περὶ τὴν πίστιν
-ὀρθοδοξία τε καὶ φροντὶς τῆς τῶν ὑπηκόων ὡφελείας, τό, τε λόγιον <lb n="15"/>
-καὶ ἡ περὶ τὰ θεῖα σύνεσις, ὡς δι᾿ ἀκριβεστάτης ἀναδείκνυται εἰκόνος.</p>
-            <note type="translation">Cum epistolæ respondens postea
-Pinytus, admiratione quidem
-ac laudibus effert imprimis Dionysium:
-sed tamen hortatur
-ut solidiorem cibum tandem impertiat,
-et transmissis iterum
-perfectioris doctrinæ literis plebem
-sibi commissam alere ve.
-lit: ne forte lacteis sermonibus
-perpetuo innutriti homines,
-in infantili quadam disci.
-plina paulatim consenescant.
-Qua quidem epistola et rectam <lb n="20"/>
-Pinyti fidem, et sollicudinem de
-profectu plebis ipsi commissæ, eloquentiam
-quoque et peritiam rerum
-divinarum, velut tabella quadam
-picta egregie commonstrat.</note>
-            <lb n="25"/>
+            <p>—πρὸς ἣν (Dionysii epistolam, de quæ supra) ὁ Πινυτὸς ἀντιγράφων, θαυμάζει μὲν καὶ
+               ἀποδέχεται τὸν Διονύσιον· ἀντιπαρακαλεῖ δὲ a στεῤῥοτέρας ἤδη ποτὲ μεταδιδόναι τροφῆς, <lb
+                  n="10" /> τελειοτέροις γράμμασιν εἰσαῦθις τὸν παῤ αὐτῷ λαὸν ὑποθρέψαντα, ὡς μὴ
+               διατέλους τοῖς γαλακτώδεσιν ἐνδιατρίβοντες λόγοις, τῇ νηπιώδει ἀγωγῇ λάθοιεν
+               καταγηράσαντες. δι᾿ ἧς ἐπιστολῆς καὶ ἡ τοῦ Πινυτοῦ περὶ τὴν πίστιν ὀρθοδοξία τε καὶ
+               φροντὶς τῆς τῶν ὑπηκόων ὡφελείας, τό, τε λόγιον <lb n="15" /> καὶ ἡ περὶ τὰ θεῖα
+               σύνεσις, ὡς δι᾿ ἀκριβεστάτης ἀναδείκνυται εἰκόνος.</p>
+            <note type="translation">Cum epistolæ respondens postea Pinytus, admiratione quidem ac
+               laudibus effert imprimis Dionysium: sed tamen hortatur ut solidiorem cibum tandem
+               impertiat, et transmissis iterum perfectioris doctrinæ literis plebem sibi commissam
+               alere ve. lit: ne forte lacteis sermonibus perpetuo innutriti homines, in infantili
+               quadam disci. plina paulatim consenescant. Qua quidem epistola et rectam <lb n="20" />
+               Pinyti fidem, et sollicudinem de profectu plebis ipsi commissæ, eloquentiam quoque et
+               peritiam rerum divinarum, velut tabella quadam picta egregie commonstrat.</note>
+            <lb n="25" />
             <note type="footnote">Heb. v. 12, 13, 14.</note>
          </div>
       </body>

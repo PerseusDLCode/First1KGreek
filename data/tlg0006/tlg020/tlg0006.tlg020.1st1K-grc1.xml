@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_drama.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_drama.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -28,11 +29,12 @@
          <publicationStmt>
             <publisher>Open Greek and Latin</publisher>
             <idno type="filename">tlg0006.tlg020.1st1K-grc1.xml</idno>
-            <pubPlace/>
+            <pubPlace />
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+                  Creative Commons Attribution-ShareAlike 4.0 International License</licence>
             </availability>
-            <date when="2022-04-11"/>
+            <date when="2022-04-11" />
             <idno type="CTS">urn:cts:greekLit:tlg0006.tlg020.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
@@ -47,31 +49,36 @@
                      <date>1889</date>
                   </imprint>
                </monogr>
-               <ref target="https://archive.org/details/tragicorumgraeco00naucuoft/page/363/mode/1up">Internet Archive</ref>
+               <ref
+                  target="https://archive.org/details/tragicorumgraeco00naucuoft/page/363/mode/1up">Internet
+                  Archive</ref>
             </biblStruct>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
             <correction>
-               <p>Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount Allison University.</p>
+               <p>Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount
+                  Allison University.</p>
             </correction>
          </editorialDecl>
-         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            Architecture</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <cRefPattern matchPattern="(\w+)" n="fragment"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                <p>This pointer pattern extracts fragment.</p>
             </cRefPattern>
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="line" delim=":" match=".//l" use="@n"/>
+               <citeStructure unit="fragment" use="@n" match="div" delim=":" n="chunk" />
             </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre" target="#drama-line"/>
+            <catRef scheme="#perseus-genre" target="#drama-line" />
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -85,7 +92,7 @@
    </teiHeader>
    <text>
       <body xml:base="urn:cts:greekLit:tlg0006.tlg020.1st1K-grc1">
-         <pb facs="tragicorumgraeco00naucuoft_0395"/>
+         <pb facs="tragicorumgraeco00naucuoft_0395" />
          <div n="1" type="fragment">
             <l>ποίαν σε φῶμεν γαῖαν ἐκλελοιπότα</l>
             <l>πόλει ξενοῦσθαι τῇδε; τίς πάτρας ὅρος;</l>
@@ -94,7 +101,7 @@
          <div n="2" type="fragment">
             <l>τί σε μάτηρ ἐν δεκάτᾳ τόκου ὠνόμαζεν;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0396"/>
+         <pb facs="tragicorumgraeco00naucuoft_0396" />
          <div n="3" type="fragment">
             <l>δειλῶν γυναῖκες δεσποτῶν θρασύστομοι.</l>
          </div>
@@ -119,7 +126,7 @@
             <l>ἦ που κρεῖσσον τῆς εὐγενίας</l>
             <l>τὸ καλῶς πράσσειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0397"/>
+         <pb facs="tragicorumgraeco00naucuoft_0397" />
          <div n="10" type="fragment">
             <l>κατθανεῖν δ’ ὀφείλεται</l>
             <l>καὶ τῷ κατ’ οἴκους ἐκτὸς ἡμένῳ πόνων.</l>
@@ -134,14 +141,14 @@
          <div n="13" type="fragment">
             <l>ἀντραῖος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0398"/>
+         <pb facs="tragicorumgraeco00naucuoft_0398" />
          <div n="14" type="fragment">
             <l>Ἕλλην γάρ, ὡς λέγουσι, γίγνεται Διός,</l>
             <l>τοῦ δ’ Αἴολος παῖς, Αἰόλου δὲ Σίσυφος</l>
             <l>Ἀθάμας τε Κρηθεύς θ’ ὅς τ’ ἐπ’ Ἀλφειοῦ ῥοαῖς</l>
             <l>θεοῦ μανεὶς ἔρριψε Σαλμωνεὺς φλόγα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0399"/>
+         <pb facs="tragicorumgraeco00naucuoft_0399" />
          <div n="15" type="fragment">
             <l>ἴδοιμι δ’ αὐτῶν ἔκγον’ ἄρσεν’ ἀρσένων·</l>
             <l>πρῶτον μὲν εἶδος ἄξιον τυραννίδος·</l>
@@ -153,7 +160,7 @@
             <l>μή μοι τὰ κομψὰ ποικίλοι γενοίατο,</l>
             <l>ἀλλ’ ὧν πόλει δεῖ μεγάλα βουλεύοντες εὖ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0400"/>
+         <pb facs="tragicorumgraeco00naucuoft_0400" />
          <div n="17" type="fragment">
             <l>ἆρ’ ἔτυμον φάτιν ἔγνων,</l>
             <l>Αἴολε, σ’ εὐνάζειν τέκνα φίλτατα;</l>
@@ -168,7 +175,7 @@
             <l>μὴ πλοῦτον εἴπῃς· οὐχὶ θαυμάζω θεόν,</l>
             <l>ὃν χὡ κάκιστος ῥᾳδίως ἐκτήσατο.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0401"/>
+         <pb facs="tragicorumgraeco00naucuoft_0401" />
          <div n="21" type="fragment">
             <l>δοκεῖτ’ ἂν οἰκεῖν γαῖαν, εἰ πένης ἅπας</l>
             <l>λαὸς πολιτεύοιτο πλουσίων ἄτερ;</l>
@@ -189,7 +196,7 @@
             <l>ἀλλ’ ἢ τὸ γῆρας τὴν Κύπριν χαίρειν ἐᾷ,</l>
             <l>ἥ τ’ Ἀφροδίτη τοῖς γέρουσιν ἄχθεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0402"/>
+         <pb facs="tragicorumgraeco00naucuoft_0402" />
          <div n="24" type="fragment">
             <l>κακὸν γυναῖκα πρὸς νέαν ζεῦξαι νέον·</l>
             <l>μακρὰ γὰρ ἰσχὺς μᾶλλον ἀρσένων μένει,</l>
@@ -210,7 +217,7 @@
             <l>ἡ βραχύ τοι σθένος ἀνέρος· ἀλλὰ</l>
             <l>ποικιλίᾳ πραπίδων</l>
             <l>δεινὰ μὲν φῦλα πόντου</l>
-            <pb facs="tragicorumgraeco00naucuoft_0403"/>
+            <pb facs="tragicorumgraeco00naucuoft_0403" />
             <l>χθονίων τ’ ἀερίων τε</l>
             <l n="5">δάμναται παιδεύματα.</l>
          </div>
@@ -228,7 +235,7 @@
             <l rend="indent">ἀλλ ὅμως</l>
             <l>οἰκτρός τις αἰὼν πατρίδος ἐκλιπεῖν ὅρους.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0404"/>
+         <pb facs="tragicorumgraeco00naucuoft_0404" />
          <div n="31" type="fragment">
             <l>ὀργῇ γὰρ ὅστις εὐθέως χαρίζεται,</l>
             <l>κακῶς τελευτᾷ· πλεῖστα γὰρ σφάλλει βροτούς.</l>
@@ -251,7 +258,7 @@
             <l>γυναῖκα δ’ ὅστις παύσεται λέγων κακῶς,</l>
             <l>δύστηνος ἆρα κοὐ σοφὸς κεκλήσεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0405"/>
+         <pb facs="tragicorumgraeco00naucuoft_0405" />
          <div n="37" type="fragment">
             <l>μοχθεῖν ἀνάγκη· τὰς δὲ δαιμόνων τύχας</l>
             <l>ὅστις φέρει κάλλιστ’ ἀνὴρ οὗτος σοφός.</l>
@@ -265,7 +272,7 @@
          <div n="41" type="fragment">
             <l>κατηρτυκέναι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0406"/>
+         <pb facs="tragicorumgraeco00naucuoft_0406" />
          <div n="42" type="fragment">
             <l rend="indent">καὶ χρόνου προύβαινε πούς</l>
          </div>
@@ -278,7 +285,7 @@
             <l>
                <label>〈Β.〉</label> χρῆν· τοῦτο δ’ εἰπεῖν ῥᾷον ἢ φέρειν κακά.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0407"/>
+         <pb facs="tragicorumgraeco00naucuoft_0407" />
          <div n="45" type="fragment">
             <l>ὥστ’ οὔτις ἀνδρῶν εἰς ἅπαντ’ εὐδαιμονεῖ.</l>
          </div>
@@ -301,7 +308,7 @@
             <l>ἤλεγχον· οὕτω γὰρ κακὸν δούλων γένος·</l>
             <l>γαστὴρ ἅπαντα, τοὐπίσω δ’ οὐδὲν σκοπεῖ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0408"/>
+         <pb facs="tragicorumgraeco00naucuoft_0408" />
          <div n="50" type="fragment">
             <l>δούλων ὅσοι φιλοῦσι δεσποτῶν γένος,</l>
             <l>πρὸς τῶν ὁμοίων πόλεμον αἴρονται μέγαν.</l>
@@ -326,7 +333,7 @@
             <l>οὐκ ἔστιν ἐν κακοῖσιν εὐγένεια,</l>
             <l>παρ’ ἀγαθοῖσι δ’ ἀνδρῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0409"/>
+         <pb facs="tragicorumgraeco00naucuoft_0409" />
          <div n="54" type="fragment">
             <l>κακόν τι παίδευμ’ ἦν ἄρ’ εἰς εὐανδρίαν</l>
             <l>ὁ πλοῦτος ἀνθρώποισιν αἵ τ’ ἄγαν τρυφαί·</l>
@@ -349,7 +356,7 @@
             <l>οἴμοι, θανοῦμαι διὰ τὸ χρήσιμον φρενῶν,</l>
             <l>ἥ τοῖσιν ἄλλοις γίγνεται σωτηρία.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0410"/>
+         <pb facs="tragicorumgraeco00naucuoft_0410" />
          <div n="59" type="fragment">
             <l>ἐκ τῶν ὁμοίων οἱ κακοὶ γαμοῦσ’ ἀεί.</l>
          </div>
@@ -373,7 +380,7 @@
          <div n="66" type="fragment">
             <l>οὐδὲ πυνθάνεσθε ταῦτ’, ὦ παρθένοι, τἀν τῇ πόλει;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0413"/>
+         <pb facs="tragicorumgraeco00naucuoft_0413" />
          <div n="67" type="fragment">
             <l>ὁ φόβος, ὅταν τις αἵματος μέλλῃ πέρι</l>
             <l>λέγειν καταστὰς εἰς ἀγῶν’ ἐναντίον,</l>
@@ -389,7 +396,7 @@
             <l>
                <label>〈Φ.〉</label> ἑκὼν ἑκοῦσαν ἢ 〈οὐ〉 θέλουσαν οὐχ ἑκών;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0414"/>
+         <pb facs="tragicorumgraeco00naucuoft_0414" />
          <div n="69" type="fragment">
             <l>μάλιστα μέν μ’ ἐπῆρ’ ἐπισκήψας πατήρ,</l>
             <l>ὅθ’ ἅρματ’ εἰσέβαινεν εἰς Θήβας ἰών.</l>
@@ -405,7 +412,7 @@
             <l>χαῖρ’, ὦ γεραιέ· τήν τε παῖδ’ ἐκδοὺς ἐμοὶ</l>
             <l>γαμβρὸς νομίζῃ καὶ πατὴρ σωτήρ τ’ ἐμός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0415"/>
+         <pb facs="tragicorumgraeco00naucuoft_0415" />
          <div n="73" type="fragment">
             <l>ἀργαίνειν</l>
          </div>
@@ -423,7 +430,7 @@
             <l>ὁρᾶτε τὸν τύραννον ὡς ἄπαις γέρων</l>
             <l>φεύγει· φρονεῖν δὲ θνητὸν ὄντ’ οὐ χρὴ μέγα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0416"/>
+         <pb facs="tragicorumgraeco00naucuoft_0416" />
          <div n="77" type="fragment">
             <l>ἀπαιώνιστον</l>
          </div>
@@ -447,7 +454,7 @@
             <l>τὰ τῶν τεκόντων ὡς μετέρχεται θεὸς</l>
             <l>μιάσματα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0417"/>
+         <pb facs="tragicorumgraeco00naucuoft_0417" />
          <div n="83" type="fragment">
             <l>εἰ τοῦ τεκόντος οὐδὲν ἐντρέπῃ πατρός</l>
          </div>
@@ -467,7 +474,7 @@
             <l>σχέθῃ τις ὑμᾶς· ταῦτα γὰρ σκεθρῶς ὁρᾶν</l>
             <l>ἡμᾶς ἀνάγκη τοὺς νομίζοντας τέχνην</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0418"/>
+         <pb facs="tragicorumgraeco00naucuoft_0418" />
          <div n="88" type="fragment">
             <l>πολὺς δ’ ἀνεῖρπε κισσὸς εὐφυὴς κλάδος,</l>
             <l>ἀηδόνων μουσεῖον</l>
@@ -479,7 +486,7 @@
          <div n="90" type="fragment">
             <l>πόθεν δὲ πεύκης πανὸν ἐξηῦρες λαβεῖν;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0419"/>
+         <pb facs="tragicorumgraeco00naucuoft_0419" />
          <div n="91" type="fragment">
             <l>ἀτρέκεια δ’ ἄριστον ἀνδρὸς ἐν πόλει δικαίου πέλει.</l>
          </div>
@@ -502,7 +509,7 @@
          <div n="96" type="fragment">
             <l>σκαιόν τι χρῆμα πλοῦτος ἥ τ’ ἀπειρία.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0420"/>
+         <pb facs="tragicorumgraeco00naucuoft_0420" />
          <div n="97" type="fragment">
             <l>ἀλλ’ οὐ γὰρ ὀρθῶς ταῦτα, γενναίως 〈δ’〉 ἴσως</l>
             <l>ἔπραξας· αἰνεῖσθαι δὲ δυστυχῶν ἐγὼ</l>
@@ -522,7 +529,7 @@
             <l>ἀλλ’ ἡμέρα τοι πολλὰ καὶ μέλαινα νὺξ</l>
             <l>τίκτει βροτοῖσιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0421"/>
+         <pb facs="tragicorumgraeco00naucuoft_0421" />
          <div n="102" type="fragment">
             <l>σοφώτεροι γὰρ συμφορὰς τὰς τῶν πέλας</l>
             <l>πάντες διαθρεῖν ἢ τύχας τὰς οἴκοθεν.</l>
@@ -534,7 +541,7 @@
          <div n="104" type="fragment">
             <l>ἀμολγὸν νύκτα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0422"/>
+         <pb facs="tragicorumgraeco00naucuoft_0422" />
          <div n="105" type="fragment">
             <l>ὁρῶ μὲν ἀνδρῶν τόνδε γυμνάδα στόλον</l>
             <l>στείχοντα θεωρὸν ἐκ τρόχων πεπαυμένον.</l>
@@ -546,7 +553,7 @@
             <l>πλήσας δὲ νηδὺν οὐδ’ ὄναρ κατ’ εὐφρόνην</l>
             <l>φίλοις ἔδειξεν αὑτόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0423"/>
+         <pb facs="tragicorumgraeco00naucuoft_0423" />
          <div n="108" type="fragment">
             <l>γυνὴ γυναικὶ σύμμαχος πέφυκέ πως.</l>
          </div>
@@ -567,11 +574,11 @@
             <l>ὁ χρόνος ἅπαντα τοῖσιν ὕστερον φράσει,</l>
             <l>λάλος ἐστὶν οὗτος, οὐκ ἐρωτῶσιν λέγει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0424"/>
+         <pb facs="tragicorumgraeco00naucuoft_0424" />
          <div n="113" type="fragment">
             <l>ὁδῆσαι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0425"/>
+         <pb facs="tragicorumgraeco00naucuoft_0425" />
          <div n="114" type="fragment">
             <l>
                <label type="speaker">ΑΝΔΡ.</label> Ὦ νὺξ ἱερά,</l>
@@ -585,7 +592,7 @@
             <l>μέρος ἐξέλαχον, θανάτου τλήμων</l>
             <l>μέλλουσα τυχεῖν;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0426"/>
+         <pb facs="tragicorumgraeco00naucuoft_0426" />
          <div n="116" type="fragment">
             <l>ποῖαι λιβάδες, ποία σειρήν</l>
          </div>
@@ -603,7 +610,7 @@
             <l>δακρύων μεταδοὺς ἔχει</l>
             <l>κουφότητα μόχθων.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0427"/>
+         <pb facs="tragicorumgraeco00naucuoft_0427" />
          <div n="120" type="fragment">
             <l>ἄνοικτος ὃς τεκὼν σὲ τὴν</l>
             <l>πολυπονωτάτην βροτῶν</l>
@@ -634,7 +641,7 @@
             </l>
             <l>ἰὼ μοίρας ἄτεγκτε δαίμων·</l>
             <l>ὦ κατάρατος ἐγώ·</l>
-            <pb facs="tragicorumgraeco00naucuoft_0428"/>
+            <pb facs="tragicorumgraeco00naucuoft_0428" />
             <l>τίς ἐμὸν οὐκ ἐπόψεται</l>
             <l>πάθος ἀμέγαρτον ἐπὶ κακῶν παρουσίᾳ;</l>
             <l n="1050">εἴθε με πυρφόρος ἀστεροπητὴς</l>
@@ -657,7 +664,7 @@
          <div n="125" type="fragment">
             <l>ἔα, τίν’ ὄχθον τόνδ’ ὁρῶ περίρρυτον</l>
             <l>ἀφρῷ θαλάσσης; παρθένου τ’ εἰκώ τινα</l>
-            <pb facs="tragicorumgraeco00naucuoft_0429"/>
+            <pb facs="tragicorumgraeco00naucuoft_0429" />
             <l>ἐξ αὐτομόρφων λαίνων τυκισμάτων</l>
             <l>σοφῆς ἄγαλμα χειρός.</l>
          </div>
@@ -677,7 +684,7 @@
          <div n="129" type="fragment">
             <l>ὦ παρθέν’, εἰ σῴσαιμί σ’, εἴσῃ μοι χάριν;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0430"/>
+         <pb facs="tragicorumgraeco00naucuoft_0430" />
          <div n="130" type="fragment">
             <l>τὰς συμφορὰς γὰρ τῶν κακῶς πεπραγότων</l>
             <l>οὐπώποθ’ ὕβρισ’, αὐτὸς ὀρρωδῶν παθεῖν.</l>
@@ -690,7 +697,7 @@
             <l>ἄγου δέ μ’, ὦ ξεῖν’, εἴτε πρόσπολον θέλεις</l>
             <l>εἴτ’ ἄλοχον εἴτε δμωίδ’. . . . .</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0431"/>
+         <pb facs="tragicorumgraeco00naucuoft_0431" />
          <div n="133" type="fragment">
             <l>ἀλλ’ ἡδύ τοι σωθέντα μεμνῆσθαι πόνων.</l>
          </div>
@@ -706,7 +713,7 @@
             <l>ἢ μὴ δίδασκε τὰ καλὰ φαίνεσθαι καλά,</l>
             <l>ἢ τοῖς ἐρῶσιν εὐτυχῶς συνεκπόνει</l>
             <l>μοχθοῦσι μόχθους ὧν σὺ δημιουργὸς εἶ.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0432"/>
+            <pb facs="tragicorumgraeco00naucuoft_0432" />
             <l n="5">καὶ ταῦτα μὲν δρῶν τίμιος θεοῖς ἔσῃ,</l>
             <l>μὴ δρῶν δ’ ὑπ’ αὐτοῦ τοῦ διδάσκεσθαι φιλεῖν</l>
             <l>ἀφαιρεθήσῃ χάριτας αἷς τιμῶσί σε.</l>
@@ -728,7 +735,7 @@
             <l>ὦ τλῆμον, ὡς σοὶ τὰς τύχας μὲν ἀσθενεῖς</l>
             <l>ἔδωχ’ ὁ δαίμων, μέγα φρονοῦσι δ’ οἱ λόγοι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0433"/>
+         <pb facs="tragicorumgraeco00naucuoft_0433" />
          <div n="141" type="fragment">
             <l>ἐγὼ δὲ παῖδας οὐκ ἐῶ νόθους λαβεῖν·</l>
             <l>τῶν γνησίων γὰρ οὐδὲν ὄντες ἐνδεεῖς</l>
@@ -751,7 +758,7 @@
             <l>ὁρῶ δὲ πρὸς τὰ παρθένου θοινάματα</l>
             <l>κῆτος θοάζον ἐξ Ἀτλαντικῆς ἁλός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0434"/>
+         <pb facs="tragicorumgraeco00naucuoft_0434" />
          <div n="146" type="fragment">
             <l rend="indent">πᾶς δὲ ποιμένων ἔρρει λεώς,</l>
             <l>ὃ μὲν γάλακτος κίσσινον φέρων σκύφος</l>
@@ -763,7 +770,7 @@
          <div n="148" type="fragment">
             <l>τέλειος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0435"/>
+         <pb facs="tragicorumgraeco00naucuoft_0435" />
          <div n="149" type="fragment">
             <l>νεότης μ’ ἐπῆρε καὶ θράσος τοῦ νοῦ πλέον.</l>
          </div>
@@ -780,7 +787,7 @@
             <l>ὅπῃ μοίρας διεξέρχεται;</l>
             <l>στρέφει δ’ ἄλλους ἄλλως εἰς ἁμέραν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0436"/>
+         <pb facs="tragicorumgraeco00naucuoft_0436" />
          <div n="153" type="fragment">
             <l>ὃ μὲν ὄλβιος ἦν, τὸ δ’ ἀπέκρυψεν</l>
             <l>θεὸς ἐκ κείνων τῶν ποτε λαμπρῶν·</l>
@@ -799,14 +806,14 @@
          <div n="156" type="fragment">
             <l>ἀμείβεται</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0437"/>
+         <pb facs="tragicorumgraeco00naucuoft_0437" />
          <div n="157" type="fragment">
             <l>Ἦν Οἰδίπους τὸ πρῶτον εὐδαίμων ἀνήρ</l>
          </div>
          <div n="158" type="fragment">
             <l>εἶτ’ ἐγένετ’ αὖθις ἀθλιώτατος βροτῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0438"/>
+         <pb facs="tragicorumgraeco00naucuoft_0438" />
          <div n="159" type="fragment">
             <l>χρυσεόνωτον ἀσπίδα τὰν Καπανέως</l>
          </div>
@@ -822,7 +829,7 @@
             <l>τἄλλ’, εἰς ἔρωτα πᾶς ἀνὴρ σοφώτατος·</l>
             <l>ἢν δ’ ἂν προσῆται Κύπρις, ἥδιστον λαβεῖν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0439"/>
+         <pb facs="tragicorumgraeco00naucuoft_0439" />
          <div n="163" type="fragment">
             <l>ἀνδρὸς φίλου δὲ χρυσὸς ἀμαθίας μέτα</l>
             <l>ἄχρηστος, εἰ μὴ κἀρετὴν ἔχων τύχοι.</l>
@@ -838,7 +845,7 @@
             <l>τὸ μῶρον αὐτῷ τοῦ πατρὸς νόσημ’ ἔνι·</l>
             <l>φιλεῖ γὰρ οὕτως ἐκ κακῶν εἶναι κακούς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0440"/>
+         <pb facs="tragicorumgraeco00naucuoft_0440" />
          <div n="167" type="fragment">
             <l>ἡ γὰρ δόκησις πατράσι παῖδας εἰκέναι·</l>
             <l>τὰ πολλὰ ταύτῃ γίγνεται τέκνων πέρι.</l>
@@ -861,7 +868,7 @@
             <l>τύραννον εἶναι· μωρία δὲ καὶ θέλειν</l>
             <l>ὃς τῶν ὁμοῖων βούλεται κρατεῖν μόνος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0441"/>
+         <pb facs="tragicorumgraeco00naucuoft_0441" />
          <div n="173" type="fragment">
             <l>οἰκεῖος ἀνθρώποισι γίγνεσθαι φιλεῖ</l>
             <l>πόλεμος ἐν ἀστοῖς, ἢν διχοστατῇ πόλις.</l>
@@ -875,7 +882,7 @@
             <l>ὅστις δὲ πρὸς τὸ πῖπτον εὐλόφως φέρει,</l>
             <l>τὸν δαίμον’ οὗτος ἧσσόν ἐστιν ἄθλιος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0442"/>
+         <pb facs="tragicorumgraeco00naucuoft_0442" />
          <div n="176" type="fragment">
             <l>θάνατος γὰρ ἀνθρώποισι νεικέων τέλος</l>
             <l>ἔχει· μαθεῖν δὲ πᾶσίν ἐστιν εὐμαρές.</l>
@@ -887,7 +894,7 @@
             <l>ὦ παῖ Διώνης, ὡς ἔφυς μέγας θεός,</l>
             <l>Διόνυσε, θνητοῖς τ’ οὐδαμῶς ὑποστατός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0444"/>
+         <pb facs="tragicorumgraeco00naucuoft_0444" />
          <div n="179" type="fragment">
             <l rend="indent">Οἰνόῃ</l>
             <l>σύγχορτα ναίω πεδία ταῖς τ’ Ἐλευθεραῖς</l>
@@ -895,7 +902,7 @@
          <div n="180" type="fragment">
             <l>Ὑσιαί</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0445"/>
+         <pb facs="tragicorumgraeco00naucuoft_0445" />
          <div n="181" type="fragment">
             <l>τὸν μὲν κίκλησκε Ζῆθον· ἐζήτησε γὰρ</l>
             <l>τόκοισιν εὐμάρειαν ἡ τεκοῦσά νιν.</l>
@@ -905,7 +912,7 @@
             <l>νέμων τὸ πλεῖστον ἡμέρας τούτῳ μέρος,</l>
             <l>ἵν’ αὐτὸς αὑτοῦ τυγχάνει κράτιστος ὤν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0446"/>
+         <pb facs="tragicorumgraeco00naucuoft_0446" />
          <div n="184" type="fragment">
             <l>μοῦσάν τιν’ ἄτοπον εἰσάγεις, ἀσύμφορον,</l>
             <l>ἀργόν, φίλοινον, χρημάτων ἀτημελῆ.</l>
@@ -918,7 +925,7 @@
             <l n="5">〈καλῶς〉 ὁμιλήσειας οὔτ’ ἄλλων ὕπερ</l>
             <l>νεανικὸν βούλευμά βουλεύσαιό 〈τι〉.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0447"/>
+         <pb facs="tragicorumgraeco00naucuoft_0447" />
          <div n="186" type="fragment">
             <l>πῶς γὰρ σοφὸν τοῦτ’ ἔστιν, ἥτις εὐφυᾶ</l>
             <l>λαβοῦσα τέχνη φῶτ’ ἔθηκε χείρονα;</l>
@@ -931,7 +938,7 @@
             <l n="5">φίλοισι δ’ οὐδείς· ἡ φύσις γὰρ οἴχεται,</l>
             <l>ὅταν γλυκείας ἡδονῆς ἥσσων τις ᾖ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0448"/>
+         <pb facs="tragicorumgraeco00naucuoft_0448" />
          <div n="188" type="fragment">
             <l rend="indent">ἀλλ’ ἐμοὶ πιθοῦ·</l>
             <l>παῦσαι μελῳδῶν, πολέμων δ’ εὐμουσίαν</l>
@@ -944,7 +951,7 @@
             <l>ἐκ παντὸς ἄν τις πράγματος δισσῶν λόγων</l>
             <l>ἀγῶνα θεῖτ’ ἄν, εἰ λέγειν εἴη σοφός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0449"/>
+         <pb facs="tragicorumgraeco00naucuoft_0449" />
          <div n="190" type="fragment">
             <l>λύρα βοῶν . . ῥύσι’ ἐξερρύσατο</l>
          </div>
@@ -954,7 +961,7 @@
          <div n="192" type="fragment">
             <l>χρόνος θεῶν τε πνεῦμ’ ἔρως θ’ ὑμνῳδίας</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0450"/>
+         <pb facs="tragicorumgraeco00naucuoft_0450" />
          <div n="193" type="fragment">
             <l>ὅστις δὲ πράσσει πολλὰ μὴ πράσσειν παρόν,</l>
             <l>μῶρος, παρὸν ζῆν ἡδέως ἀπράγμονα.</l>
@@ -975,7 +982,7 @@
             <l>τί δῆτ’ ἐν ὄλβῳ μὴ σαφεῖ βεβηκότες</l>
             <l n="5">οὐ ζῶμεν ὡς ἥδιστα μὴ λυπούμενοι;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0451"/>
+         <pb facs="tragicorumgraeco00naucuoft_0451" />
          <div n="197" type="fragment">
             <l>βροτοῖσιν εὔκρας οὐ γένοιτ’ ἂν ἡδονή.</l>
          </div>
@@ -996,7 +1003,7 @@
             <l>σοφὸν γὰρ ἓν βούλευμα τὰς πολλὰς χέρας</l>
             <l>νικᾷ, σὺν ὄχλῳ δ’ ἀμαθία πλεῖστον κακόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0453"/>
+         <pb facs="tragicorumgraeco00naucuoft_0453" />
          <div n="201" type="fragment">
             <l>καὶ μὴν ὅσοι μὲν σαρκὸς εἰς εὐεξίαν</l>
             <l>ἀσκοῦσι βίοτον, ἢν σφαλῶσι χρημάτων,</l>
@@ -1019,7 +1026,7 @@
             <l>τὸ μὴ εἰδέναι γὰρ ἡδονὴν ἔχει τινὰ</l>
             <l>νοσοῦντα, κέρδος δ’ ἐν κακοῖς ἀγνωσία.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0454"/>
+         <pb facs="tragicorumgraeco00naucuoft_0454" />
          <div n="206" type="fragment">
             <l>ὦ παῖ, γένοιντ’ ἂν εὖ λελεγμένοι λόγοι</l>
             <l>ψευδεῖς, ἐπῶν δὲ κάλλεσιν νικῷεν ἂν</l>
@@ -1036,7 +1043,7 @@
             <l>ἔχει λόγον καὶ τοῦτο· τῶν πολλῶν βροτῶν</l>
             <l>δεῖ τοὺς μὲν εἶναι δυστυχεῖς, τοὺς δ’ εὐτυχεῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0455"/>
+         <pb facs="tragicorumgraeco00naucuoft_0455" />
          <div n="209" type="fragment">
             <l>οὐ σωφρονίζειν ἔμαθον· αἰδεῖσθαι δὲ χρή,</l>
             <l>γύναι, τὸ λίαν καὶ φυλάσσεσθαι φθόνον.</l>
@@ -1060,7 +1067,7 @@
             <l>δαιτὸς δὲ πληρωθείς τις ἄσμενος πάλιν</l>
             <l>φαύλῃ διαίτῃ προσβαλὼν ἥσθη στόμα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0456"/>
+         <pb facs="tragicorumgraeco00naucuoft_0456" />
          <div n="214" type="fragment">
             <l>κῆδος καθ’ αὐτὸν τὸν σοφὸν κτᾶσθαι χρεών.</l>
          </div>
@@ -1084,7 +1091,7 @@
             <l>τὸ δ’ ἐκλαλοῦν τοῦθ’ ἡδονῆς μὲν ἅπτεται,</l>
             <l>κακὸν δ’ ὁμίλημ’, ἀσθενὲς δὲ καὶ πόλει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0457"/>
+         <pb facs="tragicorumgraeco00naucuoft_0457" />
          <div n="220" type="fragment">
             <l>πολλοὶ δὲ θνητῶν τοῦτο πάσχουσιν κακόν·</l>
             <l>γνώμῃ φρονοῦντες οὐ θέλουσ’ ὑπηρετεῖν</l>
@@ -1103,7 +1110,7 @@
             <l>Δίκα τοι Δίκα χρόνιος, ἀλλ’ ὅμως ὑποπεσοῦσ’</l>
             <l>ἔλαθεν, ὅταν ἔχῃ τιν’ ἀσεβῆ βροτῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0458"/>
+         <pb facs="tragicorumgraeco00naucuoft_0458" />
          <div n="224" type="fragment">
             <l>Ζῆθον μὲν ἐλθόνθ’ ἁγνὸν ἐς Θήβης πέδον</l>
             <l>οἰκεῖν κελεύω, τὸν δὲ μουσικώτατον</l>
@@ -1115,7 +1122,7 @@
          <div n="227" type="fragment">
             <l>εὐθύδημον</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0459"/>
+         <pb facs="tragicorumgraeco00naucuoft_0459" />
          <div n="228" type="fragment">
             <l>Δαναὸς ὁ πεντήκοντα θυγατέρων πατὴρ</l>
             <l>Νείλου λιπὼν κάλλιστον ἐκ γαίας ὕδωρ,</l>
@@ -1126,7 +1133,7 @@
             <l>Πελασγιώτας δ’ ὠνομασμένους τὸ πρὶν</l>
             <l>Δαναοὺς καλεῖσθαι νόμον ἔθηκ’ ἀν’ Ἑλλάδα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0461"/>
+         <pb facs="tragicorumgraeco00naucuoft_0461" />
          <div n="229" type="fragment">
             <l>βασιλεῦ χώρας τῆς πολυβώλου</l>
             <l>Κισσεῦ, πεδίον πυρὶ μαρμαίρει</l>
@@ -1146,7 +1153,7 @@
             <l>〈γένος〉· πένης γὰρ οὐκ ἐκεῖν’ ἀπώλεσεν</l>
             <l>τὸ τοῦ πατρὸς γενναῖον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0462"/>
+         <pb facs="tragicorumgraeco00naucuoft_0462" />
          <div n="233" type="fragment">
             <l>σοὶ δ’ εἶπον, ὦ παῖ, τὰς τύχας ἐκ τῶν πόνων</l>
             <l>θηρᾶν· ὁρᾶς γὰρ πατέρα σὸν τιμώμενον.</l>
@@ -1169,7 +1176,7 @@
             <l>οὐκ ἔστιν ὅστις ἡδέως ζητῶν βιοῦν</l>
             <l>εὔκλειαν εἰσεκτήσατ’, ἀλλὰ χρὴ πονεῖν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0463"/>
+         <pb facs="tragicorumgraeco00naucuoft_0463" />
          <div n="239" type="fragment">
             <l>ὁ δ’ ἡδὺς αἰὼν ἡ κακή τ’ ἀνανδρία</l>
             <l>οὔτ’ οἶκον οὔτε πόλιν ἀνορθώσειεν ἄν.</l>
@@ -1186,7 +1193,7 @@
             <l>φέρει δὲ καὶ τοῦτ’ οὐχὶ μικρόν, εὐγενὴς</l>
             <l>ἀνὴρ στρατηγῶν εὐκλεᾶ τ’ ἔχων φάτιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0464"/>
+         <pb facs="tragicorumgraeco00naucuoft_0464" />
          <div n="243" type="fragment">
             <l rend="indent">ὀλίγον ἄλκιμον δόρυ</l>
             <l>κρεῖσσον στρατηγοῦ μυρίου στρατεύματος.</l>
@@ -1210,7 +1217,7 @@
             <l>μισῶ γὰρ ὄντως οἵτινες φρονοῦσι μέν,</l>
             <l>φρονοῦσι δ’ οὐδὲν ὥς γε χρημάτων ὕπερ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0465"/>
+         <pb facs="tragicorumgraeco00naucuoft_0465" />
          <div n="249" type="fragment">
             <l>μὴ πλούσιον θῇς· ἐνδεέστερος γὰρ ὢν</l>
             <l>ταπεινὸς ἔσται· κεῖνο δ’ ἰσχύει μέγα,</l>
@@ -1233,7 +1240,7 @@
             <l>ἀπλοῦς ὁ μῦθος, μὴ λέγ’ εὖ· τὸ γὰρ λέγειν</l>
             <l>εὖ δεινόν ἐστιν, εἰ φέρει τινα βλάβην.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0466"/>
+         <pb facs="tragicorumgraeco00naucuoft_0466" />
          <div n="254" type="fragment">
             <l>πόλλ’, ὦ τέκνον, σφάλλουσιν ἀνθρώπους θεοί.</l>
             <l>τὸ ῥᾷστον εἶπας, αἰτιάσασθαι θεούς.</l>
@@ -1249,7 +1256,7 @@
             <l>μακάριος ὅστις νοῦν ἔχων τιμᾷ θεὸν</l>
             <l>καὶ κέρδος αὐτῷ τοῦτο ποιεῖται μέγα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0467"/>
+         <pb facs="tragicorumgraeco00naucuoft_0467" />
          <div n="257" type="fragment">
             <l>πολλοὺς δ’ ὁ θυμὸς ὁ μέγας ὤλεσεν βροτῶν</l>
             <l>ἥ τ’ ἀξυνεσία, δύο κακὼ τοῖς χρωμένοις.</l>
@@ -1268,7 +1275,7 @@
             <l>ἔσῳσα δούλην οὖσαν· οἱ γὰρ ἥσσονες</l>
             <l>τοῖς κρείσσοσιν φιλοῦσι δουλεύειν βροτῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0468"/>
+         <pb facs="tragicorumgraeco00naucuoft_0468" />
          <div n="262" type="fragment">
             <l>πάλαι σκοποῦμαι τὰς τύχας τῶν βροτῶν</l>
             <l>ὡς εὖ μεταλλάσσουσιν· ὃς γὰρ ἂν σφαλῇ</l>
@@ -1283,7 +1290,7 @@
             <l>τὰ γὰρ οὐκ ὀρθῶς πρασσόμεν’ ὀρθῶς</l>
             <l>τοῖς πράσσουσιν κακὸν ἦλθεν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0469"/>
+         <pb facs="tragicorumgraeco00naucuoft_0469" />
          <div n="265" type="fragment">
             <l>νοῦ δ’ οἶνος ἐξέστησέ μ’· ὁμολογῶ δέ σε</l>
             <l>ἀδικεῖν, τὸ δ’ ἀδίκημ’ ἐγένετ’ οὐχ ἑκούσιον.</l>
@@ -1294,7 +1301,7 @@
             <l>κοὐ μυσαρά σοι ταῦτ’ ἐστίν· εἰ δ’ ἐγὼ ἔτεκον,</l>
             <l>δεινὸν τόδ’ ἡγῇ;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0470"/>
+         <pb facs="tragicorumgraeco00naucuoft_0470" />
          <div n="267" type="fragment">
             <l>δεινὴ πόλις νοσοῦσ’ ἀνευρίσκειν κακά.</l>
          </div>
@@ -1310,7 +1317,7 @@
          <div n="270" type="fragment">
             <l>οὐ τῶν κακούργων οἶκτος ἀλλὰ τῆς δίκης.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0471"/>
+         <pb facs="tragicorumgraeco00naucuoft_0471" />
          <div n="271" type="fragment">
             <l>πτηνὰς διώκεις, ὦ τέκνον, τὰς ἐλπίδας.</l>
             <l>οὐχ ἡ τύχη γε· τῆς τύχης δ’ οὐχ εἷς τρόπος.</l>
@@ -1332,7 +1339,7 @@
             <l>τοὐλεύθερον γὰρ ὄνομα παντὸς ἄξιον,</l>
             <l>κἂν σμίκρ’ ἔχῃ τις, μεγάλ’ ἔχειν νομιζέτω.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0472"/>
+         <pb facs="tragicorumgraeco00naucuoft_0472" />
          <div n="276" type="fragment">
             <l>γυναῖκές ἐσμεν· τὰ μὲν ὄκνῳ νικώμεθα,</l>
             <l>τὰ δ’ οὐκ ἂν ἡμῶν θράσος ὑπερβάλοιτό τις.</l>
@@ -1354,7 +1361,7 @@
          <div n="281" type="fragment">
             <l>φιλοτραφής</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0473"/>
+         <pb facs="tragicorumgraeco00naucuoft_0473" />
          <div n="282" type="fragment">
             <l>κακῶν γὰρ ὄντων μυρίων καθ’ Ἑλλάδα</l>
             <l>οὐδὲν κάκιόν ἐστιν ἀθλητῶν γένους·</l>
@@ -1378,7 +1385,7 @@
             <l n="20">δίσκους ἔχοντες ἢ δι’ ἀσπίδων χερὶ</l>
             <l>θείνοντες ἐκβαλοῦσι πολεμίους πάτρας;</l>
             <l>οὐδεὶς σιδήρου ταῦτα μωραίνει πέλας</l>
-            <pb facs="tragicorumgraeco00naucuoft_0474"/>
+            <pb facs="tragicorumgraeco00naucuoft_0474" />
             <l>στάς. ἄνδρας χρὴ σοφούς τε κἀγαθοὺς</l>
             <l>φύλλοις στέφεσθαι, χὥστις ἡγεῖται πόλει</l>
             <l n="25">κάλλιστα σώφρων καὶ δίκαιος ὢν ἀνήρ,</l>
@@ -1389,7 +1396,7 @@
          <div n="283" type="fragment">
             <l>τοὺς ὄνους τοὺς λαρκαγωγοὺς ἐξ ὄρους οἴσειν ξύλα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0475"/>
+         <pb facs="tragicorumgraeco00naucuoft_0475" />
          <div n="284" type="fragment">
             <l>σχοινίνας γὰρ ἵπποισι φλοίνας ἡνίας πλέκει.</l>
          </div>
@@ -1399,7 +1406,7 @@
             <l>τρισσῶν δὲ μοιρῶν ἐγκρινῶ νικᾶν μίαν,</l>
             <l>πλούτου τε χὥτῳ σπέρμα γενναῖον προσῇ</l>
             <l n="5">πενίας τ’· ἀριθμὸν γὰρ τοσόνδε προυθέμην.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0476"/>
+            <pb facs="tragicorumgraeco00naucuoft_0476" />
             <l>ὁ μὲν ζάπλουτος, εἰς γένος δ’ οὐκ εὐτυχής,</l>
             <l>ἀλγεῖ μὲν ἀλγεῖ, παγκάλως δ’ ἀλγύνεται</l>
             <l>ὄλβου διοίγων θάλαμον ἥδιστον χερί.</l>
@@ -1416,7 +1423,7 @@
             <l>ἐκεῖνο γὰρ μεμνήμεθ’ · οἷος ἦν ποτε</l>
             <l n="20">κἀγὼ μετ’ ἀνδρῶν ἡνίκ’ ηὐτύχουν βίῳ</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0477"/>
+         <pb facs="tragicorumgraeco00naucuoft_0477" />
          <div n="286" type="fragment">
             <l>φησίν τις εἶναι δῆτ’ ἐν οὐρανῷ θεούς;</l>
             <l>οὐκ εἰσίν, οὐκ εἶσ’, εἴ τις ἀνθρώπων θέλει</l>
@@ -1434,7 +1441,7 @@
             <l>εὔχοιτο καὶ μὴ χειρὶ συλλέγοι βίον,</l>
             <l n="15">τὰ θεῖα πυργοῦσιν αἱ κακαί τε συμφοραί.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0478"/>
+         <pb facs="tragicorumgraeco00naucuoft_0478" />
          <div n="287" type="fragment">
             <l>τοῖς πράγμασιν γὰρ οὐχὶ θυμοῦσθαι χρεών·</l>
             <l>μέλει γὰρ αὐτοῖς οὐδέν· ἀλλ’ οὑντυγχάνων</l>
@@ -1453,7 +1460,7 @@
             <l>ἀεὶ γὰρ ἄνδρα σκαιὸν ἰσχυρὸν φύσει</l>
             <l>ἧσσον δέδοικα τἀσθενοῦς τε καὶ σοφοῦ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0479"/>
+         <pb facs="tragicorumgraeco00naucuoft_0479" />
          <div n="291" type="fragment">
             <l>ὦ παῖ, νέων τοι δρᾶν μὲν ἔντονοι χέρες,</l>
             <l>γνῶμαι δ’ ἀμείνους εἰσὶ τῶν γεραιτέρων·</l>
@@ -1473,7 +1480,7 @@
             <l>θνήσκοιμ’ ἄν· οὐ γὰρ ἄξιον λεύσσειν φάος</l>
             <l>κακοὺς ὁρῶντας ἐκδίκως τιμωμένους.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0480"/>
+         <pb facs="tragicorumgraeco00naucuoft_0480" />
          <div n="294" type="fragment">
             <l>φθονοῦσιν αὐτοὶ χείρονες πεφυκότες·</l>
             <l>εἰς τἀπίσημα δ’ ὁ φθόνος πηδᾶν φιλεῖ.</l>
@@ -1490,7 +1497,7 @@
          <div n="297" type="fragment">
             <l>ὡς ἔμφυτος μὲν πᾶσιν ἀνθρώποις κάκη·</l>
             <l>ὅστις δὲ πλεῖστον μισθὸν εἰς χεῖρας λαβὼν</l>
-            <pb facs="tragicorumgraeco00naucuoft_0481"/>
+            <pb facs="tragicorumgraeco00naucuoft_0481" />
             <l>κακὸς γένηται, τῷδε συγγνώμη μὲν οὔ,</l>
             <l>πλείω δὲ μισθὸν μείζονος τόλμης ἔχων</l>
             <l>τὸν τῶν ψεγόντων ῥᾷον ἂν φέροι λόγον.</l>
@@ -1509,7 +1516,7 @@
          <div n="301" type="fragment">
             <l>ὁρᾷς δ’ ἀέλπτους μυρίων ἀναστροφάς·</l>
             <l>πολλοὶ μὲν οἶδμα διέφυγον θαλάσσιον,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0482"/>
+            <pb facs="tragicorumgraeco00naucuoft_0482" />
             <l>πολλοὶ δὲ λόγχαις πολεμίων ἀμείνονες</l>
             <l>ἥσσους γεγῶτες κρείσσον’ ἦλθον εἰς τύχην.</l>
          </div>
@@ -1533,9 +1540,9 @@
          <div n="305" type="fragment">
             <l>καὶ ξεστὸν ὄχθον Δαναϊδῶν ἑδρασμάτων</l>
             <l>στὰς ἐν μέσοισιν εἶπε κηρύκων . .
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0483"/>
+         <pb facs="tragicorumgraeco00naucuoft_0483" />
          <div n="306" type="fragment">
             <l>ἄγ’, ὦ φίλον μοι Πηγάσου πτερόν. .</l>
          </div>
@@ -1551,7 +1558,7 @@
          <div n="309" type="fragment">
             <l>ἔπτησσ’ ὑπείκων μᾶλλον, εἰ μᾶλλον θέλοι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0484"/>
+         <pb facs="tragicorumgraeco00naucuoft_0484" />
          <div n="310" type="fragment">
             <l>κομίζετ’ εἴσω τόνδε τὸν δυσδαίμονα.</l>
          </div>
@@ -1562,7 +1569,7 @@
          <div n="312" type="fragment">
             <l>ὑφ’ ἅρματ’ ἐλθὼν Ζηνὸς ἀστραπηφορεῖ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0485"/>
+         <pb facs="tragicorumgraeco00naucuoft_0485" />
          <div n="313" type="fragment">
             <l>δούλῳ γὰρ οὐχ οἷόν τε τἀληθῆ λέγειν,</l>
             <l>εἰ δεσπόταισι μὴ πρέποντα τυγχάνοι.</l>
@@ -1578,7 +1585,7 @@
             <l>καλὸν δὲ πόντου χεῦμ’ ἰδεῖν εὐήνεμον,</l>
             <l>γῆ τ’ ἠρινὸν θάλλουσα πλούσιόν θ’ ὕδωρ,</l>
             <l>πολλῶν τ’ ἔπαινον ἔστι μοι λέξαι καλῶν·</l>
-            <pb facs="tragicorumgraeco00naucuoft_0486"/>
+            <pb facs="tragicorumgraeco00naucuoft_0486" />
             <l n="5">ἀλλ’ οὐδὲν οὕτω λαμπρὸν οὐδ’ ἰδεῖν καλὸν</l>
             <l>ὡς τοῖς ἄπαισι καὶ πόθῳ δεδηγμένοις</l>
             <l>παίδων νεογνῶν ἐν δόμοις ἰδεῖν θάλος.</l>
@@ -1601,7 +1608,7 @@
             <l>συμμαρτυρῶ σοι· πανταχοῦ λελείμμεθα</l>
             <l>πᾶσαι γυναῖκες ἀρσένων ἀεὶ δίχα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0487"/>
+         <pb facs="tragicorumgraeco00naucuoft_0487" />
          <div n="320" type="fragment">
             <l>οὐκ ἔστιν οὔτε τεῖχος οὔτε χρήματα</l>
             <l>οὔτ’ ἄλλο δυσφύλακτον οὐδὲν ὡς γυνή.</l>
@@ -1619,7 +1626,7 @@
             <l>οὐδεὶς προσαιτῶν βίοτον ἠράσθη βροτῶν,</l>
             <l n="5">ἐν τοῖς δ’ ἔχουσιν ἡβητὴς πέφυχ’ ὅδε.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0488"/>
+         <pb facs="tragicorumgraeco00naucuoft_0488" />
          <div n="323" type="fragment">
             <l>τάχ’ ἂν πρὸς ἀγκάλαισι καὶ στέρνοις ἐμοῖς</l>
             <l>πηδῶν ἀθύροι καὶ φιλημάτων ὄχλῳ</l>
@@ -1634,7 +1641,7 @@
             <l n="5">εἰ δ’ ἡ Κύπρις τοιοῦτον ὀφθαλμοῖς ὁρᾷ,</l>
             <l>οὐ θαῦμ’ ἔρωτας μυρίους αὐτὴν τρέφειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0489"/>
+         <pb facs="tragicorumgraeco00naucuoft_0489" />
          <div n="325" type="fragment">
             <l>κρείσσων γὰρ οὔτις χρημάτων πέφυκ’ ἀνήρ,</l>
             <l>πλὴν εἴ τις· ὅστις δ’ οὗτός ἐστιν οὐχ ὁρῶ.</l>
@@ -1642,7 +1649,7 @@
          <div n="326" type="fragment">
             <l>ἀρ’ οἶσθ’ ὁθούνεχ’ οἱ μὲν εὐγενεῖς βροτῶν</l>
             <l>πένητες ὄντες οὐδὲν ἀλφάνουσ’ ἔτι,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0490"/>
+            <pb facs="tragicorumgraeco00naucuoft_0490" />
             <l>οἳ δ’ οὐδὲν ἦσαν πρόσθεν, ὄλβιοι δὲ νῦν,</l>
             <l>δόξαν φέρονται τοῦ νομίσματος χάριν</l>
             <l n="5">καὶ συμπλέκοντες σπέρμα καὶ γάμους τέκνων;</l>
@@ -1665,7 +1672,7 @@
             <l>τοῦτον νομίζω κἂν θεῶν συλᾶν βρέτη</l>
             <l>τοῖς φιλτάτοις τε πολέμιον πεφυκέναι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0491"/>
+         <pb facs="tragicorumgraeco00naucuoft_0491" />
          <div n="329" type="fragment">
             <l>φεῦ, τοῖσι γενναίοισιν ὡς ἁπανταχοῦ</l>
             <l>πρέπει χαρακτὴρ χρηστὸς εἰς εὐψυχίαν.</l>
@@ -1681,7 +1688,7 @@
             <l>ζῶσίν τε σὺν κακοῖσιν, οἳ δ’ ὄλβου μέτα</l>
             <l>φθίνουσ’ ἐτείοις προσφερεῖς μεταλλαγαῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0492"/>
+         <pb facs="tragicorumgraeco00naucuoft_0492" />
          <div n="331" type="fragment">
             <l>φίλος γὰρ ἦν μοι, καί μ’ ἔρως ἕλοι ποτὲ</l>
             <l>οὐκ εἰς τὸ μῶρον οὐδέ μ’ εἰς Κύπριν τρέπων.</l>
@@ -1700,7 +1707,7 @@
             <l>φεῦ φεῦ, παλαιὸς αἶνος ὡς καλῶς ἔχει·</l>
             <l>οὐκ ἂν γένοιτο χρηστὸς ἐκ κακοῦ πατρός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0493"/>
+         <pb facs="tragicorumgraeco00naucuoft_0493" />
          <div n="334" type="fragment">
             <l>πολλοῖς παρέστην κἀφθόνησα δὴ βροτῶν</l>
             <l>ὅστις κακοῖσιν ἐσθλὸς ὢν ὅμοιος ᾖ,</l>
@@ -1721,7 +1728,7 @@
             <l>μὴ νεῖκος, ὦ γεραιέ, κοιράνοις τίθου·</l>
             <l>σέβειν δὲ τοὺς κρατοῦντας ἀρχαῖος νόμος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0494"/>
+         <pb facs="tragicorumgraeco00naucuoft_0494" />
          <div n="338" type="fragment">
             <l>ὄντων δὲ παίδων καὶ πεφυκότος γένους</l>
             <l>καινοὺς φυτεῦσαι παῖδας ἐν δόμοις θέλεις,</l>
@@ -1745,7 +1752,7 @@
             <l>μή μοί ποτ’ εἴη χρημάτων νικωμένῳ</l>
             <l>κακῷ γενέσθαι, μηδ’ ὁμιλοίην κακοῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0495"/>
+         <pb facs="tragicorumgraeco00naucuoft_0495" />
          <div n="342" type="fragment">
             <l>. .τί μ’ ἄρτι πημάτων λελησμένην</l>
             <l>ὀρθοῖς;</l>
@@ -1767,7 +1774,7 @@
             <l>θηρσίν τε πᾶσι, τέκνα τίκτουσιν φιλεῖν·</l>
             <l>τὰ δ’ ἄλλα χωρὶς χρώμεθ’ ἀλλήλων νόμοις.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0496"/>
+         <pb facs="tragicorumgraeco00naucuoft_0496" />
          <div n="347" type="fragment">
             <l>εἰ δ’ ἦσθα μὴ κάκιστος, οὔποτ’ ἂν πάτραν</l>
             <l>τὴν σὴν ἀτίζων τήνδ’ ἂν ηὐλόγεις πόλιν·</l>
@@ -1778,7 +1785,7 @@
          <div n="348" type="fragment">
             <l>ἁζοίμην</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0497"/>
+         <pb facs="tragicorumgraeco00naucuoft_0497" />
          <div n="349" type="fragment">
             <l>Αἰθιοπίαν νιν ἐξέσῳσ’ ἐπὶ χθόνα</l>
          </div>
@@ -1794,7 +1801,7 @@
             <l>ὡς σὺν θεοῖσι τοὺς σοφοὺς κινεῖν δόρυ</l>
             <l>στρατηλάτας χρή, τῶν θεῶν δὲ μὴ βίᾳ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0498"/>
+         <pb facs="tragicorumgraeco00naucuoft_0498" />
          <div n="353" type="fragment">
             <l>οὐδεὶς στρατεύσας ἄδικα σῶς ἦλθεν πάλιν.</l>
          </div>
@@ -1817,7 +1824,7 @@
             <l>ἐρᾶτε μητρός, παῖδες, ὡς οὐκ ἔστ’ ἔρως</l>
             <l>τοιοῦτος ἄλλος ὅστις ἡδίων ἐρᾶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0499"/>
+         <pb facs="tragicorumgraeco00naucuoft_0499" />
          <div n="359" type="fragment">
             <l>θετῶν δὲ παίδων ποῦ κράτος; τὰ φύντα γὰρ</l>
             <l>κρείσσω νομίζειν τῶν δοκημάτων χρεών.</l>
@@ -1850,7 +1857,7 @@
             <l n="25">θάνατον προταρβοῦσ’; ἀλλ’ ἔμοιγ’ εἴη τέκνα </l>
             <l>〈ἃ〉 καὶ μάχοιτο καὶ μετ’ ἀνδράσιν πρέποι,</l>
             <l>μὴ σχήματ’ ἄλλως ἐν πόλει πεφυκότα.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0500"/>
+            <pb facs="tragicorumgraeco00naucuoft_0500" />
             <l>τὰ μητέρων δὲ δάκρυ’ ὅταν πέμπῃ τέκνα,</l>
             <l>πολλοὺς ἐθήλυν’ εἰς μάχην ὁρμωμένους.</l>
             <l n="30">μισῶ γυναῖκας αἵτινες πρὸ τοῦ καλοῦ</l>
@@ -1880,7 +1887,7 @@
             <l>οὕτω φιλοῖεν ὡς ἐγώ· καὶ ῥᾳδίως</l>
             <l n="55">οἰκοῖμεν ἄν σε κοὐδὲν ἂν πάσχοις κακόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0502"/>
+         <pb facs="tragicorumgraeco00naucuoft_0502" />
          <div n="361" type="fragment">
             <l rend="indent">ἐγὼ δὲ τοὺς καλῶς τεθνηκότας</l>
             <l>ζῆν φημὶ μᾶλλον τοῦ βλέπειν τοὺς μὴ καλῶς.</l>
@@ -1913,7 +1920,7 @@
             <l n="25">αἰσχροὺς ἔρωτας δημοτῶν διωκαθεῖν.</l>
             <l>ὃ καὶ σίδηρον ἀγχόνας τ’ ἐφέλκεται,</l>
             <l>χρηστῶν πενήτων ἤν τις αἰσχύνῃ τέκνα.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0503"/>
+            <pb facs="tragicorumgraeco00naucuoft_0503" />
             <l>καὶ τοὺς πονηροὺς μήποτ’ αὔξαν’ ἐν πόλει·</l>
             <l>κακοὶ γὰρ ἐμπλησθέντες ἢ νομίσματος</l>
             <l n="30">ἢ πόλεος ἐμπεσόντες εἰς ἀρχήν τινα</l>
@@ -1922,7 +1929,7 @@
             <l>καὶ χαῖρ’· ὑπ’ αἰδοῦς δ’ οὐ λίαν ἀσπάζομαι·</l>
             <l>γυναικόφρων γὰρ θυμὸς ἀνδρὸς οὐ σοφοῦ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0504"/>
+         <pb facs="tragicorumgraeco00naucuoft_0504" />
          <div n="363" type="fragment">
             <l>εἷς μὲν λόγος μοι δεῦρ’ ἀεὶ περαίνεται.</l>
          </div>
@@ -1931,7 +1938,7 @@
             <l>[ὁ δ’ ἡδὺς αἰὼν ἡ κακή τ’ ἀνανδρία</l>
             <l>οὔτ’ οἶκον οὔτε πόλιν ἀνορθώσειεν ἄν.]</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0505"/>
+         <pb facs="tragicorumgraeco00naucuoft_0505" />
          <div n="365" type="fragment">
             <l>αἰδοῦς δὲ καὐτὸς δυσκρίτως ἔχω πέρι·</l>
             <l>καὶ δεῖ γὰρ αὐτῆς κἄστιν αὖ κακὸν μέγα.</l>
@@ -1946,7 +1953,7 @@
          <div n="368" type="fragment">
             <l>μίασμα δρυός</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0506"/>
+         <pb facs="tragicorumgraeco00naucuoft_0506" />
          <div n="369" type="fragment">
             <l>κείσθω δόρυ μοι μίτον ἀμφιπλέκειν ἀράχναις,</l>
             <l>μετὰ δ’ ἡσυχίας πολιῷ γήρᾳ συνοικοίην·</l>
@@ -1960,7 +1967,7 @@
             <l>πέμπεις δ’ ἐς Ἅιδου ζῶντα κοὐ τεθνηκότα,</l>
             <l>καί μοι τὸ τέρθρον δῆλον εἰσπορεύομαι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0507"/>
+         <pb facs="tragicorumgraeco00naucuoft_0507" />
          <div n="372" type="fragment">
             <l>οὐκ ἔστιν, ὦ γεραιέ, μὴ δείσῃς τάδε·</l>
             <l>τὰ Δαιδάλεια πάντα κινεῖσθαι δοκεῖ</l>
@@ -1982,7 +1989,7 @@
             <l>οὐκ οἶδ’ ὅτῳ χρὴ κανόνι τὰς βροτῶν τύχας</l>
             <l>ὀρθῶς σταθμήσαντ’ εἰδέναι τὸ δραστέον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0508"/>
+         <pb facs="tragicorumgraeco00naucuoft_0508" />
          <div n="377" type="fragment">
             <l>μάτην δὲ θνητοὶ τοὺς νόθους φεύγουσ’ ἄρα</l>
             <l>παῖδας φυτεύειν· ὃς γὰρ ἂν χρηστὸς φύῃ,</l>
@@ -1999,7 +2006,7 @@
          <div n="380" type="fragment">
             <l>Ταρτάρειος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0509"/>
+         <pb facs="tragicorumgraeco00naucuoft_0509" />
          <div n="381" type="fragment">
             <l>σχεδὸν παρ’ αὐτοῖς κρασπέδοις Εὐρωπίας</l>
          </div>
@@ -2018,12 +2025,12 @@
             <l>αὗται δὲ συντρέχουσιν εἰς μίαν βάσιν·</l>
             <l>τὸ λοίσθιον δὲ τῷ τρίτῳ προσεμφερές.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0510"/>
+         <pb facs="tragicorumgraeco00naucuoft_0510" />
          <div n="383" type="fragment">
             <l n="470">τοία Στυγός σε μελανοκάρδιος πέτρα</l>
             <l>Ἀχερόντιός τε σκοπελὸς αἱματοσταγὴς</l>
             <l>φρουροῦσι Κωκυτοῦ τε περίδρομοι κύνες</l>
-            <l>Ἔχιδνά θ’ ἑκατογκέφαλος, ἢ τὰ σπλάγχνα σου     </l>
+            <l>Ἔχιδνά θ’ ἑκατογκέφαλος, ἢ τὰ σπλάγχνα σου </l>
             <l>διασπαράξει, πλευμόνων τ’ ἀνθάψεται</l>
             <l n="475">Ταρτησσία μύραινα· τὼ νεφρὼ δέ σου</l>
             <l>αὐτοῖσιν ἐντέροισιν ᾑματωμένω</l>
@@ -2037,7 +2044,7 @@
          <div n="385" type="fragment">
             <l>τί με δῆτ’, ὦ μελέα μᾶτερ, ἔτικτες;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0511"/>
+         <pb facs="tragicorumgraeco00naucuoft_0511" />
          <div n="386" type="fragment">
             <l>ἀνόνητον ἄγαλμ’, ὦ πάτερ, οἴκοισι τεκών</l>
          </div>
@@ -2051,7 +2058,7 @@
             <l>τῶν εὐσεβούντων οἵτινές τε σώφρονες</l>
             <l n="5">ἐρᾶν, Κύπριν δὲ τὴν Διὸς χαίρειν ἐᾶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0512"/>
+         <pb facs="tragicorumgraeco00naucuoft_0512" />
          <div n="389" type="fragment">
             <l>ἀνὴρ γὰρ ὅστις χρημάτων μὲν ἐνδεής,</l>
             <l>δρᾶσαι δὲ χειρὶ δυνατός, οὐκ ἀφέξεται</l>
@@ -2064,9 +2071,9 @@
             <l>οὐκ ἔστιν οὐδὲν χωρὶς ἀνθρώποις θεῶν·</l>
             <l>σπουδάζομεν δὲ πόλλ’ ὑπ’ ἐλπίδων, μάτην</l>
             <l>πόνους ἔχοντες, οὐδὲν εἰδότες σαφές.
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0513"/>
+         <pb facs="tragicorumgraeco00naucuoft_0513" />
          <div n="392" type="fragment">
             <l rend="indent">εἰ δ’ ἄτερ πόνων</l>
             <l>δοκεῖς ἔσεσθαι, μῶρος εἶ, θνητὸς γεγώς.</l>
@@ -2087,7 +2094,7 @@
             <l>πιθανά, νομίζειν χρή σε καὶ τοὐναντίον,</l>
             <l>ἄπιστ’ ἀληθῆ πολλὰ συμβαίνειν βροτοῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0514"/>
+         <pb facs="tragicorumgraeco00naucuoft_0514" />
          <div n="397" type="fragment">
             <l>θεοῦ θέλοντος κἂν ἐπὶ ῥιπὸς πλέοις.</l>
          </div>
@@ -2095,7 +2102,7 @@
             <l>εὕδουσα δ’ Ἰνοῦς συμφορὰ χρόνον πολὺν</l>
             <l>νῦν ὄμμ’ ἐγείρει</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0515"/>
+         <pb facs="tragicorumgraeco00naucuoft_0515" />
          <div n="399" type="fragment">
             <l>φίλαι γυναῖκες, πῶς ἂν ἐξ ἀρχῆς δόμους</l>
             <l>Ἀθάμαντος οἰκήσαιμι τῶν πεπραγμένων</l>
@@ -2116,7 +2123,7 @@
             <l>χρῆν γὰρ τὸν εὐτυχοῦνθ’ ὅπως πλείστας ἔχειν</l>
             <l>[γυναῖκας, εἴπερ τροφὴ δόμοις παρῆν],</l>
             <l>ὡς τὴν κακὴν μὲν ἐξέβαλλε δωμάτων,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0516"/>
+            <pb facs="tragicorumgraeco00naucuoft_0516" />
             <l n="5">τὴν δ’ οὖσαν ἐσθλὴν ἡδέως ἐσῴζετο.</l>
             <l>νῦν δ’ εἰς μίαν βλέπουσι, κίνδυνον μέγαν</l>
             <l>ῥίπτοντες· οὐ γὰρ τῶν τρόπων πειρώμενοι</l>
@@ -2140,7 +2147,7 @@
             <l>τιμῶσι πολλοὶ προσλαβεῖν τέκνων χάριν,</l>
             <l>τό τ’ ἀξίωμα μᾶλλον ἢ τὰ χρήματα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0517"/>
+         <pb facs="tragicorumgraeco00naucuoft_0517" />
          <div n="406" type="fragment">
             <l rend="indent">μὴ σκυθρωπὸς ἴσθ’ ἄγαν</l>
             <l>πρὸς τοὺς κακῶς πράσσοντας, ἄνθρωπος γεγώς.</l>
@@ -2162,7 +2169,7 @@
             <l>ἥτις τὸ μὲν δίκαιον οὐ σιγήσεται,</l>
             <l>τὰ δ’ αἰσχρὰ μισεῖ καὶ κατ’ ὀφθαλμοὺς ἔχει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0518"/>
+         <pb facs="tragicorumgraeco00naucuoft_0518" />
          <div n="411" type="fragment">
             <l>ἴστω δὲ μηδεὶς ταῦθ’ ἃ σιγᾶσθαι χρεών·</l>
             <l>μικροῦ γὰρ ἐκ λαμπτῆρος Ἰδαῖον λέπας</l>
@@ -2181,7 +2188,7 @@
             <l>γαστρὸς κρατεῖν δέ· καὶ γὰρ ἐν κακοῖσιν ὢν</l>
             <l n="5">ἐλευθέροισιν ἐμπεπαίδευμαι τρόποις.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0519"/>
+         <pb facs="tragicorumgraeco00naucuoft_0519" />
          <div n="414" type="fragment">
             <l>φειδώμεθ’ ἀνδρῶν εὐγενῶν, φειδώμεθα,</l>
             <l>κακοὺς δ’ ἀποπτύωμεν, ὥσπερ ἄξιοι.</l>
@@ -2193,7 +2200,7 @@
             <l>θνητῶν τε γενεᾷ· τῶν μὲν αὔξεται βίος,</l>
             <l n="5">τῶν δὲ φθίνει τε καὶ θερίζεται πάλιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0520"/>
+         <pb facs="tragicorumgraeco00naucuoft_0520" />
          <div n="416" type="fragment">
             <l>πολλοί γε θνητῶν τῷ θράσει τὰς συμφορὰς</l>
             <l>ζητοῦσ’ ἀμαυροῦν κἀποκρύπτεσθαι κακά.</l>
@@ -2214,7 +2221,7 @@
             <l>σύμμικτα μὴ δίκαια καὶ δίκαι’ ὁμοῦ·</l>
             <l>ἔπειτ’ ἀμᾶσθε τῶνδε δύστηνον θέρος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0521"/>
+         <pb facs="tragicorumgraeco00naucuoft_0521" />
          <div n="420" type="fragment">
             <l>ὁρᾷς τυράννους διὰ μακρῶν ηὐξημένους,</l>
             <l>ὡς μικρὰ τὰ σφάλλοντα, καὶ μί’ ἡμέρα</l>
@@ -2228,7 +2235,7 @@
          <div n="422" type="fragment">
             <l>πολλοὶ παρῆσαν, ἀλλ’ ἄπιστα Θεσσαλῶν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0522"/>
+         <pb facs="tragicorumgraeco00naucuoft_0522" />
          <div n="423" type="fragment">
             <l>. . δ’ ἄρα</l>
          </div>
@@ -2240,7 +2247,7 @@
             <l>[οὐδὲν φρονεῖ δίκαιον οὐδὲ βούλεται]</l>
             <l>φίλοις τ’ ἄμικτός ἐστι καὶ πάσῃ πόλει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0523"/>
+         <pb facs="tragicorumgraeco00naucuoft_0523" />
          <div n="426" type="fragment">
             <l>τά τοι μέγιστα πάντ’ ἀπείργασται βροτοῖς</l>
             <l>τόλμ’ ὥστε νικᾶν· οὔτε γὰρ τυραννίδες</l>
@@ -2260,7 +2267,7 @@
             <l>ἐν τοῖς ἀμηχάνοισιν εὐπορώτατον,</l>
             <l>Ἔρωτα, πάντων δυσμαχώτατον θεόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0525"/>
+         <pb facs="tragicorumgraeco00naucuoft_0525" />
          <div n="431" type="fragment">
             <l>Ἔρως γὰρ ἄνδρας οὐ μόνους ἐπέρχεται</l>
             <l>οὐδ’ αὖ γυναῖκας, ἀλλὰ καὶ θεῶν ἄνω</l>
@@ -2276,7 +2283,7 @@
             <l>ἔγωγε φημὶ καὶ νόμον γε μὴ σέβειν</l>
             <l>ἐν τοῖσι δεινοῖς τῶν ἀναγκαίων πλέον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0526"/>
+         <pb facs="tragicorumgraeco00naucuoft_0526" />
          <div n="434" type="fragment">
             <l>οὐ γὰρ κατ’ εὐσέβειαν αἱ θνητῶν τύχαι,</l>
             <l>τολμήμασιν δὲ καὶ χερῶν ὑπερβολαῖς</l>
@@ -2299,7 +2306,7 @@
          <div n="439" type="fragment">
             <l>φεῦ φεῦ, τὸ μὴ τὰ πράγματ’ ἀνθρώποις ἔχειν</l>
             <l>φωνήν, ἵν’ ἦσαν μηδὲν οἱ δεινοὶ λέγειν.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0527"/>
+            <pb facs="tragicorumgraeco00naucuoft_0527" />
             <l>νῦν δ’ εὐτρόχοισι στόμασι τἀληθέστατα</l>
             <l>κλέπτουσιν, ὥστε μὴ δοκεῖν ἃ χρὴ δοκεῖν.</l>
          </div>
@@ -2318,7 +2325,7 @@
             <l>ὡς ἡδὺ λεύσσειν τοῖς τε πράσσουσιν καλῶς</l>
             <l>καὶ τοῖσι δυστυχοῦσιν, ὧν πέφυκ’ ἐγώ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0528"/>
+         <pb facs="tragicorumgraeco00naucuoft_0528" />
          <div n="444" type="fragment">
             <l>ὦ δαῖμον, ὡς οὐκ ἔστ’ ἀποστροφὴ βροτοῖς</l>
             <l>τῶν ἐμφύτων τε καὶ θεηλάτων κακῶν.</l>
@@ -2342,14 +2349,14 @@
             <l>τόδ’ ἐν μέσῳ τοῦ οὐρανοῦ τε καὶ χθονός,</l>
             <l>οἳ μὲν ὀνομάζουσι χάος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0530"/>
+         <pb facs="tragicorumgraeco00naucuoft_0530" />
          <div n="449" type="fragment">
             <l>ἐχρῆν γὰρ ἡμᾶς σύλλογον ποιουμένους</l>
             <l>τὸν φύντα θρηνεῖν εἰς ὅσ’ ἔρχεται κακά,</l>
             <l>τὸν δ’ αὖ θανόντα καὶ πόνων πεπαυμένον</l>
             <l>χαίροντας εὐφημοῦντας ἐκπέμπειν δόμων.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0531"/>
+         <pb facs="tragicorumgraeco00naucuoft_0531" />
          <div n="450" type="fragment">
             <l>εἰ μὲν γὰρ οἰκεῖ νερτέρας ὑπὸ χθονὸς</l>
             <l>ἐν τοῖσιν οὐκέτ’ οὖσιν, οὐδὲν ἂν σθένοι.</l>
@@ -2373,7 +2380,7 @@
             <l>καὶ καλλιχόρους ἀοιδὰς</l>
             <l>φιλοστεφάνους τε κώμους.</l>
             <l>ἴθι μοι, πότνα, πόλιν.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0532"/>
+            <pb facs="tragicorumgraeco00naucuoft_0532" />
             <l n="10">
                <label>ἀντ.</label> τὰν δ’ ἐχθρὰν στάσιν εἶργ’ ἀπ’ οἴ- </l>
             <l>κῶν τὰν μαινομέναν τ’ ἔριν</l>
@@ -2392,7 +2399,7 @@
             <l>ὠνητέραν δὴ τήνδ’ ἐγὼ δίδωμί σοι</l>
             <l>πληγήν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0533"/>
+         <pb facs="tragicorumgraeco00naucuoft_0533" />
          <div n="457" type="fragment">
             <l>αἰδὼς ἐν ὀφθαλμοῖσι γίγνεται, τέκνον.</l>
          </div>
@@ -2405,7 +2412,7 @@
             <l>κέρδη τοιαῦτα χρή τινα κτᾶσθαι βροτῶν,</l>
             <l>ἐφ’ οἶσι μέλλει μήποθ’ ὕστερον στένειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0534"/>
+         <pb facs="tragicorumgraeco00naucuoft_0534" />
          <div n="460" type="fragment">
             <l>λύπη μὲν ἄτῃ περιπεσεῖν αἰσχρᾷ τινι·</l>
             <l>εἰ δ’ οὖν γένοιτο, χρὴ περιστεῖλαι καλῶς</l>
@@ -2423,7 +2430,7 @@
          <div n="463" type="fragment">
             <l>οὐ γάρ ποτ’ ἄνδρα τὸν σοφὸν γυναικὶ χρὴ</l>
             <l>δοῦναι χαλινοὺς οὐδ’ ἀφέντ’ ἐᾶν κρατεῖν·</l>
-            <pb facs="tragicorumgraeco00naucuoft_0535"/>
+            <pb facs="tragicorumgraeco00naucuoft_0535" />
             <l>πιστὸν γὰρ οὐδέν ἐστιν· εἰ δέ τις κυρεῖ</l>
             <l>γυναικὸς ἐσθλῆς, εὐτυχεῖ κακὸν λαβών.</l>
          </div>
@@ -2444,7 +2451,7 @@
             <l>καὶ πεπτὰ καὶ κροτητὰ τῆς ξουθοπτέρου</l>
             <l rend="5">πελάνῳ μελίσσης ἀφθόνως δεδευμένα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0536"/>
+         <pb facs="tragicorumgraeco00naucuoft_0536" />
          <div n="468" type="fragment">
             <l>τὰ δ’ ἄλλα χαῖρε κύλικος ἑρπούσης κύκλῳ.</l>
          </div>
@@ -2454,7 +2461,7 @@
          <div n="470" type="fragment">
             <l>πρὶν ἂν . . ἐκφλῆναί με καὶ μαθεῖν λόγον</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0537"/>
+         <pb facs="tragicorumgraeco00naucuoft_0537" />
          <div n="471" type="fragment">
             <l>ἀλλ’ ὦ Κρῆτες, Ἴδης τέκνα</l>
          </div>
@@ -2474,19 +2481,19 @@
             <l>μητρί τ’ ὀρείῳ δᾷδας ἀνασχὼν</l>
             <l>καὶ κουρήτων</l>
             <l n="15">βάκχος ἐκλήθην ὁσιωθείς.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0538"/>
+            <pb facs="tragicorumgraeco00naucuoft_0538" />
             <l>πάλλευκα δ’ ἔχων εἵματα φεύγω</l>
             <l>γένεσίν τε βροτῶν καὶ νεκροθήκης</l>
             <l>οὐ χριμπτόμενος τήν τ’ ἐμψύχων</l>
             <l>βρῶσιν ἐδεστῶν πεφύλαγμαι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0539"/>
+         <pb facs="tragicorumgraeco00naucuoft_0539" />
          <div n="473" type="fragment">
             <l>φαῦλον ἄκομψον, τὰ μέγιστ’ ἀγαθόν,</l>
             <l>πᾶσαν ἐν ἔργῳ περιτεμνόμενον</l>
             <l>σοφίαν, λέσχης ἀτρίβωνα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0540"/>
+         <pb facs="tragicorumgraeco00naucuoft_0540" />
          <div n="474" type="fragment">
             <l>πόνος γάρ, ὡς λέγουσιν, εὐκλείας πατήρ.</l>
          </div>
@@ -2499,15 +2506,15 @@
          <div n="477" type="fragment">
             <l>δέσποτα φιλόδαφνε Βάκχε, παιὰν Ἄπολλον εὔλυρε</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0541"/>
+         <pb facs="tragicorumgraeco00naucuoft_0541" />
          <div n="478" type="fragment">
             <l>θριάζειν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0542"/>
+         <pb facs="tragicorumgraeco00naucuoft_0542" />
          <div n="480" type="fragment">
             <l>Ζεὺς ὅστις ὁ Ζεύς, οὐ γὰρ οἶδα πλὴν λόγῳ</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0543"/>
+         <pb facs="tragicorumgraeco00naucuoft_0543" />
          <div n="481" type="fragment">
             <l>Ζεύς, ὡς λέλεκται τῆς ἀληθείας ὕπο,</l>
             <l>Ἕλλην’ ἔτικτεν</l>
@@ -2532,15 +2539,15 @@
             <l>τίκτουσι πάντα κἀνέδωκαν εἰς φάος,</l>
             <l n="5">δένδρη, πετεινά, θῆρας οὕς θ’ ἅλμη τρέφει γένος τε θνητῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0544"/>
+         <pb facs="tragicorumgraeco00naucuoft_0544" />
          <div n="486" type="fragment">
             <l>δικαιοσύνας τὸ χρύσεον πρόσωπον</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0545"/>
+         <pb facs="tragicorumgraeco00naucuoft_0545" />
          <div n="487" type="fragment">
             <l>ὄμνυμι δ’ ἱερὸν αἰθέρ’, οἴκησιν Διός</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0547"/>
+         <pb facs="tragicorumgraeco00naucuoft_0547" />
          <div n="489" type="fragment">
             <l>τὸν δ’ ἀμφὶ βοῦς ῥιφέντα Βοιωτὸν καλεῖν</l>
          </div>
@@ -2555,7 +2562,7 @@
             <l>ᾧ γὰρ θεοὶ διδῶσι μὴ φῦναι τέκνα,</l>
             <l n="5">οὐ χρὴ μάχεσθαι πρὸς τὸ θεῖον, ἀλλ’ ἐᾶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0548"/>
+         <pb facs="tragicorumgraeco00naucuoft_0548" />
          <div n="492" type="fragment">
             <l>ἀνδρῶν δὲ πολλοὶ τοῦ γέλωτος εἵνεκα</l>
             <l>ἀσκοῦσι χάριτας κερτόμους· ἐγὼ δέ πως</l>
@@ -2577,14 +2584,14 @@
             <l>γυναικός, ἐσθλῆς δ’ οὐδὲν εἰς ὑπερβολὴν</l>
             <l>πέφυκ’ ἄμεινον· διαφέρουσι δ’ αἱ φύσεις.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0550"/>
+         <pb facs="tragicorumgraeco00naucuoft_0550" />
          <div n="495" type="fragment">
             <l>
                <label type="speaker">〈ΑΓΓΕΛΟΣ.〉 </label>― ― ― ―</l>
             <l>τίς ἦν ὁ 〈τυφλὰ τάδε βέλεμν’〉 ἐφεὶς ἐμοί;</l>
             <l>ὡς δ’ οὐκ ἐφαινόμεσθα, σῖγα δ’ εἴχομεν,</l>
             <l>πρόσω πρὸς αὐτὸν πάλιν ὑποστρέψας πόδα</l>
-            <pb facs="tragicorumgraeco00naucuoft_0551"/>
+            <pb facs="tragicorumgraeco00naucuoft_0551" />
             <l>χωρεῖ δρομαίαν, θῆρ’ ἑλεῖν πρόθυμος ὤν,</l>
             <l n="5">βοᾷ δέ· κἀν τῷδ’ ἐξεφαινόμεσθα δὴ</l>
             <l>ὀρθοσταδὸν λόγχαις ἐπείγοντες. φόν〈ον.</l>
@@ -2626,7 +2633,7 @@
             <l>δούλους φονε〉ύειν φασγάνοις ἐλευθέροις.</l>
             <l>τύχην τοιαύτην σ〉ῶν κασιγνήτων κλύεις.</l>
             <l n="40">ἐγὼ μὲν 〈οὖν〉 οὐκ οἶδ’ ὅτῳ σκοπεῖν χρεὼν</l>
-            <pb facs="tragicorumgraeco00naucuoft_0552"/>
+            <pb facs="tragicorumgraeco00naucuoft_0552" />
             <l>τὴν εὐγένειαν· τοὺς γὰρ ἀνδρείους φύσιν</l>
             <l>καὶ τοὺς δικαίους τῶν κενῶν δοξασμάτων,</l>
             <l>κἂν ὧσι δούλων, εὐγενεστέρους λέγω.</l>
@@ -2638,7 +2645,7 @@
                <label type="speaker">ΘΕΑΝΩ.</label> οἴμοι τὸ πᾶν δῆτ’ἐσφάλημ〉εν ἐλπίδων</l>
             <l>― ― ― ― ― ― ται μέγα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0553"/>
+         <pb facs="tragicorumgraeco00naucuoft_0553" />
          <div n="497" type="fragment">
             <l>τείσασθε τήνδε· καὶ γὰρ ἐντεῦθεν νοσεῖ</l>
             <l>τὰ τῶν γυναικῶν· οἳ μὲν ἢ παίδων πέρι</l>
@@ -2655,7 +2662,7 @@
             <l>ψάλλει, κενὸν τόξευμα, καὶ κακῶς λέγει·</l>
             <l>αἳ δ’ εἶσ’ ἀμείνους ἀρσένων, ἐγὼ λέγω.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0554"/>
+         <pb facs="tragicorumgraeco00naucuoft_0554" />
          <div n="500" type="fragment">
             <l>ὅστις δ’ ἄμεικτον πατέρ’ ἔχει νεανίας</l>
             <l>στυγνόν τ’ ἐν οἴκοις, μεγάλα κέκτηται κακά.</l>
@@ -2678,7 +2685,7 @@
             <l>μετὰ σωφροσύνης</l>
             <l>κῦρσαι θνητοῖσιν ἄριστον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0555"/>
+         <pb facs="tragicorumgraeco00naucuoft_0555" />
          <div n="504" type="fragment">
             <l>ὦ τέκνον, ἀνθρώποισιν ἔστιν οἷς βίος</l>
             <l>ὁ μικρὸς εὔκρας ἐγένεθ’, οἷς δ’ ὄγκος κακόν.</l>
@@ -2701,7 +2708,7 @@
             <l>τί τοὺς θανόντας οὐκ ἐᾷς τεθνηκέναι</l>
             <l>καὶ τἀκχυθέντα συλλέγεις ἀλγήματα;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0556"/>
+         <pb facs="tragicorumgraeco00naucuoft_0556" />
          <div n="508" type="fragment">
             <l>παλαιὸς αἶνος· ἔργα μὲν νεωτέρων,</l>
             <l>βουλαὶ δ’ ἔχουσι τῶν γεραιτέρων κράτος.</l>
@@ -2722,7 +2729,7 @@
          <div n="513" type="fragment">
             <l>ἴσως ἀλάστορ’ οὐκ ἐτόλμησεν κτανεῖν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0557"/>
+         <pb facs="tragicorumgraeco00naucuoft_0557" />
          <div n="515" type="fragment">
             <l>Καλυδὼν μὲν ἥδε γαῖα, Πελοπίας χθονὸς</l>
             <l>ἐν ἀντιπόρθμοις πεδί’ ἔχουσ’ εὐδαίμονα·</l>
@@ -2734,7 +2741,7 @@
             <l>Οἰνεύς ποτ’ ἐκ γῆς πολύμετρον λαβὼν στάχυν</l>
             <l>θύων ἀπαρχάς</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0558"/>
+         <pb facs="tragicorumgraeco00naucuoft_0558" />
          <div n="517" type="fragment">
             <l>Μελέαγρε, μελέαν γάρ ποτ’ ἀγρεύεις ἄγραν</l>
          </div>
@@ -2749,7 +2756,7 @@
             <l>δειλοὶ γὰρ ἄνδρες οὐκ ἔχουσιν ἐν μάχῃ</l>
             <l>ἀριθμόν, ἀλλ’ ἄπεισι κἂν παρῶσ’ ὅμως.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0559"/>
+         <pb facs="tragicorumgraeco00naucuoft_0559" />
          <div n="520" type="fragment">
             <l>ἡγησάμην οὖν, εἰ παραζεύξειέ τις</l>
             <l>χρηστῷ πονηρὸν λέκτρον, οὐκ ἂν εὐτεκνεῖν,</l>
@@ -2768,7 +2775,7 @@
          <div n="523" type="fragment">
             <l>κερκίδος ἀοιδοῦ μελέτας</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0560"/>
+         <pb facs="tragicorumgraeco00naucuoft_0560" />
          <div n="524" type="fragment">
             <l>ἡ γὰρ Κύπρις πέφυκε τῷ σκότῳ φίλη,</l>
             <l>τὸ φῶς δ’ ἀνάγκην προστίθησι σωφρονεῖν.</l>
@@ -2789,7 +2796,7 @@
             <l>γενναιότητα κἀρετήν· καλὸς δέ τις</l>
             <l>κἂν ἐκ πενήτων σωμάτων γένοιτο παῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0561"/>
+         <pb facs="tragicorumgraeco00naucuoft_0561" />
          <div n="528" type="fragment">
             <l>μισῶ γυναῖκα . . , ἐκ πασῶν δὲ σέ,</l>
             <l>ἥτις πονηρὰ τἄργ’ ἔχουσ’ 〈εἶτ’〉 εὖ λέγεις.</l>
@@ -2809,7 +2816,7 @@
             <l>τὸ δ’ ἐν πεδίλοις, ὡς ἐλαφρίζον γόνυ</l>
             <l>ἔχοιεν, ὃς δὴ πᾶσιν Αἰτωλοῖς νόμος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0562"/>
+         <pb facs="tragicorumgraeco00naucuoft_0562" />
          <div n="531" type="fragment">
             <l>σιδηροβριθές τ’ ἔλαβε δεξιᾷ ξύλον</l>
          </div>
@@ -2826,7 +2833,7 @@
          <div n="534" type="fragment">
             <l>τὸ μὲν γὰρ· ἐν φῶ, τὸ δὲ κάτω σκότος κακόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0563"/>
+         <pb facs="tragicorumgraeco00naucuoft_0563" />
          <div n="535" type="fragment">
             <l>ὁρᾷς σὺ νῦν δή μ’ ὡς ἐπράυνας, τύχη.</l>
          </div>
@@ -2843,7 +2850,7 @@
          <div n="539" type="fragment">
             <l>καθωσίωσε</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0564"/>
+         <pb facs="tragicorumgraeco00naucuoft_0564" />
          <div n="540" type="fragment">
             <l>οὐρὰν δ’ ὑπίλασ’ ὑπὸ λεοντόπουν βάσιν</l>
             <l>καθίζετο. .</l>
@@ -2857,7 +2864,7 @@
             <l>καὶ χρυσός ἐστιν, ἀλλὰ κἀρετὴ βροτοῖς</l>
             <l>νόμισμα κεῖται πᾶσιν, ᾗ χρῆσθαι χρεών.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0565"/>
+         <pb facs="tragicorumgraeco00naucuoft_0565" />
          <div n="543" type="fragment">
             <l>μεγάλη τυραννὶς ἀνδρὶ τέκνα καὶ γυνή·</l>
             <l>ἴσην γὰρ ἀνδρὶ συμφορὰν εἶναι λέγω</l>
@@ -2877,7 +2884,7 @@
             <l>κἂν ὁ κάκιστος</l>
             <l>γήμῃ τὴν εὐδοκιμοῦσαν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0566"/>
+         <pb facs="tragicorumgraeco00naucuoft_0566" />
          <div n="547" type="fragment">
             <l>ἑνὸς 〈δ’〉 ἔρωτος ὄντος οὐ μί’ ἡδονή·</l>
             <l>οἳ μὲν κακῶν ἐρῶσιν, οἳ δὲ τῶν καλῶν.</l>
@@ -2893,7 +2900,7 @@
             <l>ἐκ τῶν ἀέλπτων ἡ χαρὰ μείζων βροτοῖς</l>
             <l>[φανεῖσα μᾶλλον ἢ τὸ προσδοκώμενον].</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0567"/>
+         <pb facs="tragicorumgraeco00naucuoft_0567" />
          <div n="551" type="fragment">
             <l>φθόνος δ’ ὁ πολλῶν φρένα διαφθείρων βροτῶν</l>
             <l>ἀπώλεσ’ αὐτὸν κἀμὲ συνδιώλεσεν.</l>
@@ -2916,7 +2923,7 @@
             <l>οὐ δῆκταί πως κύνες οἱ θεοί,</l>
             <l>ἀλλ’ ἡ Δίκη γὰρ καὶ διὰ σκότου βλέπει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0568"/>
+         <pb facs="tragicorumgraeco00naucuoft_0568" />
          <div n="556" type="fragment">
             <l>ἀηδόνα</l>
          </div>
@@ -2931,7 +2938,7 @@
             <l>ᾢκησεν Ἄργος; παῖδα δ’ Ἀδράστου λαβὼν</l>
             <l n="5">συνῆψε γένναν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0569"/>
+         <pb facs="tragicorumgraeco00naucuoft_0569" />
          <div n="559" type="fragment">
             <l>ἐγὼ δὲ πατρὸς αἷμ’ ἐτιμωρησάμην</l>
             <l>σὺν τοῖς ἐφηβήσασι τῶν ὀλωλότων</l>
@@ -2951,7 +2958,7 @@
             <l>σχολὴ μὲν οὐχί, τῷ δὲ δυστυχοῦντί πως</l>
             <l>τερπνὸν τὸ λέξαι κἀποκλαύσασθαι πάλιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0570"/>
+         <pb facs="tragicorumgraeco00naucuoft_0570" />
          <div n="564" type="fragment">
             <l>ὅταν κακοὶ πράξωσιν, ὦ ξένοι, καλῶς,</l>
             <l>ἄγαν κρατοῦντες κοὺ νομίζοντες δίκην</l>
@@ -2972,7 +2979,7 @@
             <l>γνώμας σκοπῶν ὥστε Μαγνῆτις λίθος</l>
             <l>τὴν δόξαν ἕλκει καὶ μεθίησιν πάλιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0571"/>
+         <pb facs="tragicorumgraeco00naucuoft_0571" />
          <div n="569" type="fragment">
             <l>ἀθράνευτον</l>
          </div>
@@ -2989,7 +2996,7 @@
             <l>κἂν αὖ γένωνται σώφρονες, κακὸν μέγα,</l>
             <l>λυποῦσι τὸν φύσαντα μὴ πάθωσί τι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0572"/>
+         <pb facs="tragicorumgraeco00naucuoft_0572" />
          <div n="572" type="fragment">
             <l>ἕν ἐστι πάντων πρῶτον εἰδέναι τουτί,</l>
             <l>φέρειν τὰ συμπίπτοντα μὴ παλιγκότως·</l>
@@ -3006,7 +3013,7 @@
          <div n="574" type="fragment">
             <l>τεκμαιρόμεσθα τοῖς παροῦσι τἀφανῆ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0573"/>
+         <pb facs="tragicorumgraeco00naucuoft_0573" />
          <div n="575" type="fragment">
             <l>ὅστις δὲ θνητῶν βούλεται δυσώνυμον</l>
             <l>εἰς γῆρας ἐλθεῖν, οὐ λογίζεται καλῶς·</l>
@@ -3019,7 +3026,7 @@
             <l>ἐγὼ μὲν εὖτ’ ἂν τοὺς κακοὺς ὁρῶ βροτῶν</l>
             <l>πίπτοντας, εἶναι φημὶ δαιμόνων γένος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0574"/>
+         <pb facs="tragicorumgraeco00naucuoft_0574" />
          <div n="578" type="fragment">
             <l>τὰ τῆς γε λήθης φάρμακ’ ὀρθώσας μόνος,</l>
             <l>ἄφωνα φωνήεντα συλλαβὰς τιθεὶς</l>
@@ -3031,7 +3038,7 @@
             <l>ἃ δ’ εἰς ἔριν πίπτουσιν ἀνθρώποις κακὰ</l>
             <l>δέλτος διαιρεῖ, κοὐκ ἐᾷ ψευδῆ λέγειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0575"/>
+         <pb facs="tragicorumgraeco00naucuoft_0575" />
          <div n="579" type="fragment">
             <l>πάλαι πάλαι δή σ’ ἐξερωτῆσαι θέλων,</l>
             <l>σχολή μ’ ἀπεῖργε</l>
@@ -3043,7 +3050,7 @@
             <l>ὅσοι τε χωρὶς ζῶσι, χρημάτων ὕπερ</l>
             <l n="5">μοχθοῦσιν, ὃς δ’ ἂν πλεῖστ’ ἔχῃ σοφώτατος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0576"/>
+         <pb facs="tragicorumgraeco00naucuoft_0576" />
          <div n="581" type="fragment">
             <l>στρατηλάται τἄν μυρίοι γενοίμεθα,</l>
             <l>σοφὸς δ’ ἂν εἷς τις ἢ δύ’ ἐν μακρῷ χρόνῳ.</l>
@@ -3057,7 +3064,7 @@
             <l>ὅστις λέγει μὲν εὖ, τὰ δ’ ἔργ’ ἐφ’ οἷς λέγει</l>
             <l>αἴσχρ’ ἐστί, τούτου τὸ σοφὸν οὐκ αἰνῶ ποτέ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0577"/>
+         <pb facs="tragicorumgraeco00naucuoft_0577" />
          <div n="584" type="fragment">
             <l>εἷς τοι δίκαιος μυρίων οὐκ ἐνδίκων</l>
             <l>κρατεῖ τὸ θεῖον τὴν δίκην τε συλλαβών.</l>
@@ -3080,11 +3087,11 @@
             <l>πάνσοφον, ὦ Δαναοί,</l>
             <l>τὰν οὐδέν’ ἀλγύνουσαν ἀηδόνα μουσᾶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0578"/>
+         <pb facs="tragicorumgraeco00naucuoft_0578" />
          <div n="590" type="fragment">
             <l>ἔμβολα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0579"/>
+         <pb facs="tragicorumgraeco00naucuoft_0579" />
          <div n="591" type="fragment">
             <l>ἐμοὶ πατρὶς μὲν Ἄργος, ὄὔομα δ’ Ἡρακλῆς,</l>
             <l>θεῶν δὲ πάντων πατρὸς ἐξέφυν Διός·</l>
@@ -3092,7 +3099,7 @@
             <l>Ζεύς, ὡς λέλεκται τῆς ἀληθείας ὕπο.</l>
             <l n="5">ἥκω δὲ δεῦρο πρὸς βίαν Εὐρυσθέως.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0580"/>
+         <pb facs="tragicorumgraeco00naucuoft_0580" />
          <div n="592" type="fragment">
             <l>ἵνα πλημοχόας τάσδ’ εἰς χθόνιον</l>
             <l>χάσμ’ εὐφήμως προχέωμεν</l>
@@ -3104,7 +3111,7 @@
             <l>νὺξ αἰολόχρως, ἄκριτός τ’ ἄστρων</l>
             <l n="5">ὄχλος ἐνδελεχῶς ἀμφιχορεύει</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0581"/>
+         <pb facs="tragicorumgraeco00naucuoft_0581" />
          <div n="594" type="fragment">
             <l>ἀκάμας τε χρόνος περί γ’ ἀενάῳ</l>
             <l>ῥεύματι πλήρης φοιτᾷ τίκτων</l>
@@ -3124,7 +3131,7 @@
             <l>λόγος δύναιτο, τὸν δ’ ἄνω τε καὶ κάτω</l>
             <l>ῥήτωρ σπαράσσων πολλάκις λυμαίνεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0582"/>
+         <pb facs="tragicorumgraeco00naucuoft_0582" />
          <div n="598" type="fragment">
             <l>ὁ πρῶτος εἰπὼν οὐκ ἀγυμνάστῳ φρενὶ</l>
             <l>ἔρριψεν ὅστις τόνδ’ ἐκαίνισεν λόγον,</l>
@@ -3136,7 +3143,7 @@
          <div n="600" type="fragment">
             <l>θρᾶξαι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0583"/>
+         <pb facs="tragicorumgraeco00naucuoft_0583" />
          <div n="601" type="fragment">
             <l>Μήδεια πρὸς μὲν δώμασιν τυραννικοῖς</l>
          </div>
@@ -3151,7 +3158,7 @@
             <l>.  .  .  .  .  .  .  .  .  .  .  .</l>
             <l n="5">τὰ δ’ ἄλλ’ ἀφεῖναι μηχανήματ’ ἀνδράσιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0584"/>
+         <pb facs="tragicorumgraeco00naucuoft_0584" />
          <div n="604" type="fragment">
             <l>πρὸς κέντρα μὴ λάκτιζε τοῖς κρατοῦσί σου.</l>
          </div>
@@ -3168,7 +3175,7 @@
          <div n="607" type="fragment">
             <l>ὁρῶσι δ’ οἱ διδόντες εἰς τὰ χρήματα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0585"/>
+         <pb facs="tragicorumgraeco00naucuoft_0585" />
          <div n="608" type="fragment">
             <l>ἐν τοῖσι μὲν δεινοῖσιν ὡς φίλοι φίλων·</l>
             <l>ὅταν δὲ πράξωσ’ εὖ, διωθοῦνται χάριν</l>
@@ -3192,7 +3199,7 @@
          <div n="613" type="fragment">
             <l>εὐστόχως</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0586"/>
+         <pb facs="tragicorumgraeco00naucuoft_0586" />
          <div n="614" type="fragment">
             <l>κατηβολή</l>
          </div>
@@ -3211,7 +3218,7 @@
             <l>τὸν ὄλβον οὐδὲν οὐδαμοῦ κρίνω βροτοῖς,</l>
             <l>ὅν γ’ ἐξαλείφει ῥᾷον ἢ γραφὴν θεός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0587"/>
+         <pb facs="tragicorumgraeco00naucuoft_0587" />
          <div n="619" type="fragment">
             <l>τὸ γῆρας, ὦ παῖ, τῶν νεωτέρων φρενῶν</l>
             <l>σοφώτερον πέφυκε κἀσφαλέστερον,</l>
@@ -3235,7 +3242,7 @@
          <div n="624" type="fragment">
             <l>ἀρκεῖ</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0588"/>
+         <pb facs="tragicorumgraeco00naucuoft_0588" />
          <div n="625" type="fragment">
             <l>οὐ τὸν σὸν ἔκταν πατέρα, πολέμιόν γε μήν.</l>
          </div>
@@ -3252,7 +3259,7 @@
             <l>εἰσὶν γὰρ εἰσὶ διφθέραι μελεγγραφεῖς</l>
             <l>πολλῶν γέμουσαι Λοξίου γηρυμάτων</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0589"/>
+         <pb facs="tragicorumgraeco00naucuoft_0589" />
          <div n="628" type="fragment">
             <l>μηλοσφαγεῖ τε δαιμόνων ἐπ’ ἐσχάραις</l>
          </div>
@@ -3270,11 +3277,11 @@
          <div n="632" type="fragment">
             <l>πολλῶν τὰ χρήματ’ αἴτι’ ἀνθρώποις κακῶν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0590"/>
+         <pb facs="tragicorumgraeco00naucuoft_0590" />
          <div n="633" type="fragment">
             <l>μόμφος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0591"/>
+         <pb facs="tragicorumgraeco00naucuoft_0591" />
          <div n="634" type="fragment">
             <l>ὅστις νέμει κάλλιστα τὴν αὑτοῦ φύσιν,</l>
             <l>οὗτος σοφὸς πέφυκε πρὸς τὸ συμφέρον.</l>
@@ -3294,7 +3301,7 @@
             <l>νῦν δ’ ἐκλιπὼν ἤθη τε καὶ νομὸν βίου</l>
             <l>δεῦρ’ ἔπτατ’ · οὐκ οὖν ἔσθ’ ὁ παῖς ἐν οἴδμασιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0592"/>
+         <pb facs="tragicorumgraeco00naucuoft_0592" />
          <div n="637" type="fragment">
             <l>φεῦ φεῦ, τὸ γῆρας ὡς ἔχει πολλὰς νόσους.</l>
          </div>
@@ -3302,7 +3309,7 @@
             <l>τίς δ’ οἶδεν εἰ τὸ ζῆν μέν ἐστι κατθανεῖν,</l>
             <l>τὸ κατθανεῖν δὲ ζῆν κάτω νομίζεται;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0593"/>
+         <pb facs="tragicorumgraeco00naucuoft_0593" />
          <div n="639" type="fragment">
             <l>μάτην γὰρ οἴκῳ σὸν τόδ’ ἐκβαίη τέλος</l>
          </div>
@@ -3315,7 +3322,7 @@
             <l>ἐν τῷ γὰρ ὄλβῳ φαυλότης ἔνεστί τις,</l>
             <l>πενία δὲ σοφίαν ἔλαχε διὰ τὸ συγγενές.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0594"/>
+         <pb facs="tragicorumgraeco00naucuoft_0594" />
          <div n="642" type="fragment">
             <l>οὐ γὰρ παρὰ κρατῆρα καὶ θοίνην μόνον</l>
             <l>τὰ χρήματ’ ἀνθρώποισιν ἡδονὰς ἔχει,</l>
@@ -3337,11 +3344,11 @@
             <l n="5">ἤτἄρα θνητῶν εἰσιν ἀσυνετώτεροι</l>
             <l>ἢ τἀπιεικῆ πρόσθεν ἡγοῦνται δίκης.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0595"/>
+         <pb facs="tragicorumgraeco00naucuoft_0595" />
          <div n="646" type="fragment">
             <l>διαβάλλω</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0596"/>
+         <pb facs="tragicorumgraeco00naucuoft_0596" />
          <div n="647" type="fragment">
             <l rend="indent">ἄξιος δ’ ἐμὸς</l>
             <l>γαμβρὸς κέκλησαι παῖδά μοι ξυνοικίσας.</l>
@@ -3361,7 +3368,7 @@
          <div n="652" type="fragment">
             <l>ὦ παῖδες οἷον φίλτρον ἀνθρώποις φρενός</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0597"/>
+         <pb facs="tragicorumgraeco00naucuoft_0597" />
          <div n="653" type="fragment">
             <l>κοινὸν γὰρ εἶναι χρῆν γυναικεῖον λέχος.</l>
          </div>
@@ -3376,7 +3383,7 @@
             <l>. .σα λαιμὸν ἢ πεσοῦσ’ ἀπ’ ἰσθμίου</l>
             <l>κευθμῶνα πηγαῖον ὕδωρ</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0598"/>
+         <pb facs="tragicorumgraeco00naucuoft_0598" />
          <div n="657" type="fragment">
             <l>ὅστις δὲ πάσας συντιθεὶς ψέγει λόγῳ</l>
             <l>γυναῖκας ἑξῆς, σκαιός ἐστι κοὺ σοφός·</l>
@@ -3398,17 +3405,17 @@
             <l>ἐγὼ δὲ τούτων οὐδενὸς χρήζω τυχεῖν,</l>
             <l n="10">δόξαν 〈δὲ〉 βουλοίμην ἂν εὐκλείας ἔχειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0599"/>
+         <pb facs="tragicorumgraeco00naucuoft_0599" />
          <div n="660" type="fragment">
             <l>οὐδεὶς γὰρ ἡμᾶς 〈ὅστις〉 ἐξαιρήσεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0600"/>
+         <pb facs="tragicorumgraeco00naucuoft_0600" />
          <div n="661" type="fragment">
             <l>Οὐκ ἔστιν ὅστις πάντ’ ἀνὴρ εὐδαιμονεῖ·</l>
             <l>ἢ γὰρ πεφυκὼς ἐσθλὸς οὐκ ἔχει βίον,</l>
             <l>ἢ δυσγενὴς ὢν πλουσίαν ἀροῖ πλάκα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0601"/>
+         <pb facs="tragicorumgraeco00naucuoft_0601" />
          <div n="662" type="fragment">
             <l>πολλοὺς δὲ πλούτῳ καὶ γένει γαυρουμένους</l>
             <l>γυνὴ κατῄσχυν’ ἐν δόμοισι νηπία.</l>
@@ -3421,7 +3428,7 @@
             <l>πεσὸν δέ νιν λέληθεν οὐδὲν ἐκ χερός,</l>
             <l>ἀλλ’ εὐθὺς αὐδᾷ <q>τῷ Κορινθίῳ ξένῳ</q>.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0602"/>
+         <pb facs="tragicorumgraeco00naucuoft_0602" />
          <div n="665" type="fragment">
             <l>τοιαῦτ’ ἀλύει· νουθετούμενος δ’ ἔρως</l>
             <l>μᾶλλον πιέζει</l>
@@ -3437,7 +3444,7 @@
             <l>ἄνευ τύχης γάρ, ὥσπερ ἡ παροιμία,</l>
             <l>πόνος μονωθεὶς οὐκέτ’ ἀλγύνει βροτούς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0603"/>
+         <pb facs="tragicorumgraeco00naucuoft_0603" />
          <div n="669" type="fragment">
             <l>πέλας δὲ ταύτης δεινὸς ἵδρυται Κράγος</l>
             <l>ἔνθηρος, ᾗ λῃστῆρσι φρουρεῖται . .</l>
@@ -3459,7 +3466,7 @@
             <l>ὁ δ’ εἰς τὸ σῶφρον ἐπ’ ἀρετήν τ’ ἄγων ἔρως</l>
             <l>ζηλωτὸς ἀνθρώποισιν· ὧν εἴην ἐγώ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0604"/>
+         <pb facs="tragicorumgraeco00naucuoft_0604" />
          <div n="673" type="fragment">
             <l>χαίρω σέ τ’, ὦ βέλτιστον Ἀλκμήνης τέκος,</l>
             <l>. . .τὸν τε μιαρὸν ἐξολωλότα.</l>
@@ -3471,7 +3478,7 @@
             <l>καὶ τὰς μὲν ἄξῃ, πῶλον ἢν διδῷς ἕνα,</l>
             <l>τὰς δ’ ἢν ξυνωρίδ’· αἵ δὲ κἀπὶ τεσσάρων</l>
             <l>φοιτῶσιν ἵππων ἀργυρῶν. φιλοῦσι δὲ</l>
-            <pb facs="tragicorumgraeco00naucuoft_0605"/>
+            <pb facs="tragicorumgraeco00naucuoft_0605" />
             <l>τὸν ἐξ Ἀθηνῶν παρθένους ὅταν φέρῃ</l>
             <l>πολλάς</l>
          </div>
@@ -3493,7 +3500,7 @@
          <div n="680" type="fragment">
             <l>ἁμαρτεῖν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0606"/>
+         <pb facs="tragicorumgraeco00naucuoft_0606" />
          <div n="681" type="fragment">
             <l>ἔμβολα</l>
          </div>
@@ -3513,7 +3520,7 @@
             <l>καὶ πάντ’ ἀκριβῶς κἀπὶ φροντίδων βίον</l>
             <l n="5">οὕτω δικαίως ζῶσιν αἰσχύνης ἄτερ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0607"/>
+         <pb facs="tragicorumgraeco00naucuoft_0607" />
          <div n="685" type="fragment">
             <l>ζεύγλας</l>
          </div>
@@ -3526,14 +3533,14 @@
             <l>γῆς εἶσιν ἄστρα, γῆ δ’ ἄνεισ’ ἐς αἰθέρα,</l>
             <l>πρὶν ἐξ ἐμοῦ σοι θῶπ’ ἀπαντῆσαι λόγον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0608"/>
+         <pb facs="tragicorumgraeco00naucuoft_0608" />
          <div n="688" type="fragment">
             <l>ἥκιστα φαῦλος, ἀλλὰ πᾶν τοὐναντίον·</l>
             <l>τὸ σχῆμα σεμνὸς κοὺ ταπεινὸς οὐδ’ ἄγαν</l>
             <l>εὔογκος ὡς ἂν δοῦλος, ἀλλὰ καὶ στολὴν</l>
             <l>ἰδόντι λαμπρὸς καὶ ξύλῳ δραστήριος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0609"/>
+         <pb facs="tragicorumgraeco00naucuoft_0609" />
          <div n="689" type="fragment">
             <l>οὐδεὶς δ’ ἐς οἴκους δεσπότας ἀμείνονας</l>
             <l>αὑτοῦ πρίασθαι βούλεται· σὲ δ’ εἰσορῶν</l>
@@ -3557,7 +3564,7 @@
             <l rend="indent">εἶα δή, [φίλον] ξύλον,</l>
             <l>ἔγειρέ μοι σεαυτὸ καὶ γίγνου θρασύ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0610"/>
+         <pb facs="tragicorumgraeco00naucuoft_0610" />
          <div n="694" type="fragment">
             <l>βαυβῶμεν εἰσελθόντες· ἀπόμορξαι σέθεν</l>
             <l>τὰ δάκρυα.</l>
@@ -3566,13 +3573,13 @@
             <l>φεῦ, </l>
             <l>οὐδὲν δίκαιόν ἐστιν ἐν τῷ νῦν γένει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0612"/>
+         <pb facs="tragicorumgraeco00naucuoft_0612" />
          <div n="696" type="fragment">
             <l>Ὦ γαῖα πατρίς, ἣν Πέλοψ ὁρίζεται,</l>
             <l>χαῖρ’, ὅς τε πέτρον Ἀρκάδων δυσχείμερον</l>
             <l>〈Πὰν〉 ἐμβατεύεις, ἔνθεν εὔχομαι γένος.</l>
             <l>Αὔγη γὰρ Ἀλέου παῖς με τῷ Τιρυνθίῳ</l>
-            <pb facs="tragicorumgraeco00naucuoft_0613"/>
+            <pb facs="tragicorumgraeco00naucuoft_0613" />
             <l>τίκτει λαθραίως Ἡρακλεῖ· ξύνοιδ’ ὄρος</l>
             <l>Παρθένιον, ἔνθα μητέρ’ ὠδίνων ἐμὴν</l>
             <l>ἔλυσεν Εἰλείθυια.</l>
@@ -3585,7 +3592,7 @@
             <l>δεῖ γάρ με δόξαι πτωχὸν [εἶναι τήμερον],</l>
             <l>εἶναι μὲν ὅσπερ εἰμί, φαίνεσθαι δὲ μή.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0614"/>
+         <pb facs="tragicorumgraeco00naucuoft_0614" />
          <div n="699" type="fragment">
             <l>ἄνασσα πράγους τοῦδε καὶ βουλεύματος</l>
          </div>
@@ -3598,7 +3605,7 @@
          <div n="702" type="fragment">
             <l>τόλμα σὺ κἄν τι τραχὺ νείμωσιν θεοί.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0615"/>
+         <pb facs="tragicorumgraeco00naucuoft_0615" />
          <div n="703" type="fragment">
             <l>μή μοι φθονήσητ’, ἄνδρες Ἑλλήνων ἄκροι,</l>
             <l>εἰ πτωχὸς ὢν τέτληκ’ ἐν ἐσθλοῖσιν λέγειν.</l>
@@ -3617,7 +3624,7 @@
             <l>μέλλοι τις εἰς τράχηλον ἐμβαλεῖν ἐμόν,</l>
             <l>σιγήσομαι δίκαιά γ’ ἀντειπεῖν ἔχων.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0616"/>
+         <pb facs="tragicorumgraeco00naucuoft_0616" />
          <div n="707" type="fragment">
             <l>καλῶς ἔχοι μοι· Τηλέφῳ δ’ ἁγὼ φρονῶ</l>
          </div>
@@ -3631,7 +3638,7 @@
             <l rend="indent">τὸν δὲ Τήλεφον</l>
             <l>οὐκ οἰόμεσθα; νοῦς ἄρ’ ὑμῖν οὐκ ἔνι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0617"/>
+         <pb facs="tragicorumgraeco00naucuoft_0617" />
          <div n="711" type="fragment">
             <l rend="indent">εἶτα δὴ θυμούμεθα</l>
             <l>παθόντες οὐδὲν μεῖζον ἢ δεδρακότες;</l>
@@ -3642,7 +3649,7 @@
          <div n="713" type="fragment">
             <l>ὦ πόλις Ἄργους, κλύεθ’ οἷα λέγει</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0618"/>
+         <pb facs="tragicorumgraeco00naucuoft_0618" />
          <div n="714" type="fragment">
             <l>τί γάρ με πλοῦτος ὠφελεῖ νόσον;</l>
             <l>σμίκρ’ ἂν θέλοιμι καὶ καθ’ ἡμέραν ἔχων</l>
@@ -3661,7 +3668,7 @@
          <div n="717" type="fragment">
             <l>τί δ’, ὦ τάλας; σὺ τῷδε πείθεσθαι μέλλεις;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0619"/>
+         <pb facs="tragicorumgraeco00naucuoft_0619" />
          <div n="718" type="fragment">
             <l>ὥρα σε θυμοῦ κρείσσονα γνώμην ἔχειν.</l>
          </div>
@@ -3678,7 +3685,7 @@
             <l>ἴθ’ ὅποι χρήζεις· οὐκ ἀπολοῦμαι</l>
             <l>τῆς σῆς Ἑλένης εἵνεκα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0620"/>
+         <pb facs="tragicorumgraeco00naucuoft_0620" />
          <div n="723" type="fragment">
             <l>Σπάρτην ἔλαχες, κείνην κόσμει·</l>
             <l>τὰς δὲ Μυκήνας ἡμεῖς ἰδίᾳ.</l>
@@ -3689,7 +3696,7 @@
          <div n="725" type="fragment">
             <l>λοχαῖον σῖτον</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0621"/>
+         <pb facs="tragicorumgraeco00naucuoft_0621" />
          <div n="726" type="fragment">
             <l>ψυκτήρ</l>
          </div>
@@ -3702,7 +3709,7 @@
             <l>κακοὺς δὲ μισεῖ. τῇ πόλει μὲν οὖν νόσος</l>
             <l>τόδ’ ἐστί, τοῖς δὲ κατθανοῦσιν εὐκλεές.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0622"/>
+         <pb facs="tragicorumgraeco00naucuoft_0622" />
          <div n="729" type="fragment">
             <l>εἰκὸς δὲ παντὶ καὶ λόγῳ καὶ μηχανῇ</l>
             <l>πατρίδος ἐρῶντας ἐκπονεῖν σωτηρίαν.</l>
@@ -3726,7 +3733,7 @@
             <l>ζῇ δ’ οὐκέτ’ ὄντος σώματος· κακοῖσι δὲ</l>
             <l>ἅπαντα φροῦδα συνθανόνθ’ ὑπὸ χθονός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0623"/>
+         <pb facs="tragicorumgraeco00naucuoft_0623" />
          <div n="735" type="fragment">
             <l>ἀσύνετος ὅστις ἐν φόβῳ μὲν ἀσθενής,</l>
             <l>λαβὼν δὲ μικρὸν τῆς τύχης φρονεῖ μέγα.</l>
@@ -3746,7 +3753,7 @@
             <l>πολλοὶ γεγῶτες ἄνδρες οὐκ ἔχουσ’ ὅπως</l>
             <l>δείξουσιν αὑτοὺς τῶν κακῶν ἐξουσίᾳ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0624"/>
+         <pb facs="tragicorumgraeco00naucuoft_0624" />
          <div n="739" type="fragment">
             <l>φεῦ φεῦ, τὸ φῦναι πατρὸς εὐγενοῦς ἄπο</l>
             <l>ὅσην ἔχει φρόνησιν ἀξίωμά τε.</l>
@@ -3786,7 +3793,7 @@
          <div n="748" type="fragment">
             <l>ἀνανομήν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0626"/>
+         <pb facs="tragicorumgraeco00naucuoft_0626" />
          <div n="749" type="fragment">
             <l>ἄπυργος</l>
          </div>
@@ -3801,7 +3808,7 @@
             <l>καθαπτὸς ἐν πεύκαισι Παρνασὸν κάτα</l>
             <l>πηδᾷ χορεύων παρθένοις σὺν Δελφίσιν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0627"/>
+         <pb facs="tragicorumgraeco00naucuoft_0627" />
          <div n="753" type="fragment">
             <l>δείξω μὲν Ἀργείοισιν Ἀχελῴου ῥόον</l>
          </div>
@@ -3813,7 +3820,7 @@
          <div n="755" type="fragment">
             <l>ἀνὰ τὸ δωδεκαμήχανον ἄστρον</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0628"/>
+         <pb facs="tragicorumgraeco00naucuoft_0628" />
          <div n="756" type="fragment">
             <l>περίβαλ’, ὦ τέκνον, ὠλένας</l>
          </div>
@@ -3828,7 +3835,7 @@
             <l>στένειν, ἅπερ δεῖ κατὰ φύσιν διεκπερᾶν;</l>
             <l>δεινὸν γὰρ οὐδὲν τῶν ἀναγκαίων βροτοῖς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0629"/>
+         <pb facs="tragicorumgraeco00naucuoft_0629" />
          <div n="758" type="fragment">
             <l>κακοῖς τὸ κέρδος τῆς δίκης ὑπέρτερον.</l>
          </div>
@@ -3847,7 +3854,7 @@
          <div n="762" type="fragment">
             <l>εὔφημα καὶ σᾶ καὶ κατεσφραγισμένα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0630"/>
+         <pb facs="tragicorumgraeco00naucuoft_0630" />
          <div n="763" type="fragment">
             <l rend="indent">ἢ ἑτέρᾳ φράσω;</l>
          </div>
@@ -3864,7 +3871,7 @@
          <div n="767" type="fragment">
             <l>ἄρκτος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0631"/>
+         <pb facs="tragicorumgraeco00naucuoft_0631" />
          <div n="768" type="fragment">
             <l>ἐκδημία</l>
          </div>
@@ -3874,7 +3881,7 @@
          <div n="770" type="fragment">
             <l>νεαρός</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0633"/>
+         <pb facs="tragicorumgraeco00naucuoft_0633" />
          <div n="771" type="fragment">
             <l rend="indent">Μέροπι τῆσδ’ ἄνακτι γῆς,</l>
             <l>ἣν ἐκ τεθρίππων ἁρμάτων πρώτην χθόνα</l>
@@ -3886,7 +3893,7 @@
             <l>θερμὴ δ’ ἄνακτος φλὸξ ὑπερτέλλουσα γῆς</l>
             <l>καίει τὰ πόρρω, τἀγγύθεν δ’ εὔκρατ’ ἔχει.=</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0634"/>
+         <pb facs="tragicorumgraeco00naucuoft_0634" />
          <div n="773" type="fragment">
             <l>μνησθεὶς ὅ μοί ποτ’ εἶφ’ ὅτ’ ηὐνάσθη θεός.</l>
             <l>αἰτοῦ τί χρῄζεις ἕν· πέρᾳ γὰρ οὐ θέμις</l>
@@ -3925,7 +3932,7 @@
             </l>
             <l>κινοῦσιν ποίμνας ἐλάται·</l>
             <l>ἔγρονται δ’ εἰς βοτάναν</l>
-            <pb facs="tragicorumgraeco00naucuoft_0635"/>
+            <pb facs="tragicorumgraeco00naucuoft_0635" />
             <l n="30">ξανθᾶν πώλων συζυγίαι.</l>
             <l>ἤδη δ’ εἰς ἔργα κυναγοὶ</l>
             <l>στείχουσιν θηροφόνοι,</l>
@@ -3967,7 +3974,7 @@
             <l n="65">ζεῦξαι νύμφης τε λεπάδνοις.</l>
             <l>
                <label type="speaker">〈ΚΗΡ.〉</label> Ὠκεανοῦ πεδίων οἰκήτορες,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0636"/>
+            <pb facs="tragicorumgraeco00naucuoft_0636" />
             <l>εὐφαμεῖτ’, ὦ,</l>
             <l>ἐκτόπιοί τε δόμων ἀπαείρετε,</l>
             <l>ὦ ἴτε, λαοί.</l>
@@ -3981,13 +3988,13 @@
                <label type="speaker">ΜΕΡ</label>. . .  .  .  .  .  .  .  .  .  .  .  .</l>
             <l>.  .  .  .  .  .  . εἰ γὰρ εὖ λέγω</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0637"/>
+         <pb facs="tragicorumgraeco00naucuoft_0637" />
          <div n="774" type="fragment">
             <l>ναῦν τοι μί’ ἄγκυρ’ οὐχ ὁμῶς σῴζειν φιλεῖ</l>
             <l>ὡς τρεῖς ἀφέντι· προστάτης θ’ ἁπλοῦς πόλει</l>
             <l>σφαλερός, ὑπὼν δὲ κἄλλος οὐ κακὸν πέλει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0638"/>
+         <pb facs="tragicorumgraeco00naucuoft_0638" />
          <div n="775" type="fragment">
             <l>ἐλεύθερος δ’ ὢν δοῦλός ἐστι τοῦ λέχους,</l>
             <l>πεπραμένον τὸ σῶμα τῆς φερνῆς ἔχων.</l>
@@ -4004,7 +4011,7 @@
          <div n="778" type="fragment">
             <l>εὐδαιμονίζων ὄχλος ἐξέπληξέ με.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0639"/>
+         <pb facs="tragicorumgraeco00naucuoft_0639" />
          <div n="779" type="fragment">
             <l>ἔλα δὲ μήτε Λιβυκὸν αἰθέρ’ εἰσβαλών·</l>
             <l>κρᾶσιν γὰρ ὑγρὰν οὐκ ἔχων, ἁψῖδα σὴν</l>
@@ -4026,7 +4033,7 @@
             <l>οὐ θᾶσσον; οὐ σταλαγμὸν ἐξομόρξετε,</l>
             <l>εἴ πού τις ἔστιν αἵματος χαμαὶ πεσών;</l>
             <l>ἐπείγετ’ εἶα, δμωίδες· κρύψω δέ νιν</l>
-            <pb facs="tragicorumgraeco00naucuoft_0640"/>
+            <pb facs="tragicorumgraeco00naucuoft_0640" />
             <l>ξεστοῖσι θαλάμοις, ἔνθ’ ἐμῷ κεῖται πόσει</l>
             <l n="10">χρυσός· μόνη δὲ κλῇθρ’ ἐγὼ σφραγίζομαι.</l>
             <l>ὦ καλλιφεγγὲς Ἥλι’, ὥς μ’ ἀπώλεσας</l>
@@ -4069,7 +4076,7 @@
                <label type="speaker">ΘΕΡ.</label> ὦ δέσποτ’, ἔστρεψ’ ἐκ δόμων ταχὺν πόδα.</l>
             <l>οὗ γὰρ σὺ σῴζῃ σεμνὰ θησαυρίσματα</l>
             <l n="45">χρυσοῦ, δι’ ἁρμῶν ἐξαμείβεται πύλης</l>
-            <pb facs="tragicorumgraeco00naucuoft_0641"/>
+            <pb facs="tragicorumgraeco00naucuoft_0641" />
             <l>καπνοῦ μέλαιν’ ἄησις ἔνδοθεν στέγης.</l>
             <l>προσθεὶς πρόσωπον φλόγα μὲν οὐχ ὁρῶ πυρός,</l>
             <l>γέμοντα δ’ οἶκον μέλανος ἔνδοθεν καπνοῦ.</l>
@@ -4115,12 +4122,12 @@
                <label type="speaker">ΧΟΡ.</label> καλεῖ τὸν οὐ κλύοντα δυστυχῆ γόνον</l>
             <l>.  .  .  .  .  .  .  τῶνὁρᾶν σαφῆ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0643"/>
+         <pb facs="tragicorumgraeco00naucuoft_0643" />
          <div n="782" type="fragment">
             <l rend="indent">ψυκτήρια</l>
             <l>δένδρεα φίλαισιν ὠλέναισι λέξεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0644"/>
+         <pb facs="tragicorumgraeco00naucuoft_0644" />
          <div n="783" type="fragment">
             <l>χρυσέα βῶλος</l>
          </div>
@@ -4137,13 +4144,13 @@
             <l rend="indent">φίλος δέ μοι</l>
             <l>ἄλουτος ἐν φάραγξι σήπεται νέκυς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0648"/>
+         <pb facs="tragicorumgraeco00naucuoft_0648" />
          <div n="787" type="fragment">
             <l>πῶς δ’ ἂν φρονοίην, ᾧ παρῆν ἀπραγμόνως</l>
             <l>ἐν τοῖσι πολλοῖς ἠριθμημένῳ στρατοῦ</l>
             <l>ἴσον μετασχεῖν τῷ σοφωτάτῳ τύχης;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0649"/>
+         <pb facs="tragicorumgraeco00naucuoft_0649" />
          <div n="788" type="fragment">
             <l>οὐδὲν γὰρ οὕτω γαῦρον ὡς ἀνὴρ ἔφυ·</l>
             <l>τοὺς γὰρ περισσοὺς καί τι πράσσοντας πλέον</l>
@@ -4161,7 +4168,7 @@
             <l>πρίν τινα συντυχίαν</l>
             <l>ἢ κτεάτεσσιν ἐμοῖς ἢ σώματι τῷδε γενέσθαι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0650"/>
+         <pb facs="tragicorumgraeco00naucuoft_0650" />
          <div n="792" type="fragment">
             <l>φαγέδαιν’ ἀεί μου σάρκα θοινᾶται ποδός</l>
          </div>
@@ -4182,7 +4189,7 @@
             <l>ὅστις γὰρ αὐχεῖ θεῶν ἐπίστασθαι πέρι,</l>
             <l n="5">οὐδέν τι μᾶλλον οἶδεν ἢ πείθειν λέγων.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0651"/>
+         <pb facs="tragicorumgraeco00naucuoft_0651" />
          <div n="796" type="fragment">
             <l>ὑπέρ γε μέντοι παντὸς Ἑλλήνων στρατοῦ</l>
             <l>αἰσχρὸν σιωπᾶν, βαρβάρους δ’ ἐᾶν λέγειν.</l>
@@ -4193,7 +4200,7 @@
             <l>ἀλλ’ ἐξ ἐμοῦ γὰρ τἀμὰ μαθήσῃ κλύων,</l>
             <l>ὃ δ’ αὐτὸς αὑτὸν ἐμφανιεῖ σοι λέγων.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0652"/>
+         <pb facs="tragicorumgraeco00naucuoft_0652" />
          <div n="798" type="fragment">
             <l>πατρὶς καλῶς πράσσουσα τὸν τυχόντ’ ἀεὶ</l>
             <l>μείζω τίθησι, δυστυχοῦσα δ’ ἀσθενῆ.</l>
@@ -4212,15 +4219,15 @@
          </div>
          <div n="802" type="fragment">
             <l>αἱρεῖς
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0653"/>
+         <pb facs="tragicorumgraeco00naucuoft_0653" />
          <div n="803" type="fragment">
             <l>ἀκριβές</l>
          </div>
          <div n="804" type="fragment">
             <l>μοχθηρόν ἐστιν ἀνδρὶ πρεσβύτῃ τέκνα</l>
-            <pb facs="tragicorumgraeco00naucuoft_0654"/>
+            <pb facs="tragicorumgraeco00naucuoft_0654" />
             <l>δίδωσιν ὅστις οὐκέθ’ ὡραῖος γαμεῖ·</l>
             <l>δέσποινα γὰρ γέροντι νυμφίῳ γυνή.</l>
          </div>
@@ -4239,7 +4246,7 @@
          <div n="808" type="fragment">
             <l>γυνή τε πάντων ἀγριώτατον κακόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0655"/>
+         <pb facs="tragicorumgraeco00naucuoft_0655" />
          <div n="809" type="fragment">
             <l>.  .  .  .  〈οἱ〉 πεῖραν οὐ δεδωκότες</l>
             <l>μᾶλλον δοκοῦντες ἢ πεφυκότες σοφοί</l>
@@ -4262,7 +4269,7 @@
             <l>οὐ πώποτ’ ἠρώτησα, γιγνώσκων ὅτι</l>
             <l>τοιοῦτός ἐστιν οἷσπερ ἥδεται ξυνών.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0657"/>
+         <pb facs="tragicorumgraeco00naucuoft_0657" />
          <div n="813" type="fragment">
             <l>ὦ πλοῦθ’, ὅσῳ μὲν ῥᾷστον εἶ βάρος φέρειν,</l>
             <l>πόνοι δὲ κἀν σοὶ καὶ φθοραὶ πολλαὶ βίου</l>
@@ -4279,7 +4286,7 @@
          <div n="816" type="fragment">
             <l>καίτοι ποτ’ εἴ τιν’ εἰσίδοιμ’ ἀνὰ πτόλιν</l>
             <l>τυφλὸν προηγητῆρος ἐξηρτημένον,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0658"/>
+            <pb facs="tragicorumgraeco00naucuoft_0658" />
             <l>ἀδημονοῦντα συμφοραῖς ἐλοιδόρουν,</l>
             <l>ὡς δειλὸς εἴη θάνατον ἐκποδὼν ἔχων.</l>
             <l n="5">καὶ νῦν λόγοισι τοῖς ἐμοῖς ἐναντίως</l>
@@ -4298,7 +4305,7 @@
          <div n="818" type="fragment">
             <l>ἀμνήστευτος γυνή</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0659"/>
+         <pb facs="tragicorumgraeco00naucuoft_0659" />
          <div n="819" type="fragment">
             <l>Σιδώνιόν ποτ’ ἄστυ Κάδμος ἐκλιπών,</l>
             <l>Ἀγήνορος παῖς, ἦλθε Θηβαίαν χθόνα</l>
@@ -4310,7 +4317,7 @@
             <l>Φοῖνίξ 〈θ’〉, ὅθεν περ τοὔνομ’ ἡ χώρα φέρει,</l>
             <l>καὶ Θάσος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0660"/>
+         <pb facs="tragicorumgraeco00naucuoft_0660" />
          <div n="821" type="fragment">
             <l>εἰ μὲν τόδ’ ἦμαρ πρῶτον ἦν κακουμένῳ</l>
             <l>καὶ μὴ μακρὰν δὴ διὰ πόνων ἐναυστόλουν,</l>
@@ -4321,7 +4328,7 @@
          <div n="822" type="fragment">
             <l>γυνὴ γὰρ ἐν κακοῖσι καὶ νόσοις πόσει</l>
             <l>ἥδιστόν ἐστι, δώματ’ ἢν οἰκῇ καλῶς,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0661"/>
+            <pb facs="tragicorumgraeco00naucuoft_0661" />
             <l>ὀργήν τε πραΰνουσα καὶ δυσθυμίας</l>
             <l>ψυχὴν μεθιστᾶσ’· ἡδὺ κἀπάται φίλων.</l>
          </div>
@@ -4343,7 +4350,7 @@
          <div n="827" type="fragment">
             <l>καὶ μὴν ἀνοῖξαι μὲν σιροὺς οὐκ ἠξίου</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0662"/>
+         <pb facs="tragicorumgraeco00naucuoft_0662" />
          <div n="828" type="fragment">
             <l>αἱ γὰρ πόλεις εἴσ’ ἄνδρες, οὐκ ἐρημία.</l>
          </div>
@@ -4363,7 +4370,7 @@
             <l>εἰς ταὔτ’ ἔπρασσον, πῶς τάδ’ ἂν καλῶς ἔχοι;</l>
             <l>ἢ Ζεὺς ὁ λῷστος μηδὲν ἔνδικον φρονεῖ;</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0663"/>
+         <pb facs="tragicorumgraeco00naucuoft_0663" />
          <div n="833" type="fragment">
             <l>τίς δ’ οἶδεν εἰ ζῆν τοῦθ’ ὃ κέκληται θανεῖν,</l>
             <l>τὸ ζῆν δὲ θνήσκειν ἐστί; πλὴν ὅμως βροτῶν</l>
@@ -4381,14 +4388,14 @@
             <l>δοκεῖ πονηρὰ καὶ δοκῶν ἁλίσκεται,</l>
             <l>ὅταν σχολὴν ἄγουσα τυγχάνῃ Δίκη.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0664"/>
+         <pb facs="tragicorumgraeco00naucuoft_0664" />
          <div n="836" type="fragment">
             <l>πώγωνα πυρός</l>
          </div>
          <div n="837" type="fragment">
             <l>ἰλλάδας</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0665"/>
+         <pb facs="tragicorumgraeco00naucuoft_0665" />
          <div n="839" type="fragment">
             <l>Γαῖα μεγίστη καὶ Διὸς Αἰθήρ,</l>
             <l>ὃ μὲν ἀνθρώπων καὶ θεῶν γενέτωρ,</l>
@@ -4405,12 +4412,12 @@
             <l>διακρινόμενον δ’ ἄλλο πρὸς ἄλλου</l>
             <l>μορφὴν ἑτέραν ἀπέδειξεν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0666"/>
+         <pb facs="tragicorumgraeco00naucuoft_0666" />
          <div n="840" type="fragment">
             <l>λέληθεν οὐδὲν τῶνδέ μ’ ὧν σὺ νουθετεῖς,</l>
             <l>γνώμην δ’ ἔχοντά μ’ ἡ φύσις βιάζεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0667"/>
+         <pb facs="tragicorumgraeco00naucuoft_0667" />
          <div n="841" type="fragment">
             <l>αἰαῖ, τόδ’ ἥδη θεῖον ἀνθρώποις κακόν,</l>
             <l>ὅταν τις εἰδῇ τἀγαθόν, χρῆται δὲ μή.</l>
@@ -4426,7 +4433,7 @@
          <div n="844" type="fragment">
             <l>εἰάζων</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0668"/>
+         <pb facs="tragicorumgraeco00naucuoft_0668" />
          <div n="845" type="fragment">
             <l>ἀπρόσειλος</l>
          </div>
@@ -4438,7 +4445,7 @@
          <div n="847" type="fragment">
             <l>εἰ μὴ γὰρ ἴδιον ἔλαβον εἰς χεῖρας μύσος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0669"/>
+         <pb facs="tragicorumgraeco00naucuoft_0669" />
          <div n="848" type="fragment">
             <l>γαυριᾶν</l>
          </div>
@@ -4456,7 +4463,7 @@
             <l>μή μοι γένοιτο μήτε συνθύτης τοῖς θεοῖς</l>
             <l n="5">μήτ’ ἐν θαλάσσῃ κοινόπλουν στέλλοι σκάφος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0670"/>
+         <pb facs="tragicorumgraeco00naucuoft_0670" />
          <div n="853" type="fragment">
             <l>τρεῖς εἰσὶν ἀρεταὶ τὰς χρεών σ’ ἀσκεῖν, τέκνον,</l>
             <l>θεούς τε τιμᾶν τούς τε φύσαντας γονῆς</l>
@@ -4476,7 +4483,7 @@
             <l>τέγγουσαι νοτίοις πτερῶν</l>
             <l>ῥανίσι χρόα διανιζόμεναι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0671"/>
+         <pb facs="tragicorumgraeco00naucuoft_0671" />
          <div n="857" type="fragment">
             <l>ἔλαφον δ’ Ἀχαιῶν χερσὶν ἐνθήσω φίλαις</l>
             <l>κεροῦσσαν, ἣν σφάζοντες αὐχήσουσι σὴν</l>
@@ -4491,9 +4498,9 @@
          <div n="861" type="fragment">
             <l>δείξας γὰρ ἄστρων τὴν ἐναντίαν ὁδὸν</l>
             <l>δήμους τ’ ἔσῳσα καὶ τύραννος ἱζόμην.
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0672"/>
+         <pb facs="tragicorumgraeco00naucuoft_0672" />
          <div n="862" type="fragment">
             <l rend="indent">ὁθούνεκα</l>
             <l>ἐν 〈αὐτὸς〉 αὑτῷ πάντα συλλαβὼν ἔχει</l>
@@ -4508,7 +4515,7 @@
          <div n="865" type="fragment">
             <l>φήμη τὸν ἐσθλὸν κἀν μυχοῖς δείκνυσι γῆς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0673"/>
+         <pb facs="tragicorumgraeco00naucuoft_0673" />
          <div n="866" type="fragment">
             <l>ἀλλ’ ἥδε μ’ ἐξέσῳσεν, ἥδε μοι τροφός,</l>
             <l>μήτηρ, ἀδελφή, δμωίς, ἄγκυρα στέγης.</l>
@@ -4531,7 +4538,7 @@
             <l rend="indent">αἱματοσταγῆ</l>
             <l>κηλῖδα τέγγῃ</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0674"/>
+         <pb facs="tragicorumgraeco00naucuoft_0674" />
          <div n="872" type="fragment">
             <l rend="indent">ἀκόμπαστος λόγος</l>
          </div>
@@ -4552,7 +4559,7 @@
             <l>ἀλλ’ αἰθὴρ τίκτει σε, κόρα,</l>
             <l>Ζεὺς ὃς ἀνθρώποις ὀνομάζεται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0675"/>
+         <pb facs="tragicorumgraeco00naucuoft_0675" />
          <div n="878" type="fragment">
             <l>τίς ἔσθ’ ὁ μέλλων σκόλοπος ἢ λευσμοῦ τυχεῖν;</l>
          </div>
@@ -4569,7 +4576,7 @@
          <div n="883" type="fragment">
             <l>ἀλλ’ αἰσχρὸν εἰπεῖν καὶ σιωπῆσαι βαρύ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0676"/>
+         <pb facs="tragicorumgraeco00naucuoft_0676" />
          <div n="884" type="fragment">
             <l>τηλοῦ γὰρ οἰκῶν βίοτον ἐξιδρυσάμην.</l>
          </div>
@@ -4588,7 +4595,7 @@
          <div n="888" type="fragment">
             <l>βέβληκ’ Ἀχιλλεὺς δύο κύβω καὶ τέσσαρα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0677"/>
+         <pb facs="tragicorumgraeco00naucuoft_0677" />
          <div n="889" type="fragment">
             <l>πεσεῖν ἐς εὐνὴν καὶ γαμήλιον λέχος</l>
          </div>
@@ -4596,7 +4603,7 @@
             <l>λόγων δίκαιον μισθὸν ἂν λόγους φέροις,</l>
             <l>ἔργον δ’ ἐκεῖνος ἔργον ὃς παρέσχετο.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0678"/>
+         <pb facs="tragicorumgraeco00naucuoft_0678" />
          <div n="892" type="fragment">
             <l>ἐπεὶ τί δεῖ βροτοῖσι πλὴν δυοῖν μόνον,</l>
             <l>Δήμητρος ἀκτῆς πώματός θ’ ὑδρηχόου,</l>
@@ -4610,7 +4617,7 @@
             <l>τὸ δ’ ἄκαιρον ἅπαν ὑπερβάλλον</l>
             <l>τε μὴ προσείμαν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0679"/>
+         <pb facs="tragicorumgraeco00naucuoft_0679" />
          <div n="894" type="fragment">
             <l>τἀλλότρια . . τὸν καλῶς εὐδαίμονα</l>
          </div>
@@ -4622,7 +4629,7 @@
             <l>Αἴθοπα πεπαίνοντ’ ὀρχάτους ὀπωρινούς,</l>
             <l>ἐξ οὗ βροτοὶ καλοῦσιν οἶνον αἴθοπα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0680"/>
+         <pb facs="tragicorumgraeco00naucuoft_0680" />
          <div n="897" type="fragment">
             <l>παίδευμα δ’ Ἔρως σοφίας ἀρετῆς</l>
             <l>πλεῖστον ὑπάρχει,</l>
@@ -4651,7 +4658,7 @@
             <l>φύουσιν ἡμῖν πάντα καὶ τρέφουσ’ ἅμα,</l>
             <l>δι’ ὧν βρότειον ζῇ τε καὶ θάλλει γένος.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0681"/>
+         <pb facs="tragicorumgraeco00naucuoft_0681" />
          <div n="899" type="fragment">
             <l>εἴ μοι τὸ Νεστόρειον εὔγλωσσον μέλος</l>
             <l>Ἀντήνορός τε τοῦ Φρυγὸς δοίη θεός,</l>
@@ -4662,7 +4669,7 @@
             <l>ὥφειλε δῆθεν, εἴπερ ἔστ’ ἐν οὐρανῷ</l>
             <l>Ζεύς, μὴ τὸν αὐτὸν δυστυχῆ καθιστάναι.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0682"/>
+         <pb facs="tragicorumgraeco00naucuoft_0682" />
          <div n="901" type="fragment">
             <l>πολλάκι μοι πραπίδων διῆλθε φροντίς,</l>
             <l>εἴτε τύχα 〈τις〉 εἴτε δαίμων τὰ βρότεια κραίνει,</l>
@@ -4674,7 +4681,7 @@
             <l>τὸν ἐσθλὸν ἄνδρα, κἂν ἑκὰς ναίῃ χθονός,</l>
             <l>κἂν μήποτ’ ὄσσοις εἰσίδω, κρίνω φίλον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0683"/>
+         <pb facs="tragicorumgraeco00naucuoft_0683" />
          <div n="903" type="fragment">
             <l>ἄφρων ἂν εἴην, εἰ τρέφοιν τὰ τῶν πέλας.</l>
          </div>
@@ -4682,7 +4689,7 @@
             <l rend="indent">ἀλλ’ ἄκρας εὐηθίας</l>
             <l>ἅπτοιτ’ ἂν ὅστις τὴν φύσιν νικᾶν θέλει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0684"/>
+         <pb facs="tragicorumgraeco00naucuoft_0684" />
          <div n="905" type="fragment">
             <l>μισῶ σοφιστήν, ὅστις οὐχ αὑτῷ σοφός.</l>
          </div>
@@ -4696,7 +4703,7 @@
          <div n="908" type="fragment">
             <l>τὸ μὴ γενέσθαι κρεῖσσον ἢ φῦναι βροτοῖς.</l>
             <l>ἔπειτα παῖδας σὺν πικραῖς ἀλγηδόσιν</l>
-            <pb facs="tragicorumgraeco00naucuoft_0685"/>
+            <pb facs="tragicorumgraeco00naucuoft_0685" />
             <l>τίκτω; τεκοῦσα δ’ ἢν μὲν ἄφρονας τέκω,</l>
             <l>στένω ματαίως, εἰσορῶσα 〈μὲν〉 κακούς,</l>
             <l n="5">χρηστοὺς δ’ ἀπολλῦσ’· ἢν δὲ καὶ σεσωσμένους,</l>
@@ -4718,7 +4725,7 @@
             <l>σοὶ δ’ ἔγωγε καὶ νοσοῦντι συννοσοῦσ’ ἀνέξομαι</l>
             <l>καὶ κακῶν τῶν σῶν ξυνοίσω, κοὐδὲν ἔσται μοι πικρόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0686"/>
+         <pb facs="tragicorumgraeco00naucuoft_0686" />
          <div n="910" type="fragment">
             <l>ὄλβιος ὅστις τῆς ἱστορίας</l>
             <l>ἔσχε μάθησιν,</l>
@@ -4730,7 +4737,7 @@
             <l>τοῖς δὲ τοιούτους οὐδέποτ’ αἰσχρῶν</l>
             <l>ἔργων μελέδημα προσίζει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0687"/>
+         <pb facs="tragicorumgraeco00naucuoft_0687" />
          <div n="911" type="fragment">
             <l>χρύσεαι δή μοι πτέρυγες περὶ νώτῳ</l>
             <l>καὶ τὰ σειρήνων πτερόεντα πέδιλα [ἁρμόζεται],</l>
@@ -4752,7 +4759,7 @@
             <l>τίνα δεῖ μακάρων ἐκθυσαμένους</l>
             <l>εὑρεῖν μόχθων ἀνάπαυλαν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0688"/>
+         <pb facs="tragicorumgraeco00naucuoft_0688" />
          <div n="913" type="fragment">
             <l>τίς τάδε λεύσσων θεὸν οὐχὶ νοεῖ,</l>
             <l>μετεωρολόγων δ’ ἑκὰς ἔρριψεν</l>
@@ -4769,7 +4776,7 @@
             <l>νικᾷ δὲ χρεία μ’ ἡ κακῶς τ’ ὀλουμένη</l>
             <l>γαστήρ, ἀφ’ ἧς δὴ πάντα γίγνεται κακά.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0689"/>
+         <pb facs="tragicorumgraeco00naucuoft_0689" />
          <div n="916" type="fragment">
             <l>ὦ πολύμοχθος βιοτὴ θνητοῖς,</l>
             <l>ὡς ἐπὶ παντὶ σφαλερὰ κεῖσαι,</l>
@@ -4788,7 +4795,7 @@
             <l>πρὸς ταῦθ’ ὅτι χρὴ καὶ παλαμάσθων</l>
             <l>καὶ πᾶν ἐπ’ ἐμοὶ τεκταινέσθων·</l>
             <l>τὸ γὰρ εὖ μετ’ ἐμοῦ</l>
-            <pb facs="tragicorumgraeco00naucuoft_0690"/>
+            <pb facs="tragicorumgraeco00naucuoft_0690" />
             <l>καὶ τὸ δίκαιον ξύμμαχον ἔσται,</l>
             <l>κοὺ μή ποθ’ ἁλῶ κακὰ πράσσων.</l>
          </div>
@@ -4798,9 +4805,9 @@
          </div>
          <div n="920" type="fragment">
             <l>ἡ φύσις ἐβούλεθ’, ᾗ νόμων οὐδὲν μέλει.
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0691"/>
+         <pb facs="tragicorumgraeco00naucuoft_0691" />
          <div n="921" type="fragment">
             <l>ἀωρὶ πόντου κύματ’ εὐρέος περᾷ . . .</l>
             <l>σμικραῖς ἑαυτοὺς ἐπιτρέπουσιν ἐλπίσιν</l>
@@ -4818,14 +4825,14 @@
             <l>τί περισσὰ φρονεῖς; εἰ μὴ μέλλεις</l>
             <l>σεμνύνεσθαι παρ’ ὁμοίοις.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0692"/>
+         <pb facs="tragicorumgraeco00naucuoft_0692" />
          <div n="926" type="fragment">
             <l>γλώσσῃ διαψαίρουσα μυκτήρων πόρους</l>
          </div>
          <div n="927" type="fragment">
             <l>ἔνδον γυναικῶν καὶ παρ’ οἰκέταις λόγος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0693"/>
+         <pb facs="tragicorumgraeco00naucuoft_0693" />
          <div n="928" type="fragment">
             <l rend="indent">οὐ γὰρ ἀσφαλὲς</l>
             <l>περαιτέρω τὸ κάλλος ἢ μέσον λαβεῖν.</l>
@@ -4840,7 +4847,7 @@
          <div n="931" type="fragment">
             <l rend="indent">λωτίνας ἀηδόνας</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0694"/>
+         <pb facs="tragicorumgraeco00naucuoft_0694" />
          <div n="932" type="fragment">
             <l>Αἰγυπτία ἐμπολή</l>
          </div>
@@ -4854,7 +4861,7 @@
          <div n="935" type="fragment">
             <l>ἀλλ’ ὦ φίλιπποι Τρῶες</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0695"/>
+         <pb facs="tragicorumgraeco00naucuoft_0695" />
          <div n="936" type="fragment">
             <l>οὔκ· ἀλλ’ ἔτ’ ἔμπνουν Ἀίδης μ’ ἐδέξατο.</l>
          </div>
@@ -4875,12 +4882,12 @@
             <l>καὶ γῆν πέριξ ἔχονθ’ ὑγραῖς ἐν ἀγκάλαις;</l>
             <l>τοῦτον νόμιζε Ζῆνα, τόνδ’ ἡγοῦ θεόν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0696"/>
+         <pb facs="tragicorumgraeco00naucuoft_0696" />
          <div n="943" type="fragment">
             <l>πυριγενὴς δὲ δράκων ὁδὸν ἡγεῖται [ταῖς] τετραμόρφοις</l>
             <l>ὥραις ζευγνὺς ἁρμονίᾳ πολύκαρπον ὄχημα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0697"/>
+         <pb facs="tragicorumgraeco00naucuoft_0697" />
          <div n="944" type="fragment">
             <l>καὶ Γαῖα μῆτερ· Ἑστίαν δέ σ’ οἱ σοφοὶ</l>
             <l>βροτῶν καλοῦσιν ἡμένην ἐν αἰθέρι.</l>
@@ -4901,7 +4908,7 @@
          <div n="949" type="fragment">
             <l>καὶ τοῖς τεκοῦσιν ἀξίαν τιμὴν νέμειν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0698"/>
+         <pb facs="tragicorumgraeco00naucuoft_0698" />
          <div n="950" type="fragment">
             <l>ὡς ἡδὺ πατέρα παισὶν ἤπιον κυρεῖν</l>
             <l>καὶ παῖδας εἶναι πατρὶ μὴ στυγουμένους.</l>
@@ -4931,7 +4938,7 @@
             <l>ἔστω δ’ ὃ βούλει· τοῦτο τί μ’ ἀδικεῖ, λέγε.</l>
             <l>ἔστ’ ἀνδρὶ καὶ γυναικὶ κείμενος νόμος,</l>
             <l n="15">τῷ μὲν διὰ τέλους ἣν ἔχει στέργειν ἀεί,</l>
-            <pb facs="tragicorumgraeco00naucuoft_0699"/>
+            <pb facs="tragicorumgraeco00naucuoft_0699" />
             <l>τῇ δ’ ὅσ’ ἂν ἀρέσκῃ τἀνδρὶ ταῦτ’ αὐτὴν ποεῖν.</l>
             <l>γέγονεν ἐκεῖνος εἰς ἔμ’ οἷον ἠξίουν,</l>
             <l>ἐμοί τ’ ἀρέσκει πάνθ’ ἃ κἀκείνῳ, πάτερ.</l>
@@ -4962,7 +4969,7 @@
             <l>πράξεις ἃ βούλει· τὴν δ’ ἐμὴν ἐγὼ τύχην</l>
             <l>πειράσομ’ ὡς δεῖ μὴ μετ’ αἰσχύνης φέρειν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0702"/>
+         <pb facs="tragicorumgraeco00naucuoft_0702" />
          <div n="955" type="fragment">
             <l rend="indent">Δήμητρος λάτριν</l>
          </div>
@@ -4981,7 +4988,7 @@
             <l>τᾶς σωφροσύνας, ἐπεὶ</l>
             <l>τοῖς ἀγαθοῖς ἀεὶ ξύνεστιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0703"/>
+         <pb facs="tragicorumgraeco00naucuoft_0703" />
          <div n="960" type="fragment">
             <l>τιμᾶν τὰν τέτασθε, πλούτῳ δ’ ἀρετὰν κατεργάσασθαι</l>
             <l>δοκεῖτ’, ἐν ἐσθλοῖς δὲ καθήσεσθ’ ἄνολβοι.</l>
@@ -5001,7 +5008,7 @@
             <l>ἀλλ’ αὑτὸς αἰεὶ μίμνε τὴν σαυτοῦ φύσιν</l>
             <l n="5">σῴζων βεβαίως ὥστε χρυσὸς ἐν πυρί.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0704"/>
+         <pb facs="tragicorumgraeco00naucuoft_0704" />
          <div n="964" type="fragment">
             <l>ἐγὼ δὲ 〈ταῦτα〉 παρὰ σοφοῦ τινος μαθὼν</l>
             <l>εἰς φροντίδας νοῦν συμφοράς τ’ ἐβαλλόμην,</l>
@@ -5014,7 +5021,7 @@
             <l>ὅστις δ’ ἀνάγκῃ συγκεχώρηκεν βροτῶν,</l>
             <l>σοφὸς παρ’ ἡμῖν καὶ τὰ θεῖ’ ἐπίσταται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0705"/>
+         <pb facs="tragicorumgraeco00naucuoft_0705" />
          <div n="966" type="fragment">
             <l>βίος γὰρ ὄνομ’ ἔχει πόνος γεγώς.</l>
          </div>
@@ -5029,7 +5036,7 @@
             <l>οὐ βούλομαι πλουτοῦντι δωρεῖσθαι πένης,</l>
             <l>μή μ’ ἄφρονα κρίνῃς ἢ διδοὺς αἰτεῖν δοκῶ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0706"/>
+         <pb facs="tragicorumgraeco00naucuoft_0706" />
          <div n="970" type="fragment">
             <l rend="indent">ἀλλ’ ἀνοιστέος λόγος</l>
          </div>
@@ -5044,7 +5051,7 @@
          <div n="973" type="fragment">
             <l>μάντις δ’ ἄριστος ὅστις εἰκάζει καλῶς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0707"/>
+         <pb facs="tragicorumgraeco00naucuoft_0707" />
          <div n="974" type="fragment">
             <l rend="indent">τῶν ἄγαν γὰρ ἅπτεται</l>
             <l>θεός, τὰ μικρὰ δ’ εἰς τύχην ἀφεὶς ἐᾷ.</l>
@@ -5061,7 +5068,7 @@
          <div n="978" type="fragment">
             <l>εἰ δ’ ἦσαν ἀνθρώποισιν ὠνητοὶ λόγοι,</l>
             <l>οὐδεὶς ἂν αὑτὸν εὖ λέγειν ἐβούλετο·</l>
-            <pb facs="tragicorumgraeco00naucuoft_0708"/>
+            <pb facs="tragicorumgraeco00naucuoft_0708" />
             <l>νῦν δ’, ἐκ βαθείας γὰρ πάρεστιν αἰθέρος</l>
             <l>λαβεῖν ἀμοχθί, πᾶς τις ἥδεται λέγων</l>
             <l n="5">τά τ’ ὄντα καὶ μή· ζημίαν γὰρ οὐκ ἔχει.</l>
@@ -5076,7 +5083,7 @@
             <l>τὰ τῶν τεκόντων σφάλματ’ εἰς τοὺς ἐκγόνους</l>
             <l>οἱ θεοὶ τρέπουσιν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0709"/>
+         <pb facs="tragicorumgraeco00naucuoft_0709" />
          <div n="981" type="fragment">
             <l>εἰ δὲ πάρεργον χρή τι κομπάσαι, γύναι,</l>
             <l>οὐρανὸν ὑπὲρ γῆς ἔχομεν εὖ κεκραμένον,</l>
@@ -5090,7 +5097,7 @@
          <div n="983" type="fragment">
             <l>οἶνος περάσας πλευμόνων διαρροάς</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0710"/>
+         <pb facs="tragicorumgraeco00naucuoft_0710" />
          <div n="984" type="fragment">
             <l>ἄλλην θέλουσιν εἰσαγώγιμον λαβεῖν</l>
          </div>
@@ -5109,7 +5116,7 @@
          <div n="989" type="fragment">
             <l>ὁ τῆς τύχης παῖς κλῆρος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0711"/>
+         <pb facs="tragicorumgraeco00naucuoft_0711" />
          <div n="990" type="fragment">
             <l>φίλης τ’ ὀπώρας διπτύχους ἦρός τ’ ἴσους</l>
          </div>
@@ -5127,7 +5134,7 @@
             <l>εἰ δὲ θανεῖν θέμις, ὧδε θανεῖν καλόν,</l>
             <l>εἰς ἀρετὴν καταλυσαμένους βίον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0712"/>
+         <pb facs="tragicorumgraeco00naucuoft_0712" />
          <div n="995" type="fragment">
             <l>πολλοῖσι πολλήν, δὶς τόσοις δὲ πλείονα</l>
          </div>
@@ -5140,7 +5147,7 @@
          <div n="998" type="fragment">
             <l>αἰεὶ πρασίμοχθοι κοὔποθ’ ἥσυχοι δορί</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0713"/>
+         <pb facs="tragicorumgraeco00naucuoft_0713" />
          <div n="999" type="fragment">
             <l>ἀγήρων ἀρετήν</l>
          </div>
@@ -5159,7 +5166,7 @@
          <div n="1005" type="fragment">
             <l>ἐγὼ δ’ ἐμός εἰμι</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0714"/>
+         <pb facs="tragicorumgraeco00naucuoft_0714" />
          <div n="1006" type="fragment">
             <l>οὐχ ἑσπέρας φάσ’, ἀλλὰ καὶ μεσημβρίας</l>
             <l>τούτους ἀφεστήκασιν ἡμέραν τρίτην.</l>
@@ -5176,7 +5183,7 @@
          <div n="1010" type="fragment">
             <l>ἤπειρον εἰς ἄπειρον ἐκβάλλων πόδα</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0715"/>
+         <pb facs="tragicorumgraeco00naucuoft_0715" />
          <div n="1011" type="fragment">
             <l>τί χρέος ἔβα δῶμα;</l>
          </div>
@@ -5189,7 +5196,7 @@
          <div n="1014" type="fragment">
             <l>πόλεως μὲν ἀρχῷ, φωτὶ δ’ οὐκ ἔτῃ πρέπων</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0716"/>
+         <pb facs="tragicorumgraeco00naucuoft_0716" />
          <div n="1015" type="fragment">
             <l>αἰεὶ δὲ μήτηρ φιλότεκνος μᾶλλον πατρός·</l>
             <l>ἢ μὲν γὰρ αὑτῆς οἶδεν ὄνθ’, ὃ δ’ οἴεται.</l>
@@ -5200,21 +5207,21 @@
          <div n="1018" type="fragment">
             <l>ὁ νοῦς γὰρ ἡμῶν ἐστιν ἐν ἑκάστῳ θεός.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0717"/>
+         <pb facs="tragicorumgraeco00naucuoft_0717" />
          <div n="1019" type="fragment">
             <l>δούλοισι γάρ τε ζῶμεν οἱ ἐλεύθεροι.</l>
          </div>
          <div n="1020" type="fragment">
             <l>ὃ δ’ ἐσφάδᾳζεν οὐκ ἔχων ἀπαλλαγάς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0718"/>
+         <pb facs="tragicorumgraeco00naucuoft_0718" />
          <div n="1023" type="fragment">
             <l>Αἰθέρα καὶ Γαῖαν πάντων γενέτειραν ἀείδω.</l>
          </div>
          <div n="1024" type="fragment">
             <l>φθείρουσιν ἤδη χρήσθ’ ὁμιλίαι κακαί.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0719"/>
+         <pb facs="tragicorumgraeco00naucuoft_0719" />
          <div n="1025" type="fragment">
             <l>θεοῦ γὰρ οὐδεὶς χωρὶς εὐτυχεῖ βροτῶν</l>
             <l>οὐδ’ εἰς τὸ μεῖζον ἦλθε· τὰς θνητῶν δ’ ἐγὼ</l>
@@ -5235,7 +5242,7 @@
             <l>τόν τε παρελθόντ’ ἀπόλωλε χρόνον</l>
             <l>καὶ τὸν μέλλοντα τέθνηκεν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0720"/>
+         <pb facs="tragicorumgraeco00naucuoft_0720" />
          <div n="1029" type="fragment">
             <l>οὐκ ἔστιν ἀρετῆς κτῆμα τιμιώτερον·</l>
             <l>οὐ γὰρ πέφυκε δοῦλον οὔτε χρημάτων</l>
@@ -5254,7 +5261,7 @@
             <l>τὸ δ’ ὠκὺ τοῦτο καὶ τὸ λαιψηρὸν φρενῶν</l>
             <l>εἰς συμφορὰν καθῆκε πολλὰ δὴ βροτούς.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0721"/>
+         <pb facs="tragicorumgraeco00naucuoft_0721" />
          <div n="1033" type="fragment">
             <l>εὖ γὰρ τόδ’ ἴσθι, κεῖ σ’ ἐλάνθανεν πάρος,</l>
             <l>τὸ σκαιὸν εἶναι πρῶτ’ ἀμουσίαν ἔχει.</l>
@@ -5276,7 +5283,7 @@
          <div n="1037" type="fragment">
             <l>ἀτὰρ σιωπᾶν τά γε δίκαι’ οὐ χρή ποτε.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0722"/>
+         <pb facs="tragicorumgraeco00naucuoft_0722" />
          <div n="1038" type="fragment">
             <l>ὀργαὶ γὰρ ἀνθρώποισι συμφορᾶς ὕπο</l>
             <l>δειναί, πλάνος τε καρδίᾳ προσίσταται.</l>
@@ -5290,7 +5297,7 @@
             <l>ὀφρύν τε μείζω τῆς τύχης ἐπηρκότα,</l>
             <l>τούτου ταχεῖαν νέμεσιν εὐθὺς προσδόκα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0723"/>
+         <pb facs="tragicorumgraeco00naucuoft_0723" />
          <div n="1041" type="fragment">
             <l>κρινεῖ τίς αὑτὸν πώποτ’ ἀνθρώπων μέγαν,</l>
             <l>ὃν ἐξαλείφει πρόφασις ἡ τυχοῦσ’ ὅλον;</l>
@@ -5306,7 +5313,7 @@
             <l>οὔτ’ ἐκ χερὸς μεθέντα καρτερὸν λίθον</l>
             <l>ῥᾷον κατασχεῖν οὔτ’ ἀπὸ γλώσσης λόγον.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0724"/>
+         <pb facs="tragicorumgraeco00naucuoft_0724" />
          <div n="1045" type="fragment">
             <l>μὴ κάμνε πατρίδα σὴν λαβεῖν πειρώμενος.</l>
          </div>
@@ -5328,7 +5335,7 @@
             <l n="5">ἢ τόξα πάλλων ἢ μάχῃ δορὸς σθένων,</l>
             <l>τοῦτον τυραννεῖν τῶν κακιόνων ἐχρῆν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0725"/>
+         <pb facs="tragicorumgraeco00naucuoft_0725" />
          <div n="1049" type="fragment">
             <l>ἐγὼ γὰρ ὅστις μὴ δίκαιος ὢν ἀνὴρ</l>
             <l>βωμὸν προσίζει, τὸν νόμον χαίρειν ἐῶν</l>
@@ -5354,7 +5361,7 @@
             <l>ἡ δ’ εὐλάβεια σκότον ἔχει καθ’ Ἑλλάδα,</l>
             <l>τὸ διαβιῶναι μόνον ἀεὶ θηρωμένη.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0726"/>
+         <pb facs="tragicorumgraeco00naucuoft_0726" />
          <div n="1053" type="fragment">
             <l>μισῶ δ’ ὅταν τις καὶ χθουὸς στρατηλάτης</l>
             <l>μὴ πᾶσι πάντων προσφέρῃ μειλίγματα.</l>
@@ -5368,7 +5375,7 @@
             <l>οἰκοφθόρον γὰρ ἄνδρα κωλύει γυνὴ</l>
             <l>ἐσθλὴ παραζευχθεῖσα καὶ σῴζει δόμους.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0727"/>
+         <pb facs="tragicorumgraeco00naucuoft_0727" />
          <div n="1056" type="fragment">
             <l>οὐ πάντες οὔτε δυστυχοῦσιν ἐν γάμοις</l>
             <l>οὔτ’ εὐτυχοῦσι· συμφορὰ δ’ ὃς ἂν τύχῃ</l>
@@ -5392,7 +5399,7 @@
             <l>τόδ’ ἐστὶ πλάσμα, δημιουργὸς ὢν κακῶν</l>
             <l>μέγιστος ἴστω καὶ βροτοῖσι δυσμενής.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0728"/>
+         <pb facs="tragicorumgraeco00naucuoft_0728" />
          <div n="1060" type="fragment">
             <l>ἐχθροῖσιν εἴη πολεμίαν δάμαρτ’ ἔχειν.</l>
          </div>
@@ -5411,7 +5418,7 @@
             <l>ἐρᾷ γὰρ ὄψις τῆς θύραθεν ἡδονῆς·</l>
             <l n="5">ἐν δ’ ἀφθόνοισι τοῖσδ’ ἀναστρωφωμένη</l>
             <l>βλέπουσά τ’ εἰς πᾶν καὶ παροῦσα πανταχοῦ</l>
-            <pb facs="tragicorumgraeco00naucuoft_0729"/>
+            <pb facs="tragicorumgraeco00naucuoft_0729" />
             <l>τὴν ὄψιν ἐμπλήσασ’ ἀπήλλακται κακῶν·</l>
             <l>τό τ’ ἄρσεν ἀεὶ τοῦ κεκρυμμένου λίχνον.</l>
             <l>ὅστις δὲ μοχλοῖς καὶ διὰ σφραγισμάτων</l>
@@ -5426,7 +5433,7 @@
          <div n="1064" type="fragment">
             <l>ἀλλ’ ἴσθ’, ἐμοὶ μὲν οὗτος οὐκ ἔσται νόμος,</l>
             <l>τὸ μὴ οὐ σὲ μῆτερ προσφιλῆ νέμειν ἀεὶ</l>
-            <pb facs="tragicorumgraeco00naucuoft_0730"/>
+            <pb facs="tragicorumgraeco00naucuoft_0730" />
             <l>καὶ τοῦ δικαίου καὶ τόκων τῶν σῶν χάριν.</l>
             <l>στέργω δὲ τὸν φύσαντα τῶν πάντων βροτῶν</l>
             <l n="5">μάλισθ’· ὁρίζω τοῦτο, καὶ σὺ μὴ φθόνει·</l>
@@ -5447,7 +5454,7 @@
             <l>πῶς οὖν ἂν ἐκ τοιοῦδε σώματος κακὸς</l>
             <l>γένοιτ’ ἄν; οὐδεὶς τοῦτό μ’ ἂν πίθοι ποτέ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0731"/>
+         <pb facs="tragicorumgraeco00naucuoft_0731" />
          <div n="1068" type="fragment">
             <l>οὐ γάρ τις οὕτω παῖδας εὖ παιδεύσεται,</l>
             <l>ὥστ’ ἐκ πονηρῶν μὴ οὐ κακοὺς πεφυκέναι.</l>
@@ -5471,7 +5478,7 @@
             <l>μέλλων τ’ ἰατρὸς τῇ νόσῳ διδοὺς χρόνον</l>
             <l>ἰάσατ’ ἤδη μᾶλλον ἢ τεμὼν χρόα.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0732"/>
+         <pb facs="tragicorumgraeco00naucuoft_0732" />
          <div n="1073" type="fragment">
             <l>οὐ χρή ποτ’ ὀρθαῖς ἐν τύχαις βεβηκότα</l>
             <l>ἕξειν τὸν αὐτὸν δαίμον’ εἰς ἀεὶ δοκεῖν·</l>
@@ -5498,7 +5505,7 @@
             <l>τὰς γὰρ παρούσας οὐχὶ σῴζοντες τύχας</l>
             <l>ὤλοντ’ ἐρῶντες μειζόνων ἀβουλίᾳ.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0733"/>
+         <pb facs="tragicorumgraeco00naucuoft_0733" />
          <div n="1078" type="fragment">
             <l>ἀνδρῶν τάδ’ ἐστὶν ἐνδίκων τε καὶ σοφῶν,</l>
             <l>κἀν τοῖς κακοῖσι μὴ τεθυμῶσθαι θεοῖς.</l>
@@ -5516,7 +5523,7 @@
             <l>λαβὼν δὲ πεῖραν, μεταμέλειαν λαμβάνει,</l>
             <l>ὡς οὐδὲν ἔστι χεῖρον ἐν θνητῷ γένει.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0734"/>
+         <pb facs="tragicorumgraeco00naucuoft_0734" />
          <div n="1081" type="fragment">
             <l>τύμβῳ γὰρ οὐδεὶς πιστὸς ἀνθρώπων φίλος.</l>
          </div>
@@ -5528,7 +5535,7 @@
             <l>πολὺν μὲν ἄροτον, ἐκπονεῖν δ’ οὐ ῥᾴδιον·</l>
             <l>κοίλη γὰρ ὄρεσι περίδρομος τραχεῖά τε</l>
             <l>δυσείσβολός τε πολεμίοις .  .  .  .</l>
-            <l n="5">.  .  .  .  . καλλίκαρπον .  .  .</l>
+            <l n="5">.  .  .  .  . καλλίκαρπον . .  .</l>
             <l>κατάρρυτόν τε μυρίοισι νάμασιν</l>
             <l>καὶ βουσὶ καὶ ποίμναισιν εὐβοτωτάτην,</l>
             <l>οὔτ’ ἐν πνοαῖσι χείματος δυσχείμερον</l>
@@ -5544,7 +5551,7 @@
             <l>πρόσω δὲ βάντι ποταμὸν Ἦλις ἡ Διὸς</l>
             <l>γείτων κάθηται.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0735"/>
+         <pb facs="tragicorumgraeco00naucuoft_0735" />
          <div n="1084" type="fragment">
             <l>ἥκω περίκλυστον προλιποῦσ’ Ἀκροκόρινθον,</l>
             <l>ἱερὸν ὄχθον, πόλιν Ἀφροδίτας.</l>
@@ -5556,7 +5563,7 @@
          <div n="1086" type="fragment">
             <l>ἄλλων ἰατρὸς αὐτὸς ἕλκεσιν βρύων</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0736"/>
+         <pb facs="tragicorumgraeco00naucuoft_0736" />
          <div n="1087" type="fragment">
             <l>εὐφημία γὰρ εὐκολώτατος πόνων.</l>
          </div>
@@ -5567,7 +5574,7 @@
             <l>σῷσαι γὰρ ὁπόταν τῷ θεῷ δοκῇ,</l>
             <l>πολλὰς προφάσεις δίδωσιν εἰς σωτηρίαν.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0737"/>
+         <pb facs="tragicorumgraeco00naucuoft_0737" />
          <div n="1090" type="fragment">
             <l>ἀνέχου πάσχων· δρῶν γὰρ ἔχαιρες.</l>
          </div>
@@ -5583,7 +5590,7 @@
          <div n="1096" type="fragment">
             <l>ἀμβλυωπός</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0738"/>
+         <pb facs="tragicorumgraeco00naucuoft_0738" />
          <div n="1097" type="fragment">
             <l>ἀπάγου</l>
          </div>
@@ -5602,7 +5609,7 @@
          <div n="1102" type="fragment">
             <l>Ξάνθιος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0739"/>
+         <pb facs="tragicorumgraeco00naucuoft_0739" />
          <div n="1103" type="fragment">
             <l>ξενοφόνον</l>
          </div>
@@ -5615,7 +5622,7 @@
          <div n="1106" type="fragment">
             <l>χνοῦν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0740"/>
+         <pb facs="tragicorumgraeco00naucuoft_0740" />
          <div n="1107" type="fragment">
             <l rend="indent">ἄρχεσθαι χρεὼν</l>
             <l>κακοὺς ὑπ’ ἐσθλῶν καὶ κλύειν τῶν κρεισσόνων.</l>
@@ -5636,7 +5643,7 @@
             <l n="10">εἰ μὴ κατασκαφεῖσαν ὄψομαι πόλιν</l>
             <l>Πριάμου βίᾳ πρόρριζον ἐκτετριμμένην.</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0741"/>
+         <pb facs="tragicorumgraeco00naucuoft_0741" />
          <div n="1110" type="fragment">
             <l>Ζεὺς ἐν θεοῖσι μάντις ἀψευδέστατος</l>
             <l>καὶ τέλος αὐτὸς ἔχει.</l>
@@ -5644,7 +5651,7 @@
          <div n="1111" type="fragment">
             <l>κρίμνη σεαυτὴν ἐκ μέσης ἀντηρίδος</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0742"/>
+         <pb facs="tragicorumgraeco00naucuoft_0742" />
          <div n="1112" type="fragment">
             <l>ἔδει γὰρ ἡμᾶς τοῖς θεοῖς θύειν, ὅταν</l>
             <l>γυναῖκα κατορύττῃ τις, οὐχ ὅταν γαμῇ.</l>
@@ -5657,13 +5664,13 @@
          </div>
          <div n="1115" type="fragment">
             <l>ἡδονὴ πανταχοῦ ἐστι καὶ πάντα δι’ ἡδονῆς γίνεται.
-                              </l>
+            </l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0743"/>
+         <pb facs="tragicorumgraeco00naucuoft_0743" />
          <div n="1117" type="fragment">
             <l>κακᾶν βίων διαγωγήν</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0744"/>
+         <pb facs="tragicorumgraeco00naucuoft_0744" />
          <div n="1123" type="fragment">
             <l>ἀλίαστον</l>
          </div>
@@ -5676,7 +5683,7 @@
          <div n="1126" type="fragment">
             <l>κρυπταί</l>
          </div>
-         <pb facs="tragicorumgraeco00naucuoft_0745"/>
+         <pb facs="tragicorumgraeco00naucuoft_0745" />
          <div n="1127" type="fragment">
             <l>περιδῦσαι</l>
          </div>
@@ -5691,7 +5698,7 @@
          <div n="1131" type="fragment">
             <l>ὁρᾶθ’ ὅσοι νομίζετ’ οὐκ εἶναι θεόν,</l>
             <l>δὶς. ἐξαμαρτάνοντες οὐκ εὐγνωμόνως;</l>
-            <pb facs="tragicorumgraeco00naucuoft_0746"/>
+            <pb facs="tragicorumgraeco00naucuoft_0746" />
             <l>ἔστιν γὰρ ἔστιν. εἰ δέ τις πράσσει καλῶς</l>
             <l>κακὸς πεφυκώς, τὸν χρόνον κερδαινέτω·</l>
             <l>χρόνῳ γὰρ οὗτος ὕστερον δώσει δίκην.</l>
@@ -5720,7 +5727,7 @@
             <l n="20">Δανάην δέ πως ὠνόμασε τήνδ’, ὁθούνεκα </l>
             <l>πολὺς παρῆλθεν εἰς γονὴν παίδων χρόνος.</l>
             <l>ἐν παρθενῶσι δ’ εὐθὺς οἷς ἐδείματο</l>
-            <pb facs="tragicorumgraeco00naucuoft_0747"/>
+            <pb facs="tragicorumgraeco00naucuoft_0747" />
             <l>δίδωσιν Ἀργείαισιν ἔμφρουρον κόραις,</l>
             <l>εἰς ἀνδρὸς ὄψιν εὐλαβούμενος μολεῖν.</l>
             <l n="25">εἶθ’ ὡς ὁ μακρὸς ηὔξανεν ταύτην χρόνος, </l>
@@ -5759,7 +5766,7 @@
             <l>ὡς ἐγκύμων εἴληπται χρανθεῖσ’ ἄλεκτρος</l>
             <l>ἀνδρός· πατὴρ δέ μιν κλῄσας</l>
             <l>ἐν παρθενῶσι σφραγῖσι δέμας φυλάσσει.</l>
-            <pb facs="tragicorumgraeco00naucuoft_0748"/>
+            <pb facs="tragicorumgraeco00naucuoft_0748" />
             <l n="60">ταῦτ’ ἐτήτυμα μαθεῖν θέλω.</l>
             <l>ἀλλ’ εἰσορῶ γὰρ τῆσδε κοίρανον χθονὸς</l>
             <l>Ἀργείας Ἀκρίσιον πρὸ δόμων στείχοντα.</l>

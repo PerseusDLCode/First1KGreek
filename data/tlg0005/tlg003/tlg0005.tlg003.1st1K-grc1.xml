@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_verse.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -29,7 +30,8 @@
             <publisher>Open Greek and Latin</publisher>
             <idno type="filename">tlg0005.tlg003.1st1K-grc1.xml</idno>
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+                  Creative Commons Attribution-ShareAlike 4.0 International License</licence>
             </availability>
             <date>2020-06-24</date>
             <idno type="CTS">urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1</idno>
@@ -49,7 +51,7 @@
                      <publisher>Clarendon Press</publisher>
                      <date type="printing">1952</date>
                   </imprint>
-                  <biblScope unit="volume"/>
+                  <biblScope unit="volume" />
                </monogr>
                <ref target="http://digital.slub-dresden.de/werkansicht/dlf/109395/188/">SLUB</ref>
             </biblStruct>
@@ -57,29 +59,37 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <quotation marks="none"/>
+            <quotation marks="none" />
             <normalization>
-               <p/>
+               <p />
             </normalization>
             <correction>
-               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount
+                  Allison University. Developed through the support of the <ref
+                     target="https://nbif.ca/en">NBIF</ref>.</p>
             </correction>
          </editorialDecl>
-         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            Architecture</p>
          <refsDecl n="CTS">
-            <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])">
+            <cRefPattern n="line" matchPattern="(.+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])">
                <p>This pointer pattern extracts lines.</p>
             </cRefPattern>
          </refsDecl>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="line" delim=":" match="l" use="@n"/>
+               <citeStructure unit="line" delim=":"
+                  match="."
+                  use="concat((.//l)[1]/@n, '-', (.//l)[last()]/@n)"
+                  n="chunk" />
+               <citeStructure unit="line" delim=":" match="l" use="@n" />
             </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre" target="#verse-stichic"/>
+            <catRef scheme="#perseus-genre" target="#verse-stichic" />
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -92,7 +102,7 @@
    <text>
       <body xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1">
          <l n="1" resp="ogl">
-            <pb facs="bucogr_415773970_0188"/>Οὐδενὸς εὐνάτειρα Μακροπτολέμοιο δὲ μάτηρ </l>
+            <pb facs="bucogr_415773970_0188" />Οὐδενὸς εὐνάτειρα Μακροπτολέμοιο δὲ μάτηρ </l>
          <l n="2" resp="ogl">μαίας ἀντιπέτροιο θοὸν τέκεν ἰθυντῆρα, </l>
          <l n="3" resp="ogl">οὐχὶ Κεράσταν ὅν ποτε θρέψατο ταυροπάτωρ, </l>
          <l n="4" resp="ogl">ἀλλ᾽ ου πειλιπὲς αἶθε πάρος φρένα τέρμα σάκους, </l>
