@@ -102,11 +102,12 @@
          <publicationStmt>
             <publisher>Open Greek and Latin</publisher>
             <idno type="filename">tlg0632.tlg002.1st1K-grc1.xml</idno>
-            <pubPlace/>
+            <pubPlace />
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+                  Creative Commons Attribution-ShareAlike 4.0 International License</licence>
             </availability>
-            <date when="2021-04-07"/>
+            <date when="2021-04-07" />
             <idno type="CTS">urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
@@ -120,29 +121,34 @@
                      <date>1873</date>
                   </imprint>
                </monogr>
-               <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/600/mode/2up">Internet Archive</ref>
+               <ref
+                  target="https://www.archive.org/stream/epistolographoih00hercuoft#page/600/mode/2up">Internet
+                  Archive</ref>
             </biblStruct>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
             <correction>
-               <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+               <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount
+                  Allison University. Developed through the support of the <ref
+                     target="https://nbif.ca/en">NBIF</ref>.</p>
             </correction>
          </editorialDecl>
-         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            Architecture</p>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="epistle"
-                              delim="."
-                              match=".//div[@type='textpart'][@subtype='epistle' or @subtype='letter']"
-                              use="@n"/>
+                  delim=":"
+                  match=".//div[@type='epistle']"
+                  use="@n" />
             </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre" target="#prose-epistle"/>
+            <catRef scheme="#perseus-genre" target="#prose-epistle" />
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -154,16 +160,30 @@
    </teiHeader>
    <text>
       <body xml:base="urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1">
-         <pb facs="epistolographoih00hercuoft_0695"/>
+         <pb facs="epistolographoih00hercuoft_0695" />
          <div n="1" type="epistle">
             <head rend="center">
                <label>α′.</label> Πυθαγόρας Ἀναξιμένει.</head>
-            <p rend="indent">Καὶ σύ, ὦ λῷστε, εἰ μηδὲν ἀμείνων ἦς Πυθαγόρεω γενεήν τε καὶ κλέος, μεταναστὰς ἂν οἴχεο ἐκ Μιλήτου· νῦν δὲ κατερύκει σε ἡ πατρόθεν εὔκλεια, καὶ ἐμὲ δὲ ἂν κατείρυκεν Ἀναξιμένει ἐοικότα. εἰ δὲ ὑμεῖς οἱ ὀνήιστοι τὰς πόλιας ἐκλείψετε, ἀπὸ μὲν αὐτέων ὁ κόσμος αἱρεθήσεται, ἐπικινδυνότερα δ’ αὐτῇσι τὰ ἐκ Μήδων. οὔτε δὲ αἰεὶ καλὸν αἰθερολογεῖν, μελεδωνόν τε εἶναι τῇ πατρίδι κάλλιον. καὶ ἐγὼ δὲ οὐ πάντα περὶ τοὺς ἐμεωυτοῦ μύθους, ἀλλὰ καὶ ἐν πολέμοις, οὓς διαφέρουσι εἰς ἀλλήλους Ἰταλιῶται.</p>
+            <p rend="indent">Καὶ σύ, ὦ λῷστε, εἰ μηδὲν ἀμείνων ἦς Πυθαγόρεω γενεήν τε καὶ κλέος,
+               μεταναστὰς ἂν οἴχεο ἐκ Μιλήτου· νῦν δὲ κατερύκει σε ἡ πατρόθεν εὔκλεια, καὶ ἐμὲ δὲ ἂν
+               κατείρυκεν Ἀναξιμένει ἐοικότα. εἰ δὲ ὑμεῖς οἱ ὀνήιστοι τὰς πόλιας ἐκλείψετε, ἀπὸ μὲν
+               αὐτέων ὁ κόσμος αἱρεθήσεται, ἐπικινδυνότερα δ’ αὐτῇσι τὰ ἐκ Μήδων. οὔτε δὲ αἰεὶ καλὸν
+               αἰθερολογεῖν, μελεδωνόν τε εἶναι τῇ πατρίδι κάλλιον. καὶ ἐγὼ δὲ οὐ πάντα περὶ τοὺς
+               ἐμεωυτοῦ μύθους, ἀλλὰ καὶ ἐν πολέμοις, οὓς διαφέρουσι εἰς ἀλλήλους Ἰταλιῶται.</p>
          </div>
          <div n="2" type="epistle">
             <head rend="center">
                <label>β′.</label> Πυθαγόρας Ἱέρωνι.</head>
-            <p rend="indent">Ἀσφαλὴς ὁ ἐμὸς βίος καὶ ἡσύχιος, ὁ δὲ σὸς κατ’ οὐδὲν ἐμοὶ προσπελάζει. μέτριος ἀνὴρ καὶ λιποδεὴς Σικελικῆς τραπέζης οὐδὲν προσδεῖται. πάντ’ ἔχει Πυθαγόρας ἱκανὰ τὰ καθ’ ἡμέραν, οἷ ἂν ἔλθῃ· θεραπεία δὲ δυνάστου βαρὺ καὶ ἐπαχθὲς τῷ μὴ εἰθισμένῳ. μέγα καὶ ἀσφαλὲς αὐτάρκεια· οὔτε γὰρ ἔχει τὸν φθονήσοντα οὔτε τὸν ἐπιβουλεύσοντα. διὸ καὶ δοκεῖ εἶναι ἐγγυτάτω θεοῦ ἡ διαγωγή. διάθεσις ἀγαθὴ οὐ γεννᾶται ὑπὸ ἀφροδισίων οὐδὲ ὑπὸ ἐδεσμάτων, ἀλλ’ ὑπὸ ἐνδείας ἀγούσης πρὸς ἀνδρὸς ἀρετήν· ἡδοναὶ δὲ ποικίλαι καὶ ἀκρατεῖς δουλοῦνται ψυχὰς ἀσθενῶν ἀνθρώπων, πολὺ δὲ μάλιστα ὧν σὺ ἀπολαύεις. διὸ καὶ ἐπιδοὺς σεαυτὸν εἰς τὰ τοιαῦτα αἰωρῇ καὶ οὐ δύνασαι σώζεσθαι· λόγος γὰρ ὁ παρὰ σοῦ οὐκ ἐναντιοῦται τοῖς ἀσυμφόροις. μὴ οὖν κάλει Πυθαγόραν συμβιώσοντά σοι· οὐδὲ γὰρ ἰατροὶ αἱροῦνται τοῖς νοσοῦσι συγκάμνειν.</p>
+            <p rend="indent">Ἀσφαλὴς ὁ ἐμὸς βίος καὶ ἡσύχιος, ὁ δὲ σὸς κατ’ οὐδὲν ἐμοὶ προσπελάζει.
+               μέτριος ἀνὴρ καὶ λιποδεὴς Σικελικῆς τραπέζης οὐδὲν προσδεῖται. πάντ’ ἔχει Πυθαγόρας
+               ἱκανὰ τὰ καθ’ ἡμέραν, οἷ ἂν ἔλθῃ· θεραπεία δὲ δυνάστου βαρὺ καὶ ἐπαχθὲς τῷ μὴ
+               εἰθισμένῳ. μέγα καὶ ἀσφαλὲς αὐτάρκεια· οὔτε γὰρ ἔχει τὸν φθονήσοντα οὔτε τὸν
+               ἐπιβουλεύσοντα. διὸ καὶ δοκεῖ εἶναι ἐγγυτάτω θεοῦ ἡ διαγωγή. διάθεσις ἀγαθὴ οὐ
+               γεννᾶται ὑπὸ ἀφροδισίων οὐδὲ ὑπὸ ἐδεσμάτων, ἀλλ’ ὑπὸ ἐνδείας ἀγούσης πρὸς ἀνδρὸς
+               ἀρετήν· ἡδοναὶ δὲ ποικίλαι καὶ ἀκρατεῖς δουλοῦνται ψυχὰς ἀσθενῶν ἀνθρώπων, πολὺ δὲ
+               μάλιστα ὧν σὺ ἀπολαύεις. διὸ καὶ ἐπιδοὺς σεαυτὸν εἰς τὰ τοιαῦτα αἰωρῇ καὶ οὐ δύνασαι
+               σώζεσθαι· λόγος γὰρ ὁ παρὰ σοῦ οὐκ ἐναντιοῦται τοῖς ἀσυμφόροις. μὴ οὖν κάλει
+               Πυθαγόραν συμβιώσοντά σοι· οὐδὲ γὰρ ἰατροὶ αἱροῦνται τοῖς νοσοῦσι συγκάμνειν.</p>
          </div>
       </body>
    </text>

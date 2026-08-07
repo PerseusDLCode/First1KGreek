@@ -102,11 +102,12 @@
          <publicationStmt>
             <publisher>Open Greek and Latin</publisher>
             <idno type="filename">tlg1705.tlg001.1st1K-grc1.xml</idno>
-            <pubPlace/>
+            <pubPlace />
             <availability>
-               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+                  Creative Commons Attribution-ShareAlike 4.0 International License</licence>
             </availability>
-            <date when="2021-04-07"/>
+            <date when="2021-04-07" />
             <idno type="CTS">urn:cts:greekLit:tlg1705.tlg001.1st1K-grc1</idno>
          </publicationStmt>
          <sourceDesc>
@@ -120,29 +121,34 @@
                      <date>1873</date>
                   </imprint>
                </monogr>
-               <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/740/mode/2up">Internet Archive</ref>
+               <ref
+                  target="https://www.archive.org/stream/epistolographoih00hercuoft#page/740/mode/2up">Internet
+                  Archive</ref>
             </biblStruct>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
             <correction>
-               <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+               <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount
+                  Allison University. Developed through the support of the <ref
+                     target="https://nbif.ca/en">NBIF</ref>.</p>
             </correction>
          </editorialDecl>
-         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+            Architecture</p>
          <refsDecl n="CTS" xml:id="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
                <citeStructure unit="epistle"
-                              delim="."
-                              match=".//div[@type='textpart'][@subtype='epistle' or @subtype='letter']"
-                              use="@n"/>
+                  delim=":"
+                  match=".//div[@type='epistle']"
+                  use="@n" />
             </citeStructure>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre" target="#prose-epistle"/>
+            <catRef scheme="#perseus-genre" target="#prose-epistle" />
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -154,16 +160,30 @@
    </teiHeader>
    <text>
       <body xml:base="urn:cts:greekLit:tlg1705.tlg001.1st1K-grc1">
-         <pb facs="epistolographoih00hercuoft_0834"/>
+         <pb facs="epistolographoih00hercuoft_0834" />
          <div n="1" type="epistle">
             <head rend="center">
                <label>α′.</label> Φερεκύδει.</head>
-            <p rend="indent">Πυνθάνομαί σε πρῶτον Ἰώνων μέλλειν λόγους ἀμφὶ τῶν θείων χρημάτων ἐς τοὺς Ἕλληνας φαίνειν. καὶ τάχα μὲν ἡ γνώμη του δικαίη ἐς τὸ ξυνὸν καταθέσθαι γραφὴν ἣ ἐφ’ ὁποιοισοῦν ἐπιτρέπειν χρῆμα ἐς οὐδὲν ὄφελος. εἰ δή τοι ἥδιον, ἐθέλω γενέσθαι λεσχηνευτὴς περὶ ὁτέων γράφεις, καὶ ἢν κελεύῃς, παρὰ σὲ ἀφίξομαι ἐς Σῦρον. ἦ γὰρ ἂν οὐ φρενήρεες εἴημεν ἐγώ τε καὶ Σόλων ὁ Ἀθηναῖος, εἰ πλώσαντες μὲν ἐς Κρήτην κατὰ τὴν τῶν κεῖθι ἱστορίην, πλώσαντες δὲ ἐς Αἴγυπτον ὁμιλήσοντες τοῖς ἐκεῖ ὅσοι ἱερέες τε καὶ ἀστρολόγοι, παρὰ σὲ δὲ μὴ πλώσαιμεν; ἥξει γὰρ καὶ ὁ Σόλων, ἢν ἐπιτρέπῃς. σὺ μέντοι χωροφιλέων ὀλίγα φοιτέεις ἐς Ἰωνίην, οὐδέ σε ποθὴ ἴσχει ἀνδρῶν ξείνων· ἀλλά, ὡς ἔλπομαι, ἑνὶ μούνῳ χρήματι πρόσκεαι τῇ γραφῇ. ἡμέες δὲ οἱ μηδὲν γράφοντες περιχωρέομεν τήν τε Ἑλλάδα καὶ τὴν Ἀσίην.</p>
+            <p rend="indent">Πυνθάνομαί σε πρῶτον Ἰώνων μέλλειν λόγους ἀμφὶ τῶν θείων χρημάτων ἐς
+               τοὺς Ἕλληνας φαίνειν. καὶ τάχα μὲν ἡ γνώμη του δικαίη ἐς τὸ ξυνὸν καταθέσθαι γραφὴν ἣ
+               ἐφ’ ὁποιοισοῦν ἐπιτρέπειν χρῆμα ἐς οὐδὲν ὄφελος. εἰ δή τοι ἥδιον, ἐθέλω γενέσθαι
+               λεσχηνευτὴς περὶ ὁτέων γράφεις, καὶ ἢν κελεύῃς, παρὰ σὲ ἀφίξομαι ἐς Σῦρον. ἦ γὰρ ἂν
+               οὐ φρενήρεες εἴημεν ἐγώ τε καὶ Σόλων ὁ Ἀθηναῖος, εἰ πλώσαντες μὲν ἐς Κρήτην κατὰ τὴν
+               τῶν κεῖθι ἱστορίην, πλώσαντες δὲ ἐς Αἴγυπτον ὁμιλήσοντες τοῖς ἐκεῖ ὅσοι ἱερέες τε καὶ
+               ἀστρολόγοι, παρὰ σὲ δὲ μὴ πλώσαιμεν; ἥξει γὰρ καὶ ὁ Σόλων, ἢν ἐπιτρέπῃς. σὺ μέντοι
+               χωροφιλέων ὀλίγα φοιτέεις ἐς Ἰωνίην, οὐδέ σε ποθὴ ἴσχει ἀνδρῶν ξείνων· ἀλλά, ὡς
+               ἔλπομαι, ἑνὶ μούνῳ χρήματι πρόσκεαι τῇ γραφῇ. ἡμέες δὲ οἱ μηδὲν γράφοντες
+               περιχωρέομεν τήν τε Ἑλλάδα καὶ τὴν Ἀσίην.</p>
          </div>
          <div n="2" type="epistle">
             <head rend="center">
                <label>β′.</label> Σόλωνι.</head>
-            <p rend="indent">Ὑπαποστὰς ἐξ Ἀθηνέων δοκέεις ἄν μοι ἀρμοδιώτατα ἐν Μιλήτῳ οἶκον ποιέεσθαι παρὰ τοῖς ἀποίκοις ὑμέων· καὶ γὰρ ἐνθαῦτά τοι δεινὸν οὐδέν. εἰ δὲ ἀσχαλήσεις ὅτι καὶ Μιλήσιοι τυραννευόμεθα (ἐχθαίρεις γὰρ πάντως αἰσυμνήτας), ἀλλὰ τέρποιο ἂν σὺν τοῖς ἑτάροις ἡμῖν καταβιούς. ἐπέστειλε δέ τοι καὶ Βίης ἥκειν ἐς Πριήνην· σὺ δὲ εἰ προσηνέστερόν τοι τὸ Πριηνέων ἄστυ κεῖθι οἰκέειν, καὶ αὐτοὶ παρὰ σὲ οἰκήσομεν.<pb facs="epistolographoih00hercuoft_0835"/>
+            <p rend="indent">Ὑπαποστὰς ἐξ Ἀθηνέων δοκέεις ἄν μοι ἀρμοδιώτατα ἐν Μιλήτῳ οἶκον
+               ποιέεσθαι παρὰ τοῖς ἀποίκοις ὑμέων· καὶ γὰρ ἐνθαῦτά τοι δεινὸν οὐδέν. εἰ δὲ
+               ἀσχαλήσεις ὅτι καὶ Μιλήσιοι τυραννευόμεθα (ἐχθαίρεις γὰρ πάντως αἰσυμνήτας), ἀλλὰ
+               τέρποιο ἂν σὺν τοῖς ἑτάροις ἡμῖν καταβιούς. ἐπέστειλε δέ τοι καὶ Βίης ἥκειν ἐς
+               Πριήνην· σὺ δὲ εἰ προσηνέστερόν τοι τὸ Πριηνέων ἄστυ κεῖθι οἰκέειν, καὶ αὐτοὶ παρὰ σὲ
+               οἰκήσομεν.<pb facs="epistolographoih00hercuoft_0835" />
             </p>
          </div>
       </body>
