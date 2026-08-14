@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -106,13 +105,10 @@
          <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
          <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="fragment"
-                              delim="."
-                              match=".//div[@type='textpart'][@subtype='fragment']"
-                              use="@n"/>
+               <citeStructure unit="fragment" delim="." match=".//div[@type='textpart'][@subtype='fragment']" use="@n"/>
             </citeStructure>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="fragment" delim=":" match="div[@type='fragment']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
             <catRef scheme="#perseus-genre" target="#prose-fragment"/>

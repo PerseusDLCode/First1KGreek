@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="eng">
     <fileDesc>
       <titleStmt>
@@ -88,7 +87,7 @@
       <refsDecl n="CTS">
         <cRefPattern n="paragraph" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commentary" delim=":" match="div[@type='commentary']" use="@n"><citeStructure unit="paragraph" delim="." match="div[@type='textpart'][@subtype='paragraph']" use="@n"/></citeStructure></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
@@ -100,7 +99,7 @@
     </revisionDesc>
   </teiHeader>
 <text>
-	<body>
+	<body xml:base="urn:cts:greekLit:tlg3129.ogl001.1st1K-grc1">
 <div type="commentary" xml:lang="grc" n="urn:cts:greekLit:tlg3129.ogl001.1st1K-grc1">
 <pb n="627 "/>
 <head>QUAE THEOPIIYLACTI Ν ΓΓ. 5 14 sqq., PRO D. CYRILLI

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -89,13 +88,10 @@
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
             <citeStructure match="/TEI/text/body" use="@xml:base">
-               <citeStructure unit="fragment"
-                              delim="."
-                              match=".//div[@type='textpart'][@subtype='fragment']"
-                              use="@n"/>
+               <citeStructure unit="fragment" delim="." match=".//div[@type='textpart'][@subtype='fragment']" use="@n"/>
             </citeStructure>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="fragment" delim=":" match="div[@type='fragment']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
             <catRef scheme="#perseus-genre" target="#prose-fragment"/>
@@ -119,9 +115,7 @@
 ΠΕΡΙ ΤΗΣ ΘΕΟΦΑΝΕΙΑΣ</head>
          <head>(Bruchstücke)</head>
          <pb n="v.3.pt.2.p.3"/>
-         <div n="1"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:1.23"
-              type="fragment">
+         <div n="1" corresp="urn:cts:greekLit:tlg2018.tlg010:1.23" type="fragment">
             <note type="marginal">Mai</note>
             <p>ὥσπερ δὲ ἐπὶ τοῦ καθ’ ἡμᾶς παραδείγματος ὁ μὲν ἀόρατος καὶ
 <milestone unit="altnumbering" n="7"/> ἀφανὴς ἐν ἡμῖν νοῦς, ὃν ὅστις ποτὲ καὶ ὁποῖος ὢν τὴν οὐσίαν ὑπάρχει
@@ -160,9 +154,7 @@
 παντα Σ L &lt;Mai</note>
             <pb n="v.3.pt.2.p.4"/>
          </div>
-         <div n="2"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:3.25"
-              type="fragment">
+         <div n="2" corresp="urn:cts:greekLit:tlg2018.tlg010:3.25" type="fragment">
             <p>
                <add>τίς ἄλλος πώποτε τῶν ἐξ αἰῶνος βοηθέντων ὡς</add> οὗτος ὁ παρ’ <milestone unit="mspage" n="14r"/>
 ἡμῖν θεολογούμενος προφητικαῖς ἄνωθεν πρὸ μυρίων χρόνων ἐγνώσθη <milestone unit="altnumbering" n="95"/>
@@ -171,9 +163,7 @@
 ἀφίξεως καὶ τρόπον τοῦ βίου καὶ δυνάμεις καὶ λόγους καὶ κατορθώματα
 αὐτοῦ προλαβόντες βίβλοις ἱεραῖς ἐγκατέθεντο.</p>
          </div>
-         <div n="3"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:3.41-3.62"
-              type="fragment">
+         <div n="3" corresp="urn:cts:greekLit:tlg2018.tlg010:3.41-3.62" type="fragment">
             <p>
                <add>ἀλλ᾿ ἵνα μή μοι τὰ νῦν ὁ λόγος εἰς μακρὰν ἐκτείνοιτο ἐπὶ πάν. <milestone unit="mspage" n="307v"/>
                   <lb n="10"/> τὰ τά μεγαλουργήματα αὐτοῦ, ὑπ’ ὄψεσιν ἐκκείσθω ὁ αὐτοῦ θάνατος</add>, ὃν <milestone unit="altnumbering" n="105"/>
@@ -992,17 +982,13 @@ mit ganer Seele Σ 22 ἐνεργὴς + ὀφθαλμοῖς (frei?) Σ 23 π�
 ἔθνη καὶ τὰ προστεταγμένα ἐποίουν, κηρύττοντες μετάνιαν τοῖς
 πᾶσι καὶ λύσιν τῶν πρότερον τῶς ψυχῆς ἀμπλακημάτων . . . . .</p>
          </div>
-         <div n="10"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.12"
-              type="fragment">
+         <div n="10" corresp="urn:cts:greekLit:tlg2018.tlg010:4.12" type="fragment">
             <lb n="15"/>
             <p>. . . . . τὴν πρὸς θεὸν γνῶσίν τε καὶ φιλίαν, ἣν τοῖς αὐτοῦ <milestone unit="mspage" n="186r"/>
 προὐξένει μαθηταῖς, τήν τε   τῆς ψυχῆς ἀταραξίαν καὶ λογισμοῦ τὸ <milestone unit="altnumbering" n="141"/>
 γαληνὸν καὶ εὐσταθὲς τοῦτον ἀποκαλῶν τὸν τρόπον.</p>
          </div>
-         <div n="11"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.13-4.14"
-              type="fragment">
+         <div n="11" corresp="urn:cts:greekLit:tlg2018.tlg010:4.13-4.14" type="fragment">
             <p>συνηγμένων μὲν οὖν ἐπὶ τὸ αὐτὸ ἐν τοῖς Ἱεροσολύμοις τῶν ἀρχόντων <milestone unit="mspage" n="262v"/>
                <lb n="20"/> τοῦ Ἰουδαίων ἔθνους ἀρχιερέων τε καὶ νομοδιδασκάλων, <milestone unit="altnumbering" n="141"/>
                <add>αὐτὸς δὲ</add> ἐν αὐτῷ τῷ ἱερῷ ποιούμενος τὰς διατριβὰς τὰ μέλλοντα
@@ -1071,9 +1057,7 @@ die anderen oder die letxten Σ 23 δὲ Α &lt; Σ 27 μιαιφονίᾳ +
 <lb n="10"/> συνέντες ὃτι περὶ αὐτῶν εἲρηο, <add>καθ᾿ ἑαυτῶν τὴν ψῆφον ἐξήνεγκον</add> . . .
 . . . . . . . . . . . . .</p>
          </div>
-         <div n="12"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.18-4.20"
-              type="fragment">
+         <div n="12" corresp="urn:cts:greekLit:tlg2018.tlg010:4.18-4.20" type="fragment">
             <p>. . . . . ἐπεὶ δὲ καὶ περὶ τοῦ τόπου ἒχρησεν ὁ τοῦ θεοῦ λόγος, <milestone unit="mspage" n="199r"/>
 φέρε ἲδωμεν τὰς αὐτοῦ περὶ τούτου φωνάς. οὐ φέροντες αὐτοῦ τὴν <milestone unit="altnumbering" n="148"/>
                <lb n="15"/> σεμνὴν διδασκαλίαν οὐδὲ τὴν παρρηςίαν καὶ τοῦς ἐλέγχους οἱ τῶν
@@ -1298,9 +1282,7 @@ Völkern Σ &lt; Α</note>
 <lb n="5"/> » καὶ οἱ ἐν ταῖς χώραις μὴ εἰσελθέτωσαν εἰς αὐτήν, ὅτι ἡμέραι ἐκδικήσεως
 αὖταί εἰσι τοῦ πληρωθῆναι πάντα τὰ γεγραμμένα « . . . . . .</p>
          </div>
-         <div n="13"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.21-4.22"
-              type="fragment">
+         <div n="13" corresp="urn:cts:greekLit:tlg2018.tlg010:4.21-4.22" type="fragment">
             <p>
                <add>ταύτας τὰς συμφορὰς</add> ἀπὸ μυρίων τέθεικα διὰ τὴν θείαν τοῦ δωτῆρος <milestone unit="mspage" n="270v"/>
 ἡμῶν πρόρρησιν τὴν φήσασαν, »οὐαὶ δὲ <add> ταῖς ἐν γαστρὶ ἐχούσαις <milestone unit="altnumbering" n="155"/>
@@ -1337,9 +1319,7 @@ vom der oberen Stadt Σ (Mißberständnis) 22. 23 Die Ergänungen nach Σ &lt; �
 βίου συντέλειαν. <gap reason="omitted"/>
             </p>
          </div>
-         <div n="14"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.33"
-              type="fragment">
+         <div n="14" corresp="urn:cts:greekLit:tlg2018.tlg010:4.33" type="fragment">
             <milestone unit="mspage" n="124r"/>
             <p>
                <add>διὸ δὴ</add> τὰς ἐν ψυχαῖς. διαφορὰς τῶν τὴν διδασκαλίαν αὐτοῦ
@@ -1362,9 +1342,7 @@ vom der oberen Stadt Σ (Mißberständnis) 22. 23 Die Ergänungen nach Σ &lt; �
 πάλιν κατὰ δύναμιν τῆς αὐτῶν ψυχῆς πολυπλασίαζουσι τοῦς ἑαυτῶν
 καρπούς.</p>
          </div>
-         <div n="15"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:4.35"
-              type="fragment">
+         <div n="15" corresp="urn:cts:greekLit:tlg2018.tlg010:4.35" type="fragment">
             <milestone unit="mspage" n="269r"/>
             <p>αὐτίκα <add>γὰρ</add> Σαμαρεῖται Δοσίθεον μετὰ τοὰς χρόνους τοῦ σωτῆρος
 <milestone unit="altnumbering" n="171"/> γενόμενον αὐτὸν εἶναι τὸν ὑπὸ Μωσέως προφητευόμενον προφήτην <lb n="25"/>
@@ -1384,9 +1362,7 @@ längeren  Zusatz &lt; Σ 18 οὖν &lt; Σ 24 γὰρ Σ &lt; Α 27 πάλαι
 τοιούτους ἔδεσθαι, ἐξ ὧν δὴ καὶ αὐτῶν ἡ ἀλήθεια τῶν σωτηρίων
 προγνώσεων τὴν μαρτυρίαν εἴληφεν.</p>
          </div>
-         <div n="16"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:5.37"
-              type="fragment">
+         <div n="16" corresp="urn:cts:greekLit:tlg2018.tlg010:5.37" type="fragment">
             <lb n="5"/>
             <p>
                <gap reason="omitted"/>
@@ -1433,9 +1409,7 @@ Gr ἀπεκάλει D</note>
 κρείττονα τὸν συναπόστολον, τῶν λοιπῶν εὐαγγελιστῶν τοὐναντίον <lb n="5"/>
 πεποιηκότων.</p>
          </div>
-         <div n="17"
-              corresp="urn:cts:greekLit:tlg2018.tlg010:5.42"
-              type="fragment">
+         <div n="17" corresp="urn:cts:greekLit:tlg2018.tlg010:5.42" type="fragment">
             <note type="marginal">Μai</note>
             <p>
                <add>εἰ γὰρ δὴ πλάττεσθαι αὐτοῖς ὁ σκοπὸς ἦν καὶ λόγοις ψευδέσι Σ

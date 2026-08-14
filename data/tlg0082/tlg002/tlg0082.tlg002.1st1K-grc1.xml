@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -77,17 +76,12 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="paragraph"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="paragraph" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='paragraph']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -99,10 +93,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg0082.tlg002.1st1K-grc1">
+      <body xml:base="urn:cts:greekLit:tlg0082.tlg002.1st1K-grc1">
+         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0082.tlg002.1st1K-grc1">
             <pb n="119"/>
             <head>ΑΠΟΛΛΩΝΙΟΥ ΑΛΕΞΑΝΔΡΕΩΣ
 ΠΕΡΙ ΕΠΙΡΡΗΜΑΤΩΝ
@@ -2010,7 +2002,7 @@ var. lect, ⟨πρὸϲ ⟩ οὐδέτερα πληθυντικά RSkrzeczka | 
 13, λ b, ᾱ A1, quod in λ mutavit A2 | 14. τοῦ τόνου b, τον τονον A | ἐπικρατεῖν
 τοῦ τόνου pro τοῦ τόνου ἐπικρατεῖν GFSchoemann | 17—18. καλὸϲ καλά
 GDronke, καλῶϲ Ab | 18. τω ουδομα A | 18—19. το ουδαμωϲ A | 19. ἔχοιτο ἄν]
-fol. 128 v. | 19. 20. -lacunas explevit b | 21. καθιϲταται A | 22&#x7f;—23. τω μεντοι A,
+fol. 128 v. | 19. 20. -lacunas explevit b | 21. καθιϲταται A | 22—23. τω μεντοι A,
 τὸ μέντοι b | 23. οὐδαμῶϲ Ab, οὐδαμά GDronke | το ουδαμοϲ A, τῷ ουδαμοϲ b |
 δὲ τὸ b, δε τω A | 24. τῷ ο b, το ο A | 26. ἀμόθεν DRuhnken b, αλλοθεν A</note>
                   <pb n="156"/>
@@ -3905,7 +3897,7 @@ Ab, ‘Praepositionem abesse velim b in var. lect | 18. μεταλαμβάνει
 <lb n="25"/> γὰρ μὴ τῇδε ἔχοντα τὸ ε φυλάϲϲει. εἴρηται μὲν οὖν περὶ τῶν εἰϲ
 θεν, λέγω περὶ τοῦ ὔπιϲθα καὶ ὕπερθα καὶ τῶν τοιούτων· ἔϲτι δὲ καὶ
 ὑποδείγματα τῶν <add cause="fix">διὰ</add> τοῦ τε τὸ πότε πότα, ὅτε ὅτα. ἑτέρωτε
-ἑτέρωτα, ἄλλοτε ἄλλοτα. &#x8d;— διαφέρει δὲ πάλιν τὰ Αἰολικὰ τοῦ <lb n="15"/>
+ἑτέρωτα, ἄλλοτε ἄλλοτα. — διαφέρει δὲ πάλιν τὰ Αἰολικὰ τοῦ <lb n="15"/>
                   <lb n="30"/> Δωρικοῦ, ἡ τὸ μὲν Δωρικὸν τὸ η εἰϲ κ μεταλαμβάνει, ὅτε τὸ πότε
 πόκα ἐϲτί, τὸ ἄλλοτε ἄλλοκα, ὅτε ὅκα. καὶ μετὰ περιϲϲοῦ τοῦ κ,
 ὅκκα δὴ γυνά (Alcm. fr. 94 Berak3). οὐ μὴν ἐπὶ τοῦ κυκλόϲε ῆ
@@ -4198,7 +4190,7 @@ iure et locale et paroxytonon possit esse. — 16 ln paenultima adverbiorum in
                   <note type="footnote">ARGVM. 3 Adverbia in δην barytona sunt; derivantur et a nominibus, et
 a verbis. —20 Εἰϲδ notabile et propter aspirationem, et propter accentum.</note>
                   <note type="footnote">TESTIM. 18 Et M. 133, 17 ἀπριάτην· πρίημι. τ καθητικὸν πρίαμαι. τὰ
-ἐπίρρημα ἀπρίδην καὶ τροπῇ] τοῦ δ εἰς τ ἁπριάτην; cf, ib. 132, 46. &#x8d;—Schol.
+ἐπίρρημα ἀπρίδην καὶ τροπῇ] τοῦ δ εἰς τ ἁπριάτην; cf, ib. 132, 46. —Schol.
 BL. ad A 99 ἀπριἁτην· ἐπιρρηματικῶς αὐτὰ ἀκούει Ἀπολλώνιος, ῖν᾿ ᾗ τὸ
 χωρὶς πριασμοῦ ἀντὶ τοῦ ἀπριάδην. Cf. Apoll. Soph. 39, 23. Ep. Cr. 23, 16. Et.
 M. 132, 46, 137, 17. Schol. ξ 317. — 27 Schol. BL ad Γ 409 εἰσόκε· ἐκ τῆς εῖς προ-

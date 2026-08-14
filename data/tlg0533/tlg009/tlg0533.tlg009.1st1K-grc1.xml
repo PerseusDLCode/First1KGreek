@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -109,24 +108,17 @@
          <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(\w+).(\w+)"
-                         n="section"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
                <p>This pointer pattern extracts poem and section.</p>
             </cRefPattern>
-            <cRefPattern matchPattern="(\w+)"
-                         n="poem"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <cRefPattern matchPattern="(\w+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                <p>This pointer pattern extracts poem.</p>
             </cRefPattern>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="poem" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='poem']" use="@n"><citeStructure unit="section" delim="." match="div[@type='textpart'][@subtype='section']" use="@n"/></citeStructure></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#verse-stichic"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#verse-stichic" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -140,19 +132,11 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              n="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-              xml:lang="grc">
+      <body xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1">
+         <div type="edition" n="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" xml:lang="grc">
             <pb facs="callimachuslycop00calluoft_0256"/>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="0">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="0">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="1">
                   <head xml:lang="lat">Testimonia</head>
                   <p rend="indent">
                      <label>1.</label>
@@ -164,28 +148,19 @@
           <lb n="5"/>τοῦ σοὶ καὶ νεαρῶν χειρῶν σθένος εἴη ἀρέσθαι,
           <lb rend="indent" n="6"/>Μάρκελλε, κλεινοῦ τ’ αἶνον ἴσον βιότου.</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0"
-                    n="2">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="2">
                   <p rend="indent">
                      <label>2.</label>
                      <bibl xml:lang="lat">Schol. Callim. Hymn. Apoll. 106</bibl> ἐγκαλεῖ διὰ τούτων τοὺς σκώπτοντας αὐτὸν μὴ δύνασθαι ποιῆσαι μέγα ποίημα, ὅθεν ἠναγκάσθη ποιῆσαι τὴν Ἑκάλην.</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0"
-                    n="3">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="3">
                   <p rend="indent">
                      <label>3.</label>
                      <bibl xml:lang="lat">E.M. s.v.</bibl> Ἐκάλη· ἡ ἡρωίς, εἰς ἣν καὶ ποίημα ἔγραψε Καλλίμαχος· ἡ πρὸς ἑαυτὴν πάντας καλοῦσα. ταύτην Ἑκάλην (<foreign xml:lang="lat">leg.</foreign> Ἑκαλίνην) ἔλεγον οἱ παλαιοὶ ὑποκοριζόμενοι. ἔθυον δὲ αὐτῇ διὰ τὸ ξενίσαι Θησέα. <foreign xml:lang="lat">Cf.</foreign>
                      <bibl xml:lang="lat">Suid. s.v.<foreign xml:lang="grc"> Ἑκάλη</foreign>.</bibl>
                   </p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0"
-                    n="4">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="4">
                   <p rend="indent" xml:lang="lat">
                      <label>4.</label>
                      <bibl>Petronius 135:</bibl>
@@ -194,10 +169,7 @@
                      <lb/>Digna sacris Hecale, quam Musa loquentibus annis 
           <lb/>Battiadae veteris mirando tradidit aevo.</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0"
-                    n="5">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="5">
                   <p rend="indent">
                      <label>5.</label>
                      <bibl xml:lang="lat">Epigr. Anonym. Bern. 5 f.:</bibl>
@@ -205,14 +177,8 @@
           <lb/>καὶ τὴν τελευτὴν Θησέως τε τὴν ἄγραν.</p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="1">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="1">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="1">
                   <head rend="center">1. 1.</head>
                   <p>
                      <lb n="1"/>[κουλεὸν εἰς] ἑτέρην περίαπτε καὶ εἰν ἄορ ἧκεν· 
@@ -233,10 +199,7 @@
                      <lb n="14"/>[οἵ μιν ἐκυκλώσα]ντο περιστα [δ]όν, αἱ δὲ γυναῖκες 
           <lb n="15"/>...στόρνῃσιν ἀνέστεφον.</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1"
-                    n="2">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="2">
                   <head rend="center">1. 2.</head>
                   <p>
                      <lb n="1"/>καί ῥ’ ὅτ’ ἐποφ . . . ἐφ’ (?) ὃν ἄν τιν’ ἕκαστοι
@@ -254,10 +217,7 @@
           <lb n="12"/>αἱ φυλακοὶ κακὸν ἔργον [ἐ]πεφράσσαντο τελέσσαι 
           <lb n="13"/>κείστης . . . . . . δεσμά τ’ ἀνεῖσαι . .  .</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1"
-                    n="3">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="3">
                   <head rend="center">1. 3.</head>
                   <p>
                      <lb rend="indent" n="1"/>Ἀθήνης 
@@ -271,10 +231,7 @@
           <lb n="9"/>αὐτὰρ ἐγὼ τυτθὸς πορέ[ην γ]όνος· [ὀ]γδ[ο]άτ[η] γὰρ
           <lb n="10"/>ἤδη μοι γενεὴ πέλ[εται, δεκάτη δὲ τοκεῦσι.</p>
                </div>
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1"
-                    n="4">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="4">
                   <p>
                      <lb n="1"/>[δεί]ελος ἀλλ’ ἢ νύξ ἢ ἔνδιος ἢ ἔσετ’ ἠώς, 
           <lb n="2"/>εὖτε κόραξ, [ὃ]ς νῦν γε καὶ ἂν κύκνοισιν ἐρίζοι
@@ -294,14 +251,8 @@
           <lb n="15"/>[δμ]ῶοι χαλκῆες κωφώμενοι ἐν[τὸς] ἀκουήν.</p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="2">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:2"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="2">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:2" n="1">
                   <p>τῖον δέ ἑ πάντες ὁδῖται 
           <lb/>ἦρα φιλοξενίης· ἔχε γὰρ τέγος ἀκλήιστον.</p>
                   <p rend="indent">
@@ -313,14 +264,8 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0266"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="3">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:3"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="3">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:3" n="1">
                   <p rend="indent">αἴθ’ ὄφελες θανέειν ἢ ὕστατον ὀρχήσασθαι.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s. v. (Gaisf. i. 1096)</bibl>
@@ -328,14 +273,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="4">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:4"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="4">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:4" n="1">
                   <p rend="indent">ἁρμοῖ που κἀκείνῳ ἐπέτρεχεν ἁβρὸς ἴουλος.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s.v.</bibl>
@@ -343,28 +282,16 @@
                      <foreign xml:lang="lat">Cf. E.M. s.v.</foreign> ἁρμῷ.</p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="5">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:5"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="5">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:5" n="1">
                   <p rend="indent">Νηπείης ᾗ τ’ ἄργος, ἀοίδιμος Ἀδρήστεια.</p>
                   <p rend="indent" xml:lang="lat">
                      <bibl>Schol. Apoll. Rh. i. 1116.</bibl>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="6">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:6"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="6">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:6" n="1">
                   <p>βουσσόον, ὅν τε μύωπα βοῶν καλέουσιν ἀμορβοί.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s.v.</bibl>
@@ -376,14 +303,8 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0268"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="7">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:7"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="7">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:7" n="1">
                   <p>ὁππότε λύχνου 
           <lb/>δαιομένου πυρόεντες ἄδην ἐγένοντο μύκητες.</p>
                   <p rend="indent" xml:lang="lat">
@@ -392,14 +313,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="8">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:8"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="8">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:8" n="1">
                   <p rend="indent">οἵ νυ καὶ Ἀπόλλωνα παναρκέος Ἠελίοιο
           <lb rend="indent"/>χωρὶ διατμήγουσι καὶ εὔποδα Δηωίνην
           <lb rend="indent"/>Ἀρτέμιδος.</p>
@@ -409,14 +324,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="9">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:9"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="9">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:9" n="1">
                   <p>ναὶ μὰ τὸ ῥικνὸν 
           <lb/>σῦφαρ ἐμόν, ναὶ τοῦτο τὸ δένδρεον αὖον ἐόν περ.</p>
                   <p rend="indent">
@@ -426,14 +335,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="10">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:10"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="10">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:10" n="1">
                   <p>γεργέριμον πίτυρίν τε καὶ ἣν ἀπεθήκατο λευκὴν 
           <lb/>εἰν ἁλὶ νήχεσθαι φθινοπωρίδα.</p>
                   <p rend="indent">
@@ -447,28 +350,16 @@
                      <quote> χύδην δ’ ἐπέβαλλε τραπέζῃ | εἰν ἁλὶ νηχομένης φθινοπωρίδος ἄνθος ἐλαίης Βρόγγος ἔχων μίμημα φιλοστόργοιο νομῆος</quote> [<foreign xml:lang="eng">i.e. Molorcus who entertained Heracles</foreign>].</p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="11">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:11"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="11">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:11" n="1">
                   <p rend="indent" xml:lang="lat">
                      <bibl>Plin. N. H. xxii. 88</bibl>
                      <quote>Estur et sonchos — ut quem Theseo apud Callimachum adponat Hecale — uterque, albus uterque, et niger.</quote>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="12">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:12"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="12">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:12" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Schol. Nicandr. Ther. 909</bibl>
                      <quote>κρῆθμον· ἤτοι λάχανόν ἐστι. καὶ γὰρ μέμνηται αὐτοῦ καὶ Καλλίμαχος ἐν τῇ Ἑκάλῃ.</quote>
@@ -479,14 +370,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="13">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:13"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="13">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:13" n="1">
                   <p rend="indent">δινομένην ὑπὸ βουσὶν ἐμὴν ἐφύλασσον ἅλωα.</p>
                   <p rend="indent" xml:lang="lat">
                      <bibl>Suid. s.v. <foreign xml:lang="grc">δεινουμένην</foreign>.</bibl>
@@ -495,14 +380,8 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0272"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="14">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:14"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="14">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:14" n="1">
                   <p>ἡνίκα μὲν γὰρ ταὐτὰ φαείνεται ἀνθρώποισιν, 
           <lb/>αὐτοὶ μὲν φιλέουσ’, αὐτοὶ δέ τε πεφρίκασιν· 
           <lb/>ἑσπέριον φιλέουσιν, ἀτὰρ στυγέουσιν ἑῷον.</p>
@@ -517,14 +396,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="15">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:15"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="15">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:15" n="1">
                   <p>ἡ δ’ ἐκόησεν 
           <lb/>τοὔνεκεν Αἰγέος ἔσκε.</p>
                   <p rend="indent" xml:lang="lat">
@@ -534,14 +407,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="16">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:16"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="16">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:16" n="1">
                   <p>πολυπτῶκές τε Μέλαιναι.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Etym. Gud. 300. 11</bibl>
@@ -550,14 +417,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="17">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:17"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="17">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:17" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Steph. Byz. s.v. <foreign xml:lang="grc">Τρινεμεῖς</foreign>,</bibl>
                      <quote>δῆμος τῆς Κεκροπίδος φυλῆς. . . . Καλλίμαχος Ἑκάλῃ Τρινέμειαν.</quote>
@@ -565,28 +426,16 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0274"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="18">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:18"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="18">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:18" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Hesych. s.v. <foreign xml:lang="grc">γηφάγοι</foreign>·</bibl>
                      <quote>πένητες, ἄποροι, ὡς τὰς ἐκ γῆς βοτάνας σιτιζόμενοι τροφῆς ἀμοιροῦντες. Καλλίμαχος ἐν Ἑκάλῃ.</quote>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="19">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:19"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="19">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:19" n="1">
                   <p>στάδιον δ’ ὑφέεστο χιτῶνα.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Schol. Apoll. Rhod. iii. 1226</bibl>
@@ -595,14 +444,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="20">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:20"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="20">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:20" n="1">
                   <p>ἐν μὲν γὰρ Τροιζῆνι κολουραίῃ ὑπὸ πέτρῃ 
           <lb/>θῆκε σὺν ἁρπίδεσσι.</p>
                   <p rend="indent">
@@ -614,26 +457,14 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="21">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:21"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="21">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:21" n="1">
                   <p>εὖτ’ ἂν ὁ παῖς ἀπὸ μὲν γυαλὸν λίθον ἀγκάσσασθαι 
             <lb/>ἄρκιος ᾖ χείρεσσιν ἑλὼν Αἰδήψιον ἄορ.</p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="22">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:22"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="22">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:22" n="1">
                   <p>Λιμναίῳ δὲ χοροστάδας ἦγον ἑορτάς.</p>
                   <p rend="indent" xml:lang="lat">
                      <bibl>Schol. Aristoph. Ran. 216.</bibl> Cf. 
@@ -642,14 +473,8 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0276"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="23">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:23"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="23">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:23" n="1">
                   <p>τοῦτο γὰρ αὐτὴν
           <lb/>κωμῆται κάλεον περιηγέες.1</p>
                   <p rend="indent">
@@ -658,14 +483,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="24">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:24"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="24">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:24" n="1">
                   <p>παλαίθετα κᾶλα καθῄρει.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Etym. Paris. 2720</bibl> (<bibl xml:lang="lat">Cramer, Anec. Par. iv. 53</bibl>) <quote>Καλλίμαχος Ἑκάλῃ· παλαίθετα κτλ.</quote>
@@ -674,28 +493,16 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="25">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:25"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="25">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:25" n="1">
                   <p>ναὶ μὰ τόν.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">ναὶ μὰ τό</foreign>·</bibl> . . . <quote>καὶ Ἑκάλη εἶπε <q>ναὶ μὰ τόν</q> καὶ οὐκέτι ἐπάγει τὸν θεόν, ῥυθμίζει δὲ ὁ λόγος πρὸς εὐσέβειαν.</quote>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="26">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:26"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="26">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:26" n="1">
                   <p>οὐ γάρ μοι πενίη πατρώϊος, οὐδ’ ἀπὸ πάππων 
           <lb/>εἰμὶ λιπερνῆτις· βάλε μοι, βάλε τὸ τρίτον εἴη.</p>
                   <p rend="indent">
@@ -706,14 +513,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="27">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:27"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="27">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:27" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Schol. Eurip. Hippol. 32</bibl>
                      <quote>πέτραν δὲ Παλλάδος φησὶ τὸ ἐν τῇ Ἀττικῇ
@@ -722,42 +523,24 @@
                </div>
                <pb facs="callimachuslycop00calluoft_0278"/>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="28">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:28"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="28">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:28" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">Κωλιάς</foreign>·</bibl>
                      <quote>ναός ἐστι τῆς Ἀφροδίτης οὕτω καλούμενος. . . . μέμνηται καὶ Καλλίμαχος ἐν Ἑκάλῃ.</quote>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="29">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:29"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="29">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:29" n="1">
                   <p rend="indent">
                      <bibl xml:lang="lat">Schol. Euseb. Praep. Evang. iv. 16</bibl>
                      <quote>οὐ τὴν πρὸς ταῖς Ἀθήναις Σαλαμῖνα λέγει. αὕτη γὰρ Κούλουρις πάλαι ἐλέγετο, ὡς καὶ Καλλίμαχος ἐν Ἑκάλῃ φησίν, ἀλλὰ τὴν κατὰ Κύπρον Σαλαμῖνα λέγει.</quote>
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="30">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:30"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="30">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:30" n="1">
                   <p>ἴθι, πρηεῖα γυναικῶν,
           <lb/>τὴν ὁδὸν ἣν ἀνίαι θυμαλγέες οὐ περόωσιν.
           <lb/>πολλάκι σεῖο 〈δέ〉,1 μαῖα, φιλοξείνοιο καλιῆς 
@@ -770,14 +553,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="31">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:31"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="31">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:31" n="1">
                   <p>τοὔνεκα καὶ νέκυες πορθμήϊον οὔ τι φέρονται 
           <lb/>μούνῃ ἔνι πτολίων, ὅ τε τέθμιον οἰσέμεν ἄλλους 
           <lb/>ἐν στομάτεσσι νεὼς Ἀχεροντείας2 ἐπίβαθρον
@@ -796,14 +573,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="32">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:32"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="32">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:32" n="1">
                   <p>ἀλλὰ θεῆς, ἥτις με διάκτορον ἔλλαχε Παλλάς.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">διάκτορος</foreign>·</bibl>
@@ -811,14 +582,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="33">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:33"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="33">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:33" n="1">
                   <p>ὁ μὲν εἷλκεν, ὁ δ’ εἵπετο νωθρὸς ὁδίτης.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Schol. Apoll. Rhod. i. 1162</bibl>
@@ -826,14 +591,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="34">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:34"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="34">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:34" n="1">
                   <p>πέδιλα, τὰ μὴ πύσε νήχυτος εὐρώς.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">εὐρώς</foreign>·</bibl>
@@ -843,14 +602,8 @@
                   </p>
                </div>
             </div>
-            <div type="textpart"
-                 subtype="poem"
-                 xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1"
-                 n="35">
-               <div type="textpart"
-                    subtype="section"
-                    xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:35"
-                    n="1">
+            <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="35">
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:35" n="1">
                   <p>ἐκ δ’ ἄρτους σιπύηθεν ἅλις κατέθηκεν ἑλοῦσα.</p>
                   <p rend="indent">
                      <bibl xml:lang="lat">Zonaras, p. 1645</bibl>

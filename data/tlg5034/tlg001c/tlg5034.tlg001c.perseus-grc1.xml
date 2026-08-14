@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -71,20 +70,13 @@
       <encodingDesc>
          <p>text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="line"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="poem"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="poem" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='poem']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -96,10 +88,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              n="urn:cts:greekLit:tlg5034.tlg001c.perseus-grc1"
-              xml:lang="grc">
+      <body xml:base="urn:cts:greekLit:tlg5034.tlg001c.perseus-grc1">
+         <div type="edition" n="urn:cts:greekLit:tlg5034.tlg001c.perseus-grc1" xml:lang="grc">
             <div type="textpart" subtype="poem" n="introduction">
                <head>
                   <note n="BDPTU"/>Ὑπόθεσις Νεμέων. <note n="B"/>ἀρχὴ Νεμέων· ἐν τέλει τῶν Πυθίων.</head>

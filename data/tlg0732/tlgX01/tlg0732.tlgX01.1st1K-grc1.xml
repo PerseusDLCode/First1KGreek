@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -89,17 +88,12 @@
          <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
          <refsDecl n="CTS">
-            <cRefPattern n="page"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="page" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="page" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='page']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -107,10 +101,8 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              n="urn:cts:greekLit:tlg0732.tlgX01.1st1K-grc1"
-              xml:lang="grc">
+      <body xml:base="urn:cts:greekLit:tlg0732.tlgX01.1st1K-grc1">
+         <div type="edition" n="urn:cts:greekLit:tlg0732.tlgX01.1st1K-grc1" xml:lang="grc">
             <head>ALEXANDRI QUOD FERTUR IN ARISTOTELIS SOPHISTICOS ELENCHOS COMMENTARIUM</head>
             <pb n="1"/>
             <head>ΑΠΟΣΗΜΕΙΩΣΕΙΣ ΕΙΣ ΤΟΥΣ ΣΟΦΙΣΤΙΚΟΥΣ ΕΛΕΓΧΟΥΣ</head>

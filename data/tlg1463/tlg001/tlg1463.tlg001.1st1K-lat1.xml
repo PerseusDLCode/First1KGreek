@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/PerseusDLCode/perseus-schemas/main/perseus_prose.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt xml:lang="lat">
@@ -102,7 +101,7 @@
                </citeStructure>
             </citeStructure>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="chapter" delim=":" match="div[@type='chapter']" use="@n"><citeStructure unit="verse" delim="." match="div[@type='verse']" use="@n"/></citeStructure></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
             <catRef scheme="#perseus-genre" target="#prose-chapter-verse"/>

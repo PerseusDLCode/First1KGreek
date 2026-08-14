@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -82,17 +81,12 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="fragment"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="fragment" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='fragment']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -107,10 +101,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              n="urn:cts:greekLit:tlg2042.tlg010.opp-grc1"
-              xml:lang="grc">
+      <body xml:base="urn:cts:greekLit:tlg2042.tlg010.opp-grc1">
+         <div type="edition" n="urn:cts:greekLit:tlg2042.tlg010.opp-grc1" xml:lang="grc">
             <pb n="199"/>
             <head>Die selbständigen Fragmente aus der Prophetenkatene.</head>
             <note>c = cod. Chis. R. VIII. 54 saec. X. l = cod. Laur. V, 9 saec. XI. o = cod. Vat. Ottob.
@@ -609,8 +601,7 @@
             </div>
             <div type="textpart" subtype="fragment" n="25">
                <head>Jerem. 25, 14—16. </head>
-               <q type="mentioned"
-                  corresp="urn:cts:greekLit:tlg0527.tlg049:25.14-25.16. ">
+               <q type="mentioned" corresp="urn:cts:greekLit:tlg0527.tlg049:25.14-25.16. ">
                   <p>
                      <milestone unit="altref" n="100"/> Ἐφρόνουν γὰρ ἐπὶ τοξείᾳ, μὴ μαθόντες ψάλλειν· »οὐ
 							γὰρ ἐπὶ τὸ τόξον μου ἐλπιῶ, καὶ ἡ ῥομφαία μου οὐ σώσει με«. ἔθνη δὲ πανταχόθεν ἀπειλεῖ
@@ -1397,8 +1388,7 @@
             </div>
             <div type="textpart" subtype="fragment" n="61">
                <head>Jerem. 39, 10. 11. 14. 16.</head>
-               <q type="mentioned"
-                  corresp="urn:cts:greekLit:tlg0527.tlg049:39, 10. 11. 14. 16.">
+               <q type="mentioned" corresp="urn:cts:greekLit:tlg0527.tlg049:39, 10. 11. 14. 16.">
                   <p>
                      <milestone unit="altref" n="140"/> Οὗτος ποιεῖ βιβλίον κτήσεως, ὅπερ ἴσως ἐστὶν αἱ
 							νοήσεις, <lb n="5"/> αἱ μνήμαι, τὰ δόγματα, δι’ ὧν κεκτήμεθα τὸν ἀγρόν, τουτέστι τῆς

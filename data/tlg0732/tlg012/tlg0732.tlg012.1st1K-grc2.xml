@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -51,20 +50,13 @@
             </correction>
          </editorialDecl>
          <refsDecl n="CTS">
-            <cRefPattern n="essay"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="quaestio"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="essay" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="quaestio" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="quaestio" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='quaestio']" use="@n"><citeStructure unit="essay" delim="." match="div[@type='textpart'][@subtype='essay']" use="@n"/></citeStructure></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage default="false">
             <language ident="grc">Greek</language>
@@ -72,10 +64,8 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              n="urn:cts:greekLit:tlg0732.tlg012.1st1K-grc2"
-              xml:lang="grc">
+      <body xml:base="urn:cts:greekLit:tlg0732.tlg012.1st1K-grc2">
+         <div type="edition" n="urn:cts:greekLit:tlg0732.tlg012.1st1K-grc2" xml:lang="grc">
             <div type="textpart" subtype="quaestio" n="1">
                <div type="textpart" subtype="essay" n="2">
                   <pb n="5"/>

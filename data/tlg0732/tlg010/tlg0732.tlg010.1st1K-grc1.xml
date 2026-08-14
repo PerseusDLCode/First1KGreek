@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -76,20 +75,13 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+).(.+)"
-                         n="paragraph"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern matchPattern="(.+)"
-                         n="work"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="work" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='work']" use="@n"><citeStructure unit="paragraph" delim="." match="div[@type='textpart'][@subtype='paragraph']" use="@n"/></citeStructure></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -101,10 +93,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg0732.tlg010.1st1K-grc1">
+      <body xml:base="urn:cts:greekLit:tlg0732.tlg010.1st1K-grc1">
+         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0732.tlg010.1st1K-grc1">
             <div type="textpart" subtype="work" n="1">
                <pb n="1"/>
                <head>ΑΛΕΞΑΝΔΡΟΥ ΑΦΡΟΔΙΣΙΕΩΣ ΠΕΡΙ ΨΥΧΗΣ.</head>
@@ -4285,7 +4275,7 @@
                                 dasselbe specificiren von der Annahme der ihm fremden Formen 20 αὑτῷ
                                 om. 20—21 καὶ τί—θεωρῶν] und indem er ihre Qualitäten betrachtet 21
                                 ἄρα om. 23 post γίνεται p addit: aber es ist (?) eine Kraft, wie
-                                vorangegangen ist 23&#x7f;—24 ἐν—νοούμενον] wenn sich in ihm die
+                                vorangegangen ist 23—24 ἐν—νοούμενον] wenn sich in ihm die
                                 intelligible Form substanziirt 24 μόνον om. 25 ἀγράφῳ] auf welche
                                 geschrieben wird 25—26 τῷ—ἀγράφῳ] dem Fehlen der Schrift auf der
                                 Tafel 26—27 αὐτὸ—ἐστίν] denn die Oberfläche der Tafel, auf welche

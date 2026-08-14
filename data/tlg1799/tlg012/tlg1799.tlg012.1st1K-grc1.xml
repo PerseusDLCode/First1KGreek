@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -72,17 +71,12 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="chapter"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="chapter" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='chapter']" use="@n"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#verse-stichic"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#verse-stichic" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -94,10 +88,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg1799.tlg012.1st1K-grc1">
+      <body xml:base="urn:cts:greekLit:tlg1799.tlg012.1st1K-grc1">
+         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1799.tlg012.1st1K-grc1">
             <div type="textpart" subtype="chapter" n="pr">
                <pb n="2"/>
                <p>Ἐπειδὴ ὁρᾶται τὰ ἀπλανῆ ἄστρα ἀεὶ ἐκ τοῦ αὐτοῦ τόπου ἀνατέλλοντα καὶ εἰς τὸν

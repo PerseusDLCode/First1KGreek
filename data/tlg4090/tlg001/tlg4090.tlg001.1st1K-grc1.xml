@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="eng">
       <fileDesc>
          <titleStmt>
@@ -90,23 +89,14 @@
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
          <refsDecl n="CTS">
-            <cRefPattern n="paragraph"
-                         matchPattern="(.+).(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-            <cRefPattern n="book"
-                         matchPattern="(.+).(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-            <cRefPattern n="commentary"
-                         matchPattern="(.+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern n="paragraph" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+            <cRefPattern n="book" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern n="commentary" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commentary" delim=":" match="div[@type='edition']/div[@type='textpart'][@subtype='commentary']" use="@n"><citeStructure unit="book" delim="." match="div[@type='textpart'][@subtype='book']" use="@n"><citeStructure unit="paragraph" delim="." match="div[@type='textpart'][@subtype='paragraph']" use="@n"/></citeStructure></citeStructure></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <textClass>
-            <catRef scheme="#perseus-genre"
-                    target="#prose-standard"
-                    cert="low"
-                    resp="#corpus-tools"/>
+            <catRef scheme="#perseus-genre" target="#prose-standard" cert="low" resp="#corpus-tools"/>
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
@@ -118,10 +108,8 @@
       </revisionDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition"
-              xml:lang="grc"
-              n="urn:cts:greekLit:tlg4090.tlg001.1st1K-grc1">
+      <body xml:base="urn:cts:greekLit:tlg4090.tlg001.1st1K-grc1">
+         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg4090.tlg001.1st1K-grc1">
             <div type="textpart" subtype="commentary" n="hosea">
                <div type="textpart" subtype="book" n="praefatio">
                   <pb n="1"/>
@@ -28291,7 +28279,7 @@ ordine A. τό om. A.</note>
                         <pb n="726"/>
 Ποῦ Κύριος ὁ Θεός σου, φηλνάφως κατακεκράγασιν. ἀλλ᾿ 
 <note type="marginal">Eph. v. 27.</note> b ἥ γε σοφή τε καὶ πάναγνος καὶ ἁγία παρθένος, ἡ σπίλον τε 
-<note type="marginal">Supra ver. 7.</note> καὶ ῥυτίδα μὴ ἔχουσα, φήσειεν ἂν εἰκότως &#x90;“Ἐγὼ δὲ ἐπὶ τὸν 
+<note type="marginal">Supra ver. 7.</note> καὶ ῥυτίδα μὴ ἔχουσα, φήσειεν ἂν εἰκότως “Ἐγὼ δὲ ἐπὶ τὸν 
 “Κύριον ἐπιβλέψομαι, ὑπομενῶ ἐπὶ τῷ Θεῷ τῷ Σωτῆρί μου, 
 “εἰσακούσεταί μου ὁ Θεός μου·” καταπατήσει δὲ ὅτι τοὺς <lb n="5"/> 
 ἀνθεστηκότας ὡς πηλὸν ὁδῶν, καὶ ὡς οὐκ ἂν ἐφησθεῖεν εἰσάπαν 
@@ -48582,7 +48570,7 @@ invitis B.C.</note>
 καὶ παντὸς τοῦ ἐν αὐτῇ λιμῷ καταφθίνοντος, θρήνου τε καὶ
 κοπετοῦ τὰ πάντα πεπλήρωτο. μαρτυρήσει δὲ καὶ Ἰώσηπος,
 <note type="marginal">b</note> τὰ γὰρ τῆς Ἁλώσεως βιβλία συντιθεὶς, ἔφη που περὶ τῶν
-Ἱεροσολύμων αὐταῖς λέξεσιν ὧδε &#x8d;„Kομμοὶ δὲ ἦσαν ἀνὰ τὴν
+Ἱεροσολύμων αὐταῖς λέξεσιν ὧδε „Kομμοὶ δὲ ἦσαν ἀνὰ τὴν
 <note type="marginal">De Beilo Jud. lib. ii. cap. 1. Supra xi. 1, 2.</note>   „πόλιν πανταχῆ, οἰμωγαὶ δὲ διαπρύσιοι, καὶ θρῆνος ἐγκέλευστος.” <lb n="5"/>
 „ ὥσπερ δὲ Λίβανον καὶ δρυμὸν αὐτὴν ὠνόμαζε,
 λέγων “Διάνοιξον ὁ Λίβανος τὰς θύρας σου, καὶ καταφαγέτω
